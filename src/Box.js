@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { space, width, color, responsiveStyle } from 'styled-system'
+import { space, width, color, fontSize, responsiveStyle } from 'styled-system'
 import PropTypes from 'prop-types'
 import theme from './theme'
 
 const align = responsiveStyle('text-align', 'align')
 const Box = styled.div`
-  ${space} ${width} ${color} ${align};
+  ${space} ${width} ${color} ${fontSize} ${align};
 `
 
 Box.displayName = 'Box'
@@ -25,6 +25,12 @@ Box.propTypes = {
   bg: PropTypes.string,
   width: numberStringOrArray,
   w: numberStringOrArray,
+  fontSize: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+    PropTypes.array
+  ]),
+  align: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
   /** Margin */
   m: numberStringOrArray,
   mt: numberStringOrArray,

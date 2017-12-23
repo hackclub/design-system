@@ -27,14 +27,14 @@ describe('Box', () => {
   })
 
   test('color prop sets color', () => {
-    const json = renderer.create(<Box color="blue" />).toJSON()
+    const json = renderer.create(<Box color="info" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.blue)
+    expect(json).toHaveStyleRule('color', theme.colors.info)
   })
 
   test('bg prop sets background color', () => {
-    const json = renderer.create(<Box bg="green" />).toJSON()
+    const json = renderer.create(<Box bg="accent" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.green)
+    expect(json).toHaveStyleRule('background-color', theme.colors.accent)
   })
 })
