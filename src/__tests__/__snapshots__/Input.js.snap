@@ -13,29 +13,27 @@ exports[`Input it renders 1`] = `
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 0 undefined;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::-moz-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0:-ms-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::-ms-clear {
@@ -44,8 +42,8 @@ exports[`Input it renders 1`] = `
 
 .c0:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  border-color: #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
+  box-shadow: 0 0 0 1px #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
 }
 
 <input
@@ -67,31 +65,29 @@ exports[`Input it renders an input element with a really large padding and margi
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 0 undefined;
   margin: 32px;
   padding: 32px;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::-moz-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0:-ms-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::-ms-clear {
@@ -100,8 +96,8 @@ exports[`Input it renders an input element with a really large padding and margi
 
 .c0:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  border-color: #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
+  box-shadow: 0 0 0 1px #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
 }
 
 <input
@@ -123,29 +119,28 @@ exports[`Input it renders an input element with a red border with a color prop i
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #c00;
-  box-shadow: 0 0 0 0 #c00;
+  border-color: #fcebed,#fad5d9,#f6bcc2,#f29da7,#ed7582,#e42d42,#ce293c,#b52434,#951d2b,#6b151f;
+  box-shadow: 0 0 0 0 #fcebed,#fad5d9,#f6bcc2,#f29da7,#ed7582,#e42d42,#ce293c,#b52434,#951d2b,#6b151f;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::-moz-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0:-ms-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::-ms-clear {
@@ -154,8 +149,8 @@ exports[`Input it renders an input element with a red border with a color prop i
 
 .c0:focus {
   outline: 0;
-  border-color: #c00;
-  box-shadow: 0 0 0 1px #c00;
+  border-color: #fcebed,#fad5d9,#f6bcc2,#f29da7,#ed7582,#e42d42,#ce293c,#b52434,#951d2b,#6b151f;
+  box-shadow: 0 0 0 1px #fcebed,#fad5d9,#f6bcc2,#f29da7,#ed7582,#e42d42,#ce293c,#b52434,#951d2b,#6b151f;
 }
 
 <input
@@ -178,29 +173,27 @@ exports[`Input it renders an input element with large text 1`] = `
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 0 undefined;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::-moz-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0:-ms-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c0::-ms-clear {
@@ -209,8 +202,8 @@ exports[`Input it renders an input element with large text 1`] = `
 
 .c0:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  border-color: #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
+  box-shadow: 0 0 0 1px #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
 }
 
 <input

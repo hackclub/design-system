@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio Disabled, rendering 1`] = `
-.c4 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c3 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -19,60 +19,50 @@ exports[`Radio Disabled, rendering 1`] = `
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 0 undefined;
 }
 
-.c3::-webkit-input-placeholder {
-  color: #687B8E;
+.c2::-webkit-input-placeholder {
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
-.c3::-moz-placeholder {
-  color: #687B8E;
+.c2::-moz-placeholder {
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
-.c3:-ms-input-placeholder {
-  color: #687B8E;
+.c2:-ms-input-placeholder {
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
-.c3::placeholder {
-  color: #687B8E;
+.c2::placeholder {
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
-.c3::-ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
-.c3:focus {
+.c2:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  border-color: #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
+  box-shadow: 0 0 0 1px #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
 }
 
 .c1 {
-  color: #d1d6db;
-}
-
-.c2 {
   border-style: none;
   display: inline;
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:checked ~ svg {
-  color: #007aff;
-}
-
-.c2:disabled ~ svg {
-  color: #d1d6db;
+.c1:checked ~ svg {
+  color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
 }
 
 .c0 {
@@ -89,17 +79,17 @@ exports[`Radio Disabled, rendering 1`] = `
 >
   <span
     checked={undefined}
-    className="c1"
+    className=""
     disabled={true}
   >
     <input
-      className="c2 c3"
+      className="c1 c2"
       disabled={true}
       id="radio-input"
       type="radio"
     />
     <svg
-      className="c4"
+      className="c3"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"
@@ -132,29 +122,27 @@ exports[`Radio Not Selected, rendering 1`] = `
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 0 undefined;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c3::-moz-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c3:-ms-input-placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c3::placeholder {
-  color: #687B8E;
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 .c3::-ms-clear {
@@ -163,16 +151,12 @@ exports[`Radio Not Selected, rendering 1`] = `
 
 .c3:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
-}
-
-.c1 {
-  color: #d1d6db;
+  border-color: #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
+  box-shadow: 0 0 0 1px #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
 }
 
 .c1:hover {
-  color: #007aff;
+  color: #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
 }
 
 .c2 {
@@ -185,11 +169,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c2:checked ~ svg {
-  color: #007aff;
-}
-
-.c2:disabled ~ svg {
-  color: #d1d6db;
+  color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
 }
 
 .c0 {
@@ -230,13 +210,13 @@ exports[`Radio Not Selected, rendering 1`] = `
 `;
 
 exports[`Radio Selected, rendering 1`] = `
-.c4 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c3 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -248,60 +228,50 @@ exports[`Radio Selected, rendering 1`] = `
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 0 undefined;
 }
 
-.c3::-webkit-input-placeholder {
-  color: #687B8E;
+.c2::-webkit-input-placeholder {
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
-.c3::-moz-placeholder {
-  color: #687B8E;
+.c2::-moz-placeholder {
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
-.c3:-ms-input-placeholder {
-  color: #687B8E;
+.c2:-ms-input-placeholder {
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
-.c3::placeholder {
-  color: #687B8E;
+.c2::placeholder {
+  color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
-.c3::-ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
-.c3:focus {
+.c2:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  border-color: #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
+  box-shadow: 0 0 0 1px #e6f4fc,#cce7f8,#add9f5,#8bc9f0,#62b6eb,#2d9ee4,#298fce,#247db4,#1d6795,#154a6b;
 }
 
 .c1 {
-  color: #d1d6db;
-}
-
-.c2 {
   border-style: none;
   display: inline;
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:checked ~ svg {
-  color: #007aff;
-}
-
-.c2:disabled ~ svg {
-  color: #d1d6db;
+.c1:checked ~ svg {
+  color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
 }
 
 .c0 {
@@ -318,17 +288,17 @@ exports[`Radio Selected, rendering 1`] = `
 >
   <span
     checked={true}
-    className="c1"
+    className=""
     disabled={undefined}
   >
     <input
       checked={true}
-      className="c2 c3"
+      className="c1 c2"
       id="radio-input"
       type="radio"
     />
     <svg
-      className="c4"
+      className="c3"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"

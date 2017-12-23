@@ -5,7 +5,7 @@ exports[`BackgroundImage renders 1`] = `
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #687B8E;
+  background-color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
 }
 
 <div
@@ -18,7 +18,7 @@ exports[`BackgroundImage renders with height 1`] = `
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #687B8E;
+  background-color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
   height: 320px;
 }
 
@@ -33,7 +33,7 @@ exports[`BackgroundImage renders with image 1`] = `
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #687B8E;
+  background-color: #f9f9fa#ebeeef#dde1e4#cdd4d8#bcc5cb#a9b5bc#93a2ab#7a8c97#606e77#384046;
   background-image: url(hello.png);
 }
 
