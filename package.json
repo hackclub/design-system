@@ -4,10 +4,10 @@
   "description": "Hack Club Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "npm run icons && babel src -d dist --ignore __tests__",
+    "prepare": "npm run icons && babel src -d dist --ignore __tests__",
     "precommit": "npm run fmt",
     "start": "start-storybook -p 8000 -c .storybook",
-    "icons": "node scripts/parse-icons",
+    "icons": "node scripts/build-icons",
     "deploy": "storybook-to-ghpages",
     "storybook": "build-storybook -c .storybook -o .site",
     "coverage": "jest --coverage",
@@ -33,6 +33,7 @@
     "jest": "^20.0.4",
     "jest-styled-components": "^4.7.1",
     "lint-staged": "^4.2.3",
+    "material-design-icons": "^3.0.1",
     "prettier": "^1.7.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -41,15 +42,9 @@
     "svgi": "^1.1.0"
   },
   "jest": {
-    "coverageReporters": [
-      "text",
-      "lcov",
-      "html"
-    ],
+    "coverageReporters": ["text", "lcov", "html"],
     "collectCoverage": true,
-    "coveragePathIgnorePatterns": [
-      "dist/"
-    ],
+    "coveragePathIgnorePatterns": ["dist/"],
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
