@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { ThemeProvider, theme, Box } from '..'
+import { ThemeProvider, theme } from '..'
 import { Base } from '../ThemeProvider'
 
 describe('ThemeProvider', () => {

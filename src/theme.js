@@ -21,7 +21,9 @@ addAliases(mediaQueries, aliases)
 
 export const space = [0, 4, 8, 16, 32, 64, 128]
 
-export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
+export const font =
+  'Averta, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif'
+export const mono = 'SFMono-Regular, "Roboto Mono", Menlo, monospace'
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
