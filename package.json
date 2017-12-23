@@ -42,12 +42,20 @@
     "svgi": "^1.1.0"
   },
   "jest": {
-    "coverageReporters": ["text", "lcov", "html"],
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ],
     "collectCoverage": true,
-    "coveragePathIgnorePatterns": ["dist/"],
+    "coveragePathIgnorePatterns": [
+      "dist/"
+    ],
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
+    "dot-prop": "^4.2.0",
+    "palx": "^1.0.2",
     "prop-types": "^15.5.10",
     "styled-components": "^2.1.1",
     "styled-system": "^1.0.8-0"

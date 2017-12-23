@@ -1,3 +1,38 @@
+import palx from 'palx'
+import dotProp from 'dot-prop'
+
+const red = '#e42d42'
+const blue = '#2d9ce4'
+export const palette = palx(blue)
+
+export const grays = {
+  black: palette.black,
+  slate: palette.gray[8],
+  silver: palette.gray[7],
+  smoke: palette.gray[2],
+  snow: palette.gray[0],
+  white: '#ffffff'
+}
+
+export const brand = {
+  primary: red,
+  accent: palette.indigo[4],
+  success: palette.teal[5],
+  info: palette.blue[5],
+  warning: palette.orange[5],
+  error: palette.red[7],
+  muted: grays.silver
+}
+
+export const colors = {
+  ...brand,
+  ...grays,
+  ...palette
+}
+
+export const cx = key =>
+  dotProp.has(colors, key) ? dotProp.get(colors, key) : key
+
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
 const addAliases = (arr, aliases) =>
@@ -32,89 +67,6 @@ export const bold = 700
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = { regular, bold }
-
-// color palette
-const black = '#000'
-const white = '#fff'
-const text = '#001833'
-const lightBlue = '#cdf'
-const blue = '#007aff' // primary
-const darkBlue = '#049'
-const lightGray = '#f6f8fa'
-const borderGray = '#d1d6db'
-const gray = '#687B8E' // primary
-const darkGray = '#364049'
-const lightGreen = '#cec'
-const green = '#0a0' // secondary
-const darkGreen = '#060'
-const lightRed = '#fcc'
-const red = '#c00' // secondary
-const darkRed = '#800'
-const lightOrange = '#feb'
-const orange = '#fa0' // secondary
-const darkOrange = '#a50'
-const lightPurple = '#ecf'
-const purple = '#70b' // secondary
-const darkPurple = '#407'
-
-// tints
-const flatten = (name, colors) =>
-  colors.reduce((a, b, i) => {
-    const color = {
-      [name + i]: {
-        enumerable: true
-      }
-    }
-    return { ...a, ...color }
-  }, {})
-
-const blues = [lightBlue, lightBlue, blue, blue]
-const grays = [lightGray, lightGray, gray, gray]
-const greens = [lightGreen, lightGreen, green, green]
-const reds = [lightRed, lightRed, red, red]
-const oranges = [lightOrange, lightOrange, orange, orange]
-const purples = [lightPurple, lightPurple, purple, purple]
-
-const colors = {
-  black,
-  white,
-  text,
-  blue,
-  lightBlue,
-  darkBlue,
-  gray,
-  lightGray,
-  borderGray,
-  darkGray,
-  green,
-  lightGreen,
-  darkGreen,
-  red,
-  lightRed,
-  darkRed,
-  orange,
-  lightOrange,
-  darkOrange,
-  purple,
-  lightPurple,
-  darkPurple,
-  blues,
-  greens,
-  reds,
-  oranges,
-  purples
-}
-
-Object.defineProperties(colors, {
-  ...flatten('blue', blues),
-  ...flatten('gray', grays),
-  ...flatten('green', greens),
-  ...flatten('red', reds),
-  ...flatten('orange', oranges),
-  ...flatten('purple', purples)
-})
-
-export { colors }
 
 // styled-system’s `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 4, 8]
