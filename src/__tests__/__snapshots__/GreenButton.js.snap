@@ -10,7 +10,7 @@ exports[`GreenButton disabled prop sets 1`] = `
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #007aff;
   color: #fff;
   border-width: 0;
@@ -44,7 +44,7 @@ exports[`GreenButton renders 1`] = `
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #007aff;
   color: #fff;
   border-width: 0;
@@ -85,7 +85,7 @@ exports[`GreenButton without disabled prop sets 1`] = `
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #007aff;
   color: #fff;
   border-width: 0;

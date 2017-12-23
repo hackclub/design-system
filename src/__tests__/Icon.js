@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { Icon } from '..'
-import icons from '../../icons.json'
+import icons from '../../icons.js'
 
 const keys = Object.keys(icons)
 
@@ -13,17 +13,10 @@ describe('Icon', () => {
     })
   })
 
-  oldIcons.forEach(name => {
-    test(`${name} still renders old renamed icons`, () => {
-      const icon = renderer.create(<Icon name={name} />).toJSON()
-      expect(icon).toMatchSnapshot()
-    })
-  })
-
   test('returns false for non-existing icons', () => {
-    // Mock out console.error since we're expecting a propType warning
+    // Mock out console.error since we’re expecting a propType warning
     console.error = jest.genMockFunction()
-    const icon = renderer.create(<Icon name="nope" />).toJSON()
+    const icon = renderer.create(<Icon name="yayyay" />).toJSON()
 
     // We expect one propType warning.
     expect(console.error.mock.calls.length).toBe(1)

@@ -10,7 +10,7 @@ exports[`Input it renders 1`] = `
   font-family: inherit;
   font-size: 14px;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   border-color: #d1d6db;
@@ -50,6 +50,7 @@ exports[`Input it renders 1`] = `
 
 <input
   className="c0"
+  id="renders"
 />
 `;
 
@@ -63,7 +64,7 @@ exports[`Input it renders an input element with a really large padding and margi
   font-family: inherit;
   font-size: 14px;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   border-color: #d1d6db;
@@ -105,6 +106,7 @@ exports[`Input it renders an input element with a really large padding and margi
 
 <input
   className="c0"
+  id="space"
 />
 `;
 
@@ -118,7 +120,7 @@ exports[`Input it renders an input element with a red border with a color prop i
   font-family: inherit;
   font-size: 14px;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   border-color: #d1d6db;
@@ -159,6 +161,7 @@ exports[`Input it renders an input element with a red border with a color prop i
 <input
   className="c0"
   color="red"
+  id="color"
 />
 `;
 
@@ -172,7 +175,7 @@ exports[`Input it renders an input element with large text 1`] = `
   font-family: inherit;
   font-size: 14px;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   border-color: #d1d6db;
@@ -213,5 +216,6 @@ exports[`Input it renders an input element with large text 1`] = `
 <input
   className="c0"
   fontSize={4}
+  id="fontSize"
 />
 `;

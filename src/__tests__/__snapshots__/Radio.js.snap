@@ -16,7 +16,7 @@ exports[`Radio Disabled, rendering 1`] = `
   font-family: inherit;
   font-size: 14px;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   border-color: #d1d6db;
@@ -76,7 +76,7 @@ exports[`Radio Disabled, rendering 1`] = `
 }
 
 .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
   line-height: 1.4;
 }
 
@@ -106,8 +106,7 @@ exports[`Radio Disabled, rendering 1`] = `
       width={24}
     >
       <path
-        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8
-      	s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z "
       />
     </svg>
   </span>
@@ -130,7 +129,7 @@ exports[`Radio Not Selected, rendering 1`] = `
   font-family: inherit;
   font-size: 14px;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   border-color: #d1d6db;
@@ -194,7 +193,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
   line-height: 1.4;
 }
 
@@ -223,8 +222,7 @@ exports[`Radio Not Selected, rendering 1`] = `
       width={24}
     >
       <path
-        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8
-      	s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z "
       />
     </svg>
   </span>
@@ -247,7 +245,7 @@ exports[`Radio Selected, rendering 1`] = `
   font-family: inherit;
   font-size: 14px;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   border-color: #d1d6db;
@@ -307,7 +305,7 @@ exports[`Radio Selected, rendering 1`] = `
 }
 
 .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
   line-height: 1.4;
 }
 
@@ -337,8 +335,7 @@ exports[`Radio Selected, rendering 1`] = `
       width={24}
     >
       <path
-        d="M12,7c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5S14.8,7,12,7z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10
-      	s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
+        d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z "
       />
     </svg>
   </span>
