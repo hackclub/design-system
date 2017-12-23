@@ -1,27 +1,20 @@
-import styled from 'styled-components'
+import Box from './Box'
 import theme from './theme'
 import PropTypes from 'prop-types'
 
-const maxWidth = props =>
-  props.maxWidth
-    ? { maxWidth: `${props.maxWidth}px` }
-    : { maxWidth: props.theme.maxContainerWidth }
-
-const Container = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-
-  ${maxWidth};
+const Container = Box.extend`
+  max-width: ${props => props.maxWidth}rem;
 `
+
+Container.displayName = 'Container'
 
 Container.propTypes = {
   maxWidth: PropTypes.number
 }
 
 Container.defaultProps = {
-  theme: theme
+  maxWidth: 64,
+  mx: 'auto'
 }
-
-Container.displayName = 'Container'
 
 export default Container

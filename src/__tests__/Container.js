@@ -9,7 +9,8 @@ describe('Container', () => {
   })
 
   test('renders with maxWidth', () => {
-    const json = renderer.create(<Container maxWidth={1024} />).toJSON()
+    const json = renderer.create(<Container maxWidth={32} />).toJSON()
     expect(json).toMatchSnapshot()
+    expect(flex).toHaveStyleRule('max-width', '32rem')
   })
 })

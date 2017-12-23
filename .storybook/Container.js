@@ -1,19 +1,23 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Container, Box, theme } from '../src'
+import { withInfo } from '@storybook/addon-info'
+import { Container } from '../src'
 
 storiesOf('Container', module)
-  .add('Default align with theme max width', () => (
-    <Container>
-      <Box p={4} bg="lightGray" style={{ height: `100vh` }}>
-        Container Compnent
-      </Box>
-    </Container>
-  ))
-  .add('Input maxWidth', () => (
-    <Container maxWidth={500}>
-      <Box p={4} bg="lightGray" style={{ height: `100vh` }}>
-        Container Compnent
-      </Box>
+  .add(
+    'Container component',
+    withInfo({
+      inline: true,
+      text:
+        '<Box> to constrain the width of content and center it. Uses theme.maxContainerWidth if no maxWidth is provided'
+    })(() => (
+      <Container p={4} bg="smoke" style={{ height: '100vh' }}>
+        Container Component
+      </Container>
+    ))
+  )
+  .add('Custom maxWidth', () => (
+    <Container maxWidth={32} p={4} bg="smoke" style={{ height: '100vh' }}>
+      32rem-width Container
     </Container>
   ))
