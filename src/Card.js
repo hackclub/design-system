@@ -23,9 +23,9 @@ const boxShadow = props => {
 }
 
 const boxBorder = props => ({
-  border: `${props.borderWidth}px solid ${props.theme.colors[
-    props.borderColor
-  ]}`
+  border: `${props.borderWidth}px solid ${
+    props.theme.colors[props.borderColor]
+  }`
 })
 
 const Card = styled(Box)`
