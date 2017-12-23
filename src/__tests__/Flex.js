@@ -25,4 +25,10 @@ describe('Flex', () => {
     expect(flex).toMatchSnapshot()
     expect(flex).toHaveStyleRule('flex-wrap', 'wrap')
   })
+
+  test('direction prop', () => {
+    const flex = renderer.create(<Flex direction="column" />).toJSON()
+    expect(flex).toMatchSnapshot()
+    expect(flex).toHaveStyleRule('flex-direction', 'column')
+  })
 })
