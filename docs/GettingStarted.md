@@ -1,10 +1,9 @@
-
 # Getting Started
 
 Install the Design System in your application
 
 ```sh
-npm install --save pcln-design-system
+npm install --save hackclub-design-system
 ```
 
 ## ThemeProvider
@@ -16,18 +15,13 @@ This should only be included once in your application.
 
 ```jsx
 import React from 'react'
-import { ThemeProvider } from 'pcln-design-system'
-import SomeView from './SomeView'
+import { ThemeProvider } from 'hackclub-design-system'
 
-class App extends React.Component {
-  render () {
-    return (
-      <ThemeProvider>
-        <h1>Hello</h1>
-      </ThemeProvider>
-    )
-  }
-}
+const App = () => (
+  <ThemeProvider>
+    <h1>Hello</h1>
+  </ThemeProvider>
+)
 ```
 
 ```jsx
@@ -44,15 +38,13 @@ const Section = styled.section`
 The preferred way of using the design system in a React application is with UI primitives.
 With effective use of the UI primitives, you can reduce the need to write custom CSS in your application.
 
-
 ```jsx
 import React from 'react'
-import { Box, Text } from 'pcln-design-system'
+import { Box, Text } from 'hackclub-design-system'
 
 const SomeView = props => (
   <Box p={3}>
-    <Text color='blue'>Hello</Text>
+    <Text color="blue">Hello</Text>
   </Box>
 )
 ```
-

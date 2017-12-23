@@ -1,35 +1,26 @@
-
 # Theme
 
 The theme style constants should be used whenever low-level access to font sizes, margin, padding, media queries, and colors are needed.
 
 ```js
-import {
-  theme,
-} from 'pcln-design-system'
+import { theme } from 'hackclub-design-system'
 
 // or
-import {
-  colors,
-  mediaQueries,
-  fontSizes,
-  space
-} from 'pcln-design-system'
+import { colors, mediaQueries, fontSizes, space } from 'hackclub-design-system'
 ```
 
 ## Colors
 
 ```js
-import { colors } from 'pcln-design-system'
+import { colors } from 'hackclub-design-system'
 
 colors.blue // '#0a84c1'
 ```
 
-
 ## Font Sizes
 
 ```js
-import { fontSizes } from 'pcln-design-system'
+import { fontSizes } from 'hackclub-design-system'
 
 fontSizes[2] // 16
 ```
@@ -42,7 +33,7 @@ Use these values whenever declaring a font-size in CSS.
 The `space` array should be used whenever declaring margin or padding values.
 
 ```js
-import { space } from 'pcln-design-system'
+import { space } from 'hackclub-design-system'
 
 space[0] // 0
 space[1] // 4
@@ -58,7 +49,7 @@ space[6] // 128
 The `mediaQueries` array can be used to add styles targeted for different screen sizes. The design system is built for mobile-first design, so all media queries use min-width.
 
 ```js
-import { mediaQueries } from 'pcln-design-system'
+import { mediaQueries } from 'hackclub-design-system'
 
 mediaQueries[0] // @media screen and (min-width:32em)   - approximately phone-sized
 mediaQueries[1] // @media screen and (min-width:40em)   - approximately tablet-sized
