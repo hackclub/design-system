@@ -63,19 +63,7 @@ const flatten = (name, colors) =>
   colors.reduce((a, b, i) => {
     const color = {
       [name + i]: {
-        enumerable: true,
-        get() {
-          console.warn(
-            `Priceline Design System Warning: Using numbered colors like ${[
-              name + i
-            ]} will be deprecated in the next theme. Use light${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)}, ${name} or dark${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)} instead.`
-          )
-          return b
-        }
+        enumerable: true
       }
     }
     return { ...a, ...color }

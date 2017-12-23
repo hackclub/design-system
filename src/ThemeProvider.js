@@ -4,8 +4,7 @@ import styled, {
   ThemeProvider as StyledThemeProvider,
   injectGlobal
 } from 'styled-components'
-import nextTheme from './theme'
-import legacyTheme from './legacyTheme'
+import theme from './theme'
 
 injectGlobal`body {
   margin: 0;
@@ -20,26 +19,10 @@ export const Base = styled.div`
   }
 `
 
-const ThemeProvider = ({ legacy, customBreakpoints, ...props }) => {
-  const baseTheme = legacy ? legacyTheme : nextTheme
-  const breakpoints = customBreakpoints || baseTheme.breakpoints
-  const theme = {
-    ...baseTheme,
-    breakpoints
-  }
-
-  return (
-    <StyledThemeProvider theme={theme}>
-      <Base {...props} />
-    </StyledThemeProvider>
-  )
-}
-
-ThemeProvider.propTypes = {
-  /** Enable legacy color palette */
-  legacy: PropTypes.bool,
-  /** Array of pixel values for custom breakpoint overrides */
-  customBreakpoints: PropTypes.arrayOf(PropTypes.number)
-}
+const ThemeProvider = props => (
+  <StyledThemeProvider theme={theme}>
+    <Base {...props} />
+  </StyledThemeProvider>
+)
 
 export default ThemeProvider

@@ -13,9 +13,8 @@ This should only be included once in your application.
 </ThemeProvider>
 ```
 
-| Prop                | Type    | Description                                               |
-| ------------------- | ------- | --------------------------------------------------------- |
-| `legacy`            | Boolean | Enable legacy color palette                               |
-| `customBreakpoints` | Array   | Array of em number values to override default breakpoints |
+| Prop                | Type  | Description                                               |
+| ------------------- | ----- | --------------------------------------------------------- |
+| `customBreakpoints` | Array | Array of em number values to override default breakpoints |
 
 [sc-theme]: https://www.styled-components.com/docs/advanced#theming

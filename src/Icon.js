@@ -26,15 +26,10 @@ const aliases = {
   plane: icons.flights
 }
 
-const getPath = ({ name, legacy }) => {
-  if (!legacy) {
-    return icons[name] || icons.legacy[name]
-  }
-  return icons.legacy[name] || icons[name] || aliases[name]
-}
+const getPath = ({ name }) => icons[name] || aliases[name]
 
-const Base = ({ name, size, legacy, ...props }) => {
-  const icon = getPath({ name, legacy })
+const Base = ({ name, size, ...props }) => {
+  const icon = getPath({ name })
   if (!icon) return false
 
   return (
@@ -58,21 +53,18 @@ const Icon = styled(Base)`
 Icon.displayName = 'Icon'
 
 Icon.defaultProps = {
-  name: 'checkLight',
-  size: 24,
-  legacy: true
+  name: 'check',
+  size: 24
 }
 
 const allKeys = Object.keys({
   ...icons,
-  ...icons.legacy,
   ...aliases
 })
 
 Icon.propTypes = {
   name: PropTypes.oneOf(allKeys).isRequired,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  legacy: PropTypes.bool
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default Icon
