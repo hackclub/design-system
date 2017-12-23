@@ -1,26 +1,21 @@
-import styled from 'styled-components'
-import theme from './theme'
-import { space, width, borderColor, propTypes } from 'styled-system'
+import { borderColor, propTypes } from 'styled-system'
+import Box from './Box'
 
-const Divider = styled.hr`
+const Divider = Box.withComponent('hr').extend`
   border: 0;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
-  ${space} ${width} ${borderColor};
+  border-bottom-width: 2px;
+  ${borderColor};
 `
 
 Divider.displayName = 'Divider'
 
 Divider.defaultProps = {
-  borderColor: 'borderGray',
-  theme: theme,
-  ml: 0,
-  mr: 0
+  borderColor: 'smoke',
+  mx: 0
 }
 
 Divider.propTypes = {
-  ...propTypes.space,
-  ...propTypes.width,
   ...propTypes.borderColor
 }
 

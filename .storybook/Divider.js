@@ -2,11 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Divider, Flex } from '../src'
-import styled from 'styled-components'
 
-const description =
-  'Styled <hr /> with settings for padding, margin, width, and borderColor'
-const ColumnFlex = styled(Flex)`
+const ColumnFlex = Flex.extend`
   flex-direction: column;
 `
 
@@ -14,7 +11,8 @@ storiesOf('Divider', module)
   .add(
     'Divider component',
     withInfo({
-      text: description,
+      text:
+        'Styled <hr /> with settings for padding, margin, width, and borderColor',
       inline: true
     })(() => <Divider />)
   )
@@ -22,7 +20,7 @@ storiesOf('Divider', module)
   .add('Width', () => <Divider p={3} width={1 / 2} />)
   .add('Pixel Width', () => <Divider width={256} />)
   .add('VW Width', () => <Divider width="50vw" />)
-  .add('Border Color', () => <Divider m={3} borderColor="blue" />)
+  .add('Border Color', () => <Divider m={3} borderColor="accent" />)
   .add('Directional Margin', () => (
     <div>
       <Divider mt={3} />
