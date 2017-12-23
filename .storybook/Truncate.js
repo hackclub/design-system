@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 import { Box, Truncate } from '../src'
 
 const loripsum = `
@@ -15,7 +16,14 @@ Duo Reges: constructio interrete. Mihi enim satis est, ipsis non satis. Si enim 
 `
 
 storiesOf('Truncate', module)
-  .add('Without Container', () => <Truncate width={50}>{loripsum}</Truncate>)
+  .add(
+    'Truncate component',
+    withInfo({
+      inline: true,
+      text:
+        'Use the <Truncate /> component as an extension of the Text component with pure CSS solution to truncate long string with ellipsis.'
+    })(() => <Truncate width={50}>{loripsum}</Truncate>)
+  )
   .add('With Container', () => (
     <Box width={3 / 10}>
       <Truncate>{loripsum}</Truncate>

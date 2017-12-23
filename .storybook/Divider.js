@@ -5,7 +5,7 @@ import { Divider, Flex } from '../src'
 import styled from 'styled-components'
 
 const description =
-  '<hr /> with settings for padding, margin, width, and borderColor'
+  'Styled <hr /> with settings for padding, margin, width, and borderColor'
 const ColumnFlex = styled(Flex)`
   flex-direction: column;
 `
