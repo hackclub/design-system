@@ -10,7 +10,7 @@ const addAliases = (arr, aliases) =>
     })
   )
 
-export const breakpoints = [32, 40, 48, 64]
+export const breakpoints = [32, 48, 64, 80]
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
@@ -28,13 +28,10 @@ export const mono = 'SFMono-Regular, "Roboto Mono", Menlo, monospace'
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
 export const regular = 400
-export const bold = 600
+export const bold = 700
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
-export const fontWeights = {
-  regular,
-  bold
-}
+export const fontWeights = { regular, bold }
 
 // color palette
 const black = '#000'
@@ -119,9 +116,9 @@ Object.defineProperties(colors, {
 
 export { colors }
 
-// styled-system's `borderRadius` function can hook into the `radii` object/array
-export const radii = [0, 2, 6]
-export const radius = '2px'
+// styled-system’s `borderRadius` function can hook into the `radii` object/array
+export const radii = [0, 4, 8]
+export const radius = '4px'
 
 export const maxContainerWidth = '1280px'
 
