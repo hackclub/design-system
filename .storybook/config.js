@@ -15,9 +15,7 @@ injectGlobal([], {
 
 addDecorator(story => (
   <ThemeProvider>
-    <Box p={3}>
-      {story()}
-    </Box>
+    <Box p={3}>{story()}</Box>
   </ThemeProvider>
 ))
 
