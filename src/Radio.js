@@ -14,7 +14,9 @@ const propTypes = {
 const Radio = props => {
   const { checked, disabled } = props
 
-  const radioIconName = checked ? 'radioChecked' : 'radioEmpty'
+  const radioIconName = checked
+    ? 'radio_button_checked'
+    : 'radio_button_unchecked'
 
   const testID = checked ? 'SELECTED' : disabled ? 'DISABLED' : 'NOT_SELECTED'
 

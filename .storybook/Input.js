@@ -10,7 +10,7 @@ storiesOf('Input', module)
       inline: true,
       text:
         'Simple styled input component that accepts a color and whether or not to show an error container.'
-    })(() => <Input my={3} />)
+    })(() => <Input my={3} id="hello" />)
   )
   .add('Colors', () => (
     <Box width={400}>

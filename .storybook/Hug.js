@@ -27,7 +27,7 @@ storiesOf('Hug', module)
     </Hug>
   ))
   .add('With icon and a card inside', () => (
-    <Hug text={text} icon="thumbsUp">
+    <Hug text={text} icon="thumbs_up">
       <Card p={3} bg="white" color="text">
         I‘m a card within a hug!
       </Card>
@@ -61,7 +61,7 @@ storiesOf('Hug', module)
       text={responsiveText}
       p={2}
       fontSize={[0, 1]}
-      icon="thumbsUp"
+      icon="thumbs_up"
       iconDisplay={['none', 'unset']}
     >
       <Card p={3} bg="white" color="text">
