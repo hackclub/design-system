@@ -1,37 +1,29 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Button, GreenButton, RedButton, OutlineButton } from '../src'
+import { Button } from '../src'
 
 storiesOf('Button', module)
   .add(
     'Button component',
     withInfo({
       inline: true,
-      text:
-        'Use the <Button />,  <GreenButton />, <RedButton />,  <OutlineButton/ > components to render a primitive button.'
-    })(() => <Button size="large">Button</Button>)
+      text: 'Use the <Button /> components to render a primitive button.'
+    })(() => <Button>Button</Button>)
   )
-  .add('color', () => (
+  .add('Colors', () => (
     <div>
       <Button mr={2}>Button</Button>
-      <GreenButton mr={2}>GreenButton</GreenButton>
-      <RedButton mr={2}>RedButton</RedButton>
-      <OutlineButton mr={2}>OutlineButton</OutlineButton>
-    </div>
-  ))
-  .add('sizes', () => (
-    <div>
-      <Button size="large" mr={2}>
-        Large
+      <Button bg="accent" mr={2}>
+        Accent
       </Button>
-      <Button size="medium" mr={2}>
-        Medium
+      <Button bg="success" mr={2}>
+        Success
       </Button>
-      <Button size="small" mr={2}>
-        Small
+      <Button bg="accent" inverted mr={2}>
+        Inverted
       </Button>
     </div>
   ))
-  .add('fullWidth', () => <Button fullWidth>Full Width</Button>)
-  .add('disabled', () => <Button disabled>Disabled</Button>)
+  .add('Width', () => <Button w={1}>Full Width</Button>)
+  .add('Disabled', () => <Button disabled>Disabled</Button>)

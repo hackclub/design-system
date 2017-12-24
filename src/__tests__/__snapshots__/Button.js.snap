@@ -1,209 +1,235 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button disabled prop sets 1`] = `
+exports[`Button custom bg 1`] = `
 .c0 {
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #7280ed;
+  color: #ffffff;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
+  -webkit-transition: .125s box-shadow ease-out;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
   border-radius: 4px;
-  background-color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
-  color: #ffffff;
   border-width: 0;
   border-style: solid;
-  height: 40px;
-  font-size: 14px;
-  padding: 0 18px;
 }
 
-.c0:disabled {
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.125);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.125);
+}
+
+<a
+  className="c0"
+  color="white"
+/>
+`;
+
+exports[`Button disabled prop sets 1`] = `
+.c0 {
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition: .125s box-shadow ease-out;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
+  border-radius: 4px;
+  border-width: 0;
+  border-style: solid;
   opacity: 0.25;
 }
 
-<button
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 12px 2px rgba(228,45,66,.25);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 4px 16px 2px rgba(228,45,66,.375);
+}
+
+<a
   className="c0"
+  color="white"
   disabled={true}
 />
 `;
 
-exports[`Button fullWidth prop sets width to 100% 1`] = `
+exports[`Button inverted 1`] = `
 .c0 {
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #7280ed;
+  color: #ffffff;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
+  -webkit-transition: .125s box-shadow ease-out;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
   border-radius: 4px;
-  background-color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
-  color: #ffffff;
   border-width: 0;
   border-style: solid;
-  width: 100%;
-  height: 40px;
-  font-size: 14px;
-  padding: 0 18px;
+  background-color: #ffffff;
+  color: #7280ed;
 }
 
-.c0:disabled {
-  opacity: 0.25;
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.125);
 }
 
-<button
+.c0:active {
+  outline: 0;
+  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.125);
+}
+
+<a
   className="c0"
+  color="white"
 />
 `;
 
 exports[`Button renders 1`] = `
 .c0 {
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
+  -webkit-transition: .125s box-shadow ease-out;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
   border-radius: 4px;
-  background-color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
-  color: #ffffff;
   border-width: 0;
   border-style: solid;
-  height: 40px;
-  font-size: 14px;
-  padding: 0 18px;
 }
 
-.c0:disabled {
-  opacity: 0.25;
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 12px 2px rgba(228,45,66,.25);
 }
 
-<button
+.c0:active {
+  outline: 0;
+  box-shadow: 0 4px 16px 2px rgba(228,45,66,.375);
+}
+
+<a
   className="c0"
-/>
-`;
-
-exports[`Button size large sets height and font-size 1`] = `
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
-  color: #ffffff;
-  border-width: 0;
-  border-style: solid;
-  height: 48px;
-  font-size: 16px;
-  padding: 0 22px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
-}
-
-<button
-  className="c0"
-  size="large"
-/>
-`;
-
-exports[`Button size medium sets height and font-size 1`] = `
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
-  color: #ffffff;
-  border-width: 0;
-  border-style: solid;
-  height: 40px;
-  font-size: 14px;
-  padding: 0 18px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
-}
-
-<button
-  className="c0"
-  size="medium"
-/>
-`;
-
-exports[`Button size small sets height and font-size 1`] = `
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
-  color: #ffffff;
-  border-width: 0;
-  border-style: solid;
-  height: 32px;
-  font-size: 12px;
-  padding: 0 12px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
-}
-
-<button
-  className="c0"
-  size="small"
+  color="white"
 />
 `;
 
 exports[`Button without disabled prop sets 1`] = `
 .c0 {
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #2de473;
+  color: #ffffff;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
+  -webkit-transition: .125s box-shadow ease-out;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
   border-radius: 4px;
-  background-color: #e6f4fc#cce7f8#add9f5#8bc9f0#62b6eb#2d9ee4#298fce#247db4#1d6795#154a6b;
-  color: #ffffff;
   border-width: 0;
   border-style: solid;
-  height: 40px;
-  font-size: 14px;
-  padding: 0 18px;
 }
 
-.c0:disabled {
-  opacity: 0.25;
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.125);
 }
 
-<button
+.c0:active {
+  outline: 0;
+  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.125);
+}
+
+<a
   className="c0"
+  color="white"
 />
 `;

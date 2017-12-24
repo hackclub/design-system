@@ -1,98 +1,69 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { space } from 'styled-system'
+import Box from './Box'
 import theme from './theme'
 
-const size = props => {
-  switch (props.size) {
-    case 'small':
-      return {
-        height: '32px',
-        fontSize: `${props.theme.fontSizes[0]}px`,
-        padding: '0 12px'
-      }
-    case 'medium':
-      return {
-        height: '40px',
-        fontSize: `${props.theme.fontSizes[1]}px`,
-        padding: '0 18px'
-      }
-    case 'large':
-      return {
-        height: '48px',
-        fontSize: `${props.theme.fontSizes[2]}px`,
-        padding: '0 22px'
-      }
-    default:
-      return {
-        height: '40px',
-        fontSize: `${props.theme.fontSizes[1]}px`,
-        padding: '0 18px'
-      }
-  }
-}
-
-const fullWidth = props => (props.fullWidth ? { width: '100%' } : null)
-
-const Button = styled.button`
+const Button = Box.withComponent('a').extend`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: ${props => props.theme.bold};
+  appearance: none;
   cursor: pointer;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 12px ${props => props.theme.shadowColor};
   border-radius: ${props => props.theme.radius};
-  background-color: ${props => props.theme.colors.blue};
-  color: ${props => props.theme.colors.white};
   border-width: 0;
   border-style: solid;
 
-  &:disabled {
-    opacity: 0.25;
+  ${props =>
+    props.inverted
+      ? {
+          backgroundColor: props.theme.colors[props.color],
+          color: props.theme.colors[props.bg]
+        }
+      : null};
+
+  &:hover, &:focus {
+    outline: 0;
+    box-shadow: 0 2px 12px 2px ${props =>
+      !props.inverted && props.bg === 'primary'
+        ? 'rgba(228,45,66,.25)'
+        : props.theme.shadowColor};
   }
 
-  &:hover {
-    background-color: ${props =>
-      props.disabled ? null : props.theme.colors.darkBlue};
+  &:active {
+    outline: 0;
+    box-shadow: 0 4px 16px 2px ${props =>
+      !props.inverted && props.bg === 'primary'
+        ? 'rgba(228,45,66,.375)'
+        : props.theme.shadowColor};
   }
 
-  ${fullWidth} ${size} ${space};
+  ${props => (props.disabled ? 'opacity: 0.25' : null)};
 `
 
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
+Button.displayName = 'Button'
 
 Button.propTypes = {
-  /** Size */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  fullWidth: PropTypes.bool,
-  /** Margin */
-  m: numberStringOrArray,
-  mt: numberStringOrArray,
-  mr: numberStringOrArray,
-  mb: numberStringOrArray,
-  ml: numberStringOrArray,
-  mx: numberStringOrArray,
-  my: numberStringOrArray,
-  /** Padding */
-  p: numberStringOrArray,
-  pt: numberStringOrArray,
-  pr: numberStringOrArray,
-  pb: numberStringOrArray,
-  pl: numberStringOrArray,
-  px: numberStringOrArray,
-  py: numberStringOrArray
+  inverted: PropTypes.bool
 }
 
 Button.defaultProps = {
-  theme: theme
+  theme,
+  bg: 'primary',
+  color: 'white',
+  inverted: false,
+  f: 3,
+  m: 0,
+  px: 3,
+  py: 2
 }
 
-Button.displayName = 'Button'
+Button.button = Button.withComponent('button')
+Button.input = Button.withComponent('input')
 
 export default Button
