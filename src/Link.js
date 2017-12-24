@@ -1,23 +1,21 @@
-import styled from 'styled-components'
+import Text from './Text'
 import PropTypes from 'prop-types'
-import { color } from 'styled-system'
 import theme from './theme'
 
-const Link = styled.a`
-  text-decoration: none;
-  ${color} &:hover {
-    text-decoration: underline;
-  }
+const Link = Text.withComponent('a').extend`
+  text-decoration: ${props => (props.underline ? 'underline' : 'none')};
 `
 
 Link.displayName = 'Link'
 
 Link.propTypes = {
-  color: PropTypes.string
+  href: PropTypes.string,
+  underline: PropTypes.bool
 }
 
 Link.defaultProps = {
-  color: 'blue',
+  color: 'info',
+  underline: false,
   theme: theme
 }
 
