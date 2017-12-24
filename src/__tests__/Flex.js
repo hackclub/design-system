@@ -27,7 +27,7 @@ describe('Flex', () => {
   })
 
   test('direction prop', () => {
-    const flex = renderer.create(<Flex direction="column" />).toJSON()
+    const flex = renderer.create(<Flex flexDirection="column" />).toJSON()
     expect(flex).toMatchSnapshot()
     expect(flex).toHaveStyleRule('flex-direction', 'column')
   })
