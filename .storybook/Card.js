@@ -13,9 +13,9 @@ storiesOf('Card', module)
       <div>
         <Card
           boxShadowSize="sm"
-          mb={5}
+          my={4}
           p={3}
-          width={200}
+          width={256}
           color="black"
           bg="white"
         >
@@ -23,9 +23,9 @@ storiesOf('Card', module)
         </Card>
         <Card
           boxShadowSize="md"
-          mb={5}
+          my={4}
           p={3}
-          width={200}
+          width={256}
           color="black"
           bg="white"
         >
@@ -33,9 +33,9 @@ storiesOf('Card', module)
         </Card>
         <Card
           boxShadowSize="lg"
-          mb={5}
+          my={4}
           p={3}
-          width={200}
+          width={256}
           color="black"
           bg="white"
         >
@@ -43,9 +43,9 @@ storiesOf('Card', module)
         </Card>
         <Card
           boxShadowSize="xl"
-          mb={5}
+          my={4}
           p={3}
-          width={200}
+          width={256}
           color="black"
           bg="white"
         >
@@ -54,61 +54,65 @@ storiesOf('Card', module)
       </div>
     ))
   )
-  .add('Box Shadows with focused 2px border', () => (
-    <Box>
+  .add('Box Shadows with custom borders', () => (
+    <div>
       <Card
         boxShadowSize="sm"
-        mb={5}
+        my={4}
         p={3}
-        width={200}
+        width={256}
         color="black"
         bg="white"
         borderWidth={2}
+        borderColor="accent"
       >
         Small Shadow
       </Card>
       <Card
         boxShadowSize="md"
-        mb={5}
+        my={4}
         p={3}
-        width={200}
+        width={256}
         color="black"
-        bg="white"
+        bg="orange.1"
         borderWidth={2}
+        borderColor="warning"
       >
         Medium Shadow
       </Card>
       <Card
         boxShadowSize="lg"
-        mb={5}
+        my={4}
         p={3}
-        width={200}
+        width={256}
         color="black"
-        bg="white"
+        bg="teal.0"
         borderWidth={2}
+        borderColor="success"
       >
         Large Shadow
       </Card>
       <Card
         boxShadowSize="xl"
-        mb={5}
+        my={4}
         p={3}
-        width={200}
+        width={256}
         color="black"
-        bg="white"
+        bg="red.1"
         borderWidth={2}
+        borderColor="error"
       >
         XLarge Shadow
       </Card>
-    </Box>
+    </div>
   ))
   .add('Box Shadows with varying border radii', () => (
-    <Box>
+    <div>
       <Card
         boxShadowSize="sm"
-        mb={5}
+        my={4}
         p={3}
-        width={200}
+        width={256}
         color="black"
         bg="white"
         borderRadius={0}
@@ -117,36 +121,36 @@ storiesOf('Card', module)
       </Card>
       <Card
         boxShadowSize="md"
-        mb={5}
+        my={4}
         p={3}
-        width={200}
+        width={256}
         color="black"
         bg="white"
-        borderRadius={10}
+        borderRadius={8}
       >
         Medium Shadow
       </Card>
       <Card
         boxShadowSize="lg"
-        mb={5}
+        my={4}
         p={3}
-        width={200}
+        width={256}
         color="black"
         bg="white"
-        borderRadius={20}
+        borderRadius={24}
       >
         Large Shadow
       </Card>
       <Card
         boxShadowSize="xl"
-        mb={5}
+        my={4}
         p={3}
-        width={200}
+        width={256}
         color="black"
         bg="white"
-        borderRadius="30px"
+        borderRadius="2rem"
       >
         XLarge Shadow
       </Card>
-    </Box>
+    </div>
   ))
