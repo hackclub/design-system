@@ -16,12 +16,11 @@ export const regular = props =>
 export const bold = props =>
   props.bold ? { fontWeight: props.theme.bold } : null
 
-export const italic = props => (props.italic ? { fontStyle: 'italic' } : null)
-
 const align = responsiveStyle('text-align', 'align')
 
 const Text = styled.div`
   ${italic} ${fontSize} ${space} ${color} ${caps} ${regular} ${bold} ${align};
+  ${fontSize} ${space} ${color} ${caps} ${regular} ${bold} ${align};
 `
 
 Text.displayName = 'Text'
@@ -42,7 +41,6 @@ Text.propTypes = {
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,
-  italic: PropTypes.bool,
   color: PropTypes.string,
   /** Margin */
   m: numberStringOrArray,
