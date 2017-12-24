@@ -1,7 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import Text from './Text'
+import theme from './theme'
 
 const Badge = Text.withComponent('div').extend`
   border-radius: 99999px;
@@ -14,6 +12,7 @@ const Badge = Text.withComponent('div').extend`
 Badge.displayName = 'Badge'
 
 Badge.defaultProps = {
+  theme,
   px: 2,
   py: 1,
   bg: 'primary',

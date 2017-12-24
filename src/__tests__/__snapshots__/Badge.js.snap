@@ -3,12 +3,12 @@
 exports[`Badge accepts custom bg and color 1`] = `
 .c0 {
   font-size: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: white;
-  color: accent;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #ffffff;
+  color: #7280ed;
   border-radius: 99999px;
   display: inline-block;
   font-weight: bold;
@@ -29,12 +29,12 @@ exports[`Badge accepts custom bg and color 1`] = `
 exports[`Badge renders 1`] = `
 .c0 {
   font-size: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: primary;
-  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #e42d42;
+  color: #ffffff;
   border-radius: 99999px;
   display: inline-block;
   font-weight: bold;

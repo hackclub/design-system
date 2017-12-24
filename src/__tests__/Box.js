@@ -17,24 +17,24 @@ describe('Box', () => {
   test('m prop sets margin', () => {
     const json = renderer.create(<Box m={1} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('margin', theme.space[2] + 'px')
+    expect(json).toHaveStyleRule('margin', theme.space[1] + 'px')
   })
 
   test('p prop sets padding', () => {
     const json = renderer.create(<Box p={1} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('padding', theme.space[2] + 'px')
+    expect(json).toHaveStyleRule('padding', theme.space[1] + 'px')
   })
 
   test('color prop sets color', () => {
-    const json = renderer.create(<Box color="info" />).toJSON()
+    const json = renderer.create(<Box color="warning" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', 'info')
+    expect(json).toHaveStyleRule('color', theme.colors.warning)
   })
 
   test('bg prop sets background color', () => {
     const json = renderer.create(<Box bg="accent" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', 'accent')
+    expect(json).toHaveStyleRule('background-color', theme.colors.accent)
   })
 })

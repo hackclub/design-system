@@ -2,7 +2,7 @@
 
 exports[`Box bg prop sets background color 1`] = `
 .c0 {
-  background-color: accent;
+  background-color: #7280ed;
 }
 
 <div
@@ -12,18 +12,18 @@ exports[`Box bg prop sets background color 1`] = `
 
 exports[`Box color prop sets color 1`] = `
 .c0 {
-  color: info;
+  color: #e4732d;
 }
 
 <div
   className="c0"
-  color="info"
+  color="warning"
 />
 `;
 
 exports[`Box m prop sets margin 1`] = `
 .c0 {
-  margin: 8px;
+  margin: 4px;
 }
 
 <div
@@ -33,7 +33,7 @@ exports[`Box m prop sets margin 1`] = `
 
 exports[`Box p prop sets padding 1`] = `
 .c0 {
-  padding: 8px;
+  padding: 4px;
 }
 
 <div

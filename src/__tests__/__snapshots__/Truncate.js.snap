@@ -7,11 +7,11 @@ exports[`Truncate generates styles 1`] = `
   text-overflow: ellipsis;
 }
 
-<div
+<p
   className="c0"
 >
   generates styles
-</div>
+</p>
 `;
 
 exports[`Truncate renders 1`] = `
@@ -21,9 +21,9 @@ exports[`Truncate renders 1`] = `
   text-overflow: ellipsis;
 }
 
-<div
+<p
   className="c0"
 >
   renders
-</div>
+</p>
 `;

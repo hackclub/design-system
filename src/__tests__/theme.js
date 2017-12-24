@@ -1,4 +1,4 @@
-import { theme, colors } from '..'
+import theme, { cx, colors, space, fontSizes, boxShadows } from '../theme'
 
 const aliases = ['sm', 'md', 'lg', 'xl']
 
@@ -15,6 +15,16 @@ describe('theme', () => {
 
   test('exports colors', () => {
     expect(typeof colors).toBe('object')
+  })
+
+  test('cx works', () => {
+    expect(theme.cx('red.5')).toBe(theme.colors.red[5])
+  })
+
+  test('scales are objects', () => {
+    expect(typeof space).toBe('object')
+    expect(typeof fontSizes).toBe('object')
+    expect(typeof boxShadows).toBe('object')
   })
 
   test('breakpoints have aliases', () => {

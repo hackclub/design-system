@@ -94,7 +94,8 @@ const theme = {
   radii,
   radius,
   boxShadows,
-  shadowColor
+  shadowColor,
+  cx
 }
 
 export default theme
