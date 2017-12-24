@@ -4,10 +4,10 @@ exports[`theme snapshot 1`] = `
 Object {
   "bold": 700,
   "boxShadows": Array [
-    "0 0 4px 0 rgba(0,0,0,0.08)",
-    "0 8px 8px 0 rgba(0,0,0,0.08)",
-    "0 16px 16px 0 rgba(0,0,0,0.08)",
-    "0 32px 32px 0 rgba(0,0,0,0.08)",
+    "0 0 4px 0 rgba(0,0,0,0.125)",
+    "0 8px 8px 0 rgba(0,0,0,0.125)",
+    "0 16px 16px 0 rgba(0,0,0,0.125)",
+    "0 32px 32px 0 rgba(0,0,0,0.125)",
   ],
   "breakpoints": Array [
     32,
@@ -201,13 +201,13 @@ Object {
     "bold": 700,
     "regular": 400,
   },
-  "maxContainerWidth": "1280px",
   "mediaQueries": Array [
     "@media screen and (min-width:32em)",
     "@media screen and (min-width:48em)",
     "@media screen and (min-width:64em)",
     "@media screen and (min-width:80em)",
   ],
+  "mono": "SFMono-Regular,\\"Roboto Mono\\",Menlo,monospace",
   "radii": Array [
     0,
     4,
@@ -215,6 +215,7 @@ Object {
   ],
   "radius": "4px",
   "regular": 400,
+  "shadowColor": "rgba(0,0,0,0.125)",
   "space": Array [
     0,
     4,
