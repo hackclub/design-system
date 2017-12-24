@@ -12,17 +12,8 @@ storiesOf('Input', module)
         'Simple styled input component that accepts a color and whether or not to show an error container.'
     })(() => <Input my={3} id="hello" />)
   )
-  .add('Colors', () => (
-    <Box width={400}>
-      <Input mb={3} id="input-colors-1" placeholder="No color" />
-      <Input mb={3} id="input-colors-2" color="red" placeholder="Red" />
-      <Input mb={3} id="input-colors-3" color="green" placeholder="Green" />
-      <Input mb={3} id="input-colors-4" color="orange" placeholder="Orange" />
-      <Input mb={3} id="input-colors-5" color="blue" placeholder="Blue" />
-    </Box>
-  ))
   .add('With external label', () => (
-    <Box width={400}>
+    <Box width={256}>
       <Label fontSize={4} htmlFor="sample-input">
         Label!
       </Label>

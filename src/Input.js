@@ -1,60 +1,59 @@
-import styled, { keyframes } from 'styled-components'
-import { space, theme, propTypes } from 'styled-system'
+import styled from 'styled-components'
+import { fontSize, space, width, color, propTypes } from 'styled-system'
+import theme from './theme'
 import PropTypes from 'prop-types'
-import defaultTheme from './theme'
-
-const borders = ({ color, theme }) => {
-  const borderColor = color ? theme.colors[color] : theme.colors.borderGray
-  const focusColor = color ? borderColor : theme.colors.blue
-  return {
-    'border-color': borderColor,
-    'box-shadow': `0 0 0 0 ${borderColor}`,
-    ':focus': {
-      outline: 0,
-      'border-color': focusColor,
-      'box-shadow': `0 0 0 1px ${focusColor}`
-    }
-  }
-}
 
 const Input = styled.input`
   appearance: none;
   display: block;
-  width: 100%;
+  vertical-align: middle;
+  max-width: 32rem;
+  min-height: 36px;
+  line-height: inherit;
   font-family: inherit;
-  font-size: ${theme('fontSizes.1')}px;
   background-color: transparent;
-  border-radius: ${theme('radius')};
+  border-radius: ${props => props.theme.radius};
   border-width: 1px;
   border-style: solid;
-  border-color: ${theme('colors.borderGray')};
-
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
+  border-color: ${props => props.theme.colors.smoke};
+  transition: 0.125s box-shadow ease-out;
 
   ::placeholder {
-    color: ${theme('colors.gray')};
+    color: ${props => props.theme.colors.grey};
   }
 
   ::-ms-clear {
     display: none;
   }
 
-  ${borders} ${space};
+  &:focus {
+    outline: none;
+    border-color: ${props => props.theme.colors.info};
+    box-shadow: 0 0 0 2px ${props => props.theme.colors.blue[2]};
+  }
+
+  ${fontSize} ${space} ${width} ${color};
 `
 
 Input.displayName = 'Input'
+
 Input.propTypes = {
   id: PropTypes.string.isRequired,
-  color: PropTypes.string,
-  ...propTypes.borders,
-  ...propTypes.space
+  ...propTypes.fontSize,
+  ...propTypes.space,
+  ...propTypes.width,
+  ...propTypes.color
 }
 
 Input.defaultProps = {
-  theme: defaultTheme
+  theme,
+  w: 1,
+  m: 0,
+  py: 1,
+  px: 2,
+  fontSize: 2,
+  color: 'inherit',
+  bg: 'transparent'
 }
 
 export default Input
