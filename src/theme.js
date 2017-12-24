@@ -72,8 +72,6 @@ export const fontWeights = { regular, bold }
 export const radii = [0, 4, 8]
 export const radius = '4px'
 
-export const maxContainerWidth = '1280px'
-
 const shadowColor = 'rgba(0,0,0,0.08)'
 export const boxShadows = [
   `0 0 4px 0 ${shadowColor}`,
@@ -96,7 +94,6 @@ const theme = {
   radii,
   radius,
   boxShadows,
-  maxContainerWidth
 }
 
 export default theme
