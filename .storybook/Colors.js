@@ -15,13 +15,17 @@ const next = keys.map(key => ({ key, value: theme.colors[key] }))
 
 const Chip = props => <Box w={1} p={5} {...props} />
 
-const Pre = Text.withComponent('pre')
+const Pre = Text.withComponent('pre').extend`font-family: ${theme.mono};`
 
 const Card = ({ name, color }) => (
   <Box>
     <Chip name={name} bg={color} />
-    <Text f={0}>{name}</Text>
-    <Pre m={0}>{color}</Pre>
+    <Text fontSize={2} bold>
+      {name}
+    </Text>
+    <Pre fontSize={0} m={0} color="muted">
+      {color}
+    </Pre>
   </Box>
 )
 

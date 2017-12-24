@@ -86,6 +86,7 @@ const theme = {
   breakpoints,
   mediaQueries,
   space,
+  mono,
   font,
   fontSizes,
   fontWeights,
