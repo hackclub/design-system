@@ -22,19 +22,15 @@ const breakpoints = props => ({
 })
 
 const hidden = key => props =>
-  props[key]
-    ? {
-        [breakpoints(props)[key]]: {
-          display: 'none'
-        }
-      }
-    : null
+  props[key] ? { [breakpoints(props)[key]]: { display: 'none' } } : null
 
 const Hide = styled(Box)`
   ${hidden('xs')} ${hidden('sm')} ${hidden('md')} ${hidden('lg')} ${hidden(
       'xl'
     )};
 `
+
+Hide.displayName = 'Hide'
 
 Hide.propTypes = {
   xs: PropTypes.bool,
@@ -47,7 +43,5 @@ Hide.propTypes = {
 Hide.defaultProps = {
   theme: theme
 }
-
-Hide.displayName = 'Hide'
 
 export default Hide
