@@ -7,7 +7,7 @@ Heading.displayName = 'Heading'
 
 Heading.defaultProps = {
   regular: true,
-  fontSize: 4,
+  fontSize: 5,
   m: 0,
   theme: theme
 }

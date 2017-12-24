@@ -1,72 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Heading Heading component using <Text> component properties 1`] = `
+exports[`Heading renders 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 0px;
-  color: #384046;
+  font-weight: 400;
+}
+
+<h2
+  className="c0"
+  fontSize={5}
+/>
+`;
+
+exports[`Heading uses <Text> component properties 1`] = `
+.c0 {
+  font-size: 32px;
+  margin: 0px;
+  color: #e42d42;
   font-weight: 400;
   text-align: center;
 }
 
-@media screen and (min-width:32em) {
-  .c0 {
-    color: #ebeeef;
-  }
-}
-
-@media screen and (min-width:48em) {
-  .c0 {
-    color: #dde1e4;
-  }
-}
-
-@media screen and (min-width:64em) {
-  .c0 {
-    color: #cdd4d8;
-  }
-}
-
-@media screen and (min-width:80em) {
-  .c0 {
-    color: #bcc5cb;
-  }
-}
-
-<h3
+<h2
   className="c0"
-  color={
-    Array [
-      "#f9f9fa",
-      "#ebeeef",
-      "#dde1e4",
-      "#cdd4d8",
-      "#bcc5cb",
-      "#a9b5bc",
-      "#93a2ab",
-      "#7a8c97",
-      "#606e77",
-      "#384046",
-    ]
-  }
-  fontSize={4}
+  color="primary"
+  fontSize={5}
 />
 `;
 
-exports[`Heading Heading component with default theme font size, when "fontSize" prop not used 1`] = `
+exports[`Heading with default theme font size, when fontSize prop not used 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 0px;
   font-weight: 400;
 }
 
-<h3
+<h2
   className="c0"
-  fontSize={4}
+  fontSize={5}
 />
 `;
 
-exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
+exports[`Heading with h1-h6 dot-notation 1`] = `
 .c0 {
   font-size: 48px;
   margin: 0px;
@@ -78,7 +54,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 />
 `;
 
-exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
+exports[`Heading with h1-h6 dot-notation 2`] = `
 .c0 {
   font-size: 32px;
   margin: 0px;
@@ -90,7 +66,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
 />
 `;
 
-exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
+exports[`Heading with h1-h6 dot-notation 3`] = `
 .c0 {
   font-size: 24px;
   margin: 0px;
@@ -102,7 +78,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
 />
 `;
 
-exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
+exports[`Heading with h1-h6 dot-notation 4`] = `
 .c0 {
   font-size: 20px;
   margin: 0px;
@@ -114,7 +90,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
 />
 `;
 
-exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
+exports[`Heading with h1-h6 dot-notation 5`] = `
 .c0 {
   font-size: 16px;
   margin: 0px;
@@ -126,7 +102,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 />
 `;
 
-exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
+exports[`Heading with h1-h6 dot-notation 6`] = `
 .c0 {
   font-size: 12px;
   margin: 0px;
@@ -136,18 +112,5 @@ exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 <h6
   className="c0"
   fontSize={0}
-/>
-`;
-
-exports[`Heading renders 1`] = `
-.c0 {
-  font-size: 24px;
-  margin: 0px;
-  font-weight: 400;
-}
-
-<h3
-  className="c0"
-  fontSize={4}
 />
 `;
