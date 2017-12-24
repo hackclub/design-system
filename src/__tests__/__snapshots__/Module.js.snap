@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Module it renders 1`] = `
+.c3 {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.c2 {
+  font-size: 20px;
+  margin: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-weight: 700;
+}
+
+.c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 16px;
+  color: white;
+}
+
+.c0 {
+  padding: 8px;
+  width: 100%;
+  color: #ffffff;
+  text-align: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: left;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width:40em) {
+  .c1 {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width:48em) {
+  .c0 {
+    max-width: 20rem;
+  }
+}
+
+<div
+  align={
+    Array [
+      "flex-start",
+      "center",
+    ]
+  }
+  className="c0"
+  color="white"
+  flexDirection={
+    Array [
+      "row",
+      "column",
+    ]
+  }
+  p={2}
+  w={
+    Array [
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <svg
+    className="c1"
+    color="white"
+    fill="currentcolor"
+    height={48}
+    mr={
+      Array [
+        2,
+        0,
+      ]
+    }
+    viewBox="0 0 24 24"
+    width={48}
+  >
+    <path
+      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z "
+    />
+  </svg>
+  <div>
+    <h2
+      className="c2"
+      fontSize={3}
+    >
+      Hello
+    </h2>
+    <p
+      className="c3"
+      fontSize={2}
+    />
+  </div>
+</div>
+`;
