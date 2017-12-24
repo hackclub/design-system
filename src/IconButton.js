@@ -4,21 +4,19 @@ import Icon from './Icon'
 import Button from './Button'
 import PropTypes from 'prop-types'
 
-const TransparentButton = styled(Button)`
-  padding: 0;
-  height: auto;
-  background-color: transparent;
-  color: inherit;
+const Base = styled(Button.button)`
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
 
   &:hover {
     background-color: transparent;
+    box-shadow: none !important;
   }
 `
 
 const IconButton = ({ name, size, color, ...props }) => (
-  <TransparentButton {...props}>
-    <Icon name={name} size={size} color={color} />
-  </TransparentButton>
+  <Base children={<Icon name={name} size={size} color={color} />} {...props} />
 )
 
 IconButton.displayName = 'IconButton'

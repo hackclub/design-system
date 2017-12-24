@@ -4,8 +4,13 @@ import { IconButton } from '../src'
 
 storiesOf('IconButton', module)
   .add('Close Button', () => (
-    <IconButton name="close" onClick={action('clicked')} />
+    <IconButton name="close" color="error" onClick={action('clicked')} />
   ))
   .add('Disabled Close Button', () => (
-    <IconButton disabled name="close" onClick={action('clicked')} />
+    <IconButton
+      disabled
+      name="close"
+      color="error"
+      onClick={action('clicked')}
+    />
   ))
