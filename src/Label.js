@@ -3,13 +3,13 @@ import { space, fontSize, fontWeight, color, propTypes } from 'styled-system'
 import theme from './theme'
 
 const Label = styled.label`
-  font-size: 10px;
-  letter-spacing: 0.2px;
-  display: block;
-  width: 100%;
+  display: flex;
+  align-items: center;
 
   ${space} ${fontSize} ${color} ${fontWeight};
 `
+
+Label.displayName = 'Label'
 
 Label.propTypes = {
   ...propTypes.space,
@@ -19,12 +19,11 @@ Label.propTypes = {
 }
 
 Label.defaultProps = {
-  fontSize: '10px',
+  fontSize: 2,
   fontWeight: 'bold',
-  color: 'gray',
+  color: 'black',
+  w: 1,
   theme: theme
 }
-
-Label.displayName = 'Label'
 
 export default Label

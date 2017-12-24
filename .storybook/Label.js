@@ -33,8 +33,8 @@ storiesOf('Label', module)
   ))
   .add('color', () => (
     <div>
-      <Label color="blue">A blue label</Label>
-      <Label color="green">a green label</Label>
+      <Label color="primary">A primary label</Label>
+      <Label color="accent">An accent label</Label>
     </div>
   ))
   .add('htmlFor', () => (
