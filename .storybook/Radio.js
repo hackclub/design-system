@@ -4,17 +4,17 @@ import { Radio, Label } from '../src'
 
 storiesOf('Radio', module).add('3 states', () => (
   <div onChange={action('changed')}>
-    <Label fontSize="14px">
+    <Label>
       <Radio checked />
-      selected
+      <span>selected</span>
     </Label>
-    <Label fontSize="14px">
+    <Label>
       <Radio />
-      not selected
+      <span>not selected</span>
     </Label>
-    <Label fontSize="14px">
+    <Label>
       <Radio disabled />
-      disabled
+      <span>disabled</span>
     </Label>
   </div>
 ))
