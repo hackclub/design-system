@@ -5,7 +5,7 @@ exports[`Text align prop sets text-align 1`] = `
   text-align: center;
 }
 
-<div
+<p
   className="c0"
 />
 `;
@@ -15,7 +15,7 @@ exports[`Text bold prop sets font-weight 1`] = `
   font-weight: 700;
 }
 
-<div
+<p
   className="c0"
 />
 `;
@@ -25,17 +25,7 @@ exports[`Text caps prop sets text-transform 1`] = `
   text-transform: uppercase;
 }
 
-<div
-  className="c0"
-/>
-`;
-
-exports[`Text italic prop sets font-style 1`] = `
-.c0 {
-  font-style: italic;
-}
-
-<div
+<p
   className="c0"
 />
 `;
@@ -45,7 +35,7 @@ exports[`Text mt prop sets margin-top 1`] = `
   margin-top: 8px;
 }
 
-<div
+<p
   className="c0"
 />
 `;
@@ -55,13 +45,13 @@ exports[`Text regular prop sets font-weight 1`] = `
   font-weight: 400;
 }
 
-<div
+<p
   className="c0"
 />
 `;
 
 exports[`Text renders 1`] = `
-<div
+<p
   className=""
 />
 `;

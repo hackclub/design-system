@@ -34,14 +34,18 @@ storiesOf('Text', module)
   .add('bold', () => <Text bold>Hello Bold</Text>)
   .add('caps', () => <Text caps>Hello Caps</Text>)
   .add('strikethrough', () => <Text.s>Hello Strikethrough</Text.s>)
-  .add('margin', () => (
-    <Text mt={4} mb={2}>
-      Hello Margin
-    </Text>
+  .add('spacing', () => (
+    <div>
+      <Text mt={4} mb={2}>
+        Hello Margin
+      </Text>
+      <Text p={3}>Hello Padding</Text>
+    </div>
   ))
   .add('color', () => (
     <div>
-      <Text color="blue">Hello Blue</Text>
-      <Text color="green">Hello Green</Text>
+      <Text color="primary">Hello Primary</Text>
+      <Text color="accent">Hello Accent</Text>
+      <Text color="error">Hello Error</Text>
     </div>
   ))
