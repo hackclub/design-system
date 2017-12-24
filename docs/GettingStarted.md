@@ -9,8 +9,8 @@ npm install --save hackclub-design-system
 ## ThemeProvider
 
 Wrap the root of your application with the `ThemeProvider` component,
-which adds the Design System theme to context for use in styled-components
-and sets typographic defaults.
+which adds the Design System theme to context for use in `styled-components`
+and sets typographic defaults (including loading our webfont, Averta).
 This should only be included once in your application.
 
 ```jsx
@@ -29,7 +29,7 @@ const App = () => (
 import styled from 'styled-components'
 
 const Section = styled.section`
-  background-color: ${props => props.theme.blue};
+  background-color: ${props => props.theme.colors.primary};
 `
 ```
 
@@ -43,8 +43,8 @@ import React from 'react'
 import { Box, Text } from 'hackclub-design-system'
 
 const SomeView = props => (
-  <Box p={3}>
-    <Text color="blue">Hello</Text>
+  <Box bg="primary" p={3}>
+    <Text color="white">Hello</Text>
   </Box>
 )
 ```

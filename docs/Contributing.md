@@ -1,13 +1,13 @@
 # Contributing
 
-If youd like to contribute to the design system, we’d love to have your help.
+If you’d like to contribute to the design system, we’d love to have your help.
 
 Contributing doesn’t necessarily mean committing code, we also encourage you to:
 
 * Open issues
 * Join in on discussions in issues and PRs
-* Help write documentation
-* Use the Design System in your project and provide feedback
+* Help write documentation (storybook)
+* Use the Design System and provide feedback
 
 ## Local Development
 
@@ -59,4 +59,4 @@ open http://localhost:8000/
 
 ## Troubleshooting
 
-You may run into the following error `ERROR in ./icons.json` when running storybook. The problem occur when the icons.json is not built yet. Running `npm run prepare` should fix the problem.
+You may run into the following error `ERROR in ./icons.json` when running storybook. The problem occur when the icons.json is not built yet. Running `npm run icons` should fix the problem.

@@ -14,7 +14,7 @@ import { colors, mediaQueries, fontSizes, space } from 'hackclub-design-system'
 ```js
 import { colors } from 'hackclub-design-system'
 
-colors.blue // '#0a84c1'
+colors.primary // '#e42d42'
 ```
 
 ## Font Sizes
@@ -51,10 +51,10 @@ The `mediaQueries` array can be used to add styles targeted for different screen
 ```js
 import { mediaQueries } from 'hackclub-design-system'
 
-mediaQueries[0] // @media screen and (min-width:32em)   - approximately phone-sized
-mediaQueries[1] // @media screen and (min-width:40em)   - approximately tablet-sized
-mediaQueries[2] // @media screen and (min-width:48em)   - approximately laptop-sized
-mediaQueries[3] // @media screen and (min-width:64em)   - approximately desktop-sized
+mediaQueries[0] // @media screen and (min-width:32em)
+mediaQueries[1] // @media screen and (min-width:48em)
+mediaQueries[2] // @media screen and (min-width:48em)
+mediaQueries[3] // @media screen and (min-width:64em)
 
 mediaQueries.sm // alias for mediaQueries[0]
 mediaQueries.md // alias for mediaQueries[1]

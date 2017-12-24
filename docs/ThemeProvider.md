@@ -1,10 +1,10 @@
 # ThemeProvider
 
-The ThemeProvider component is a wrapper around the styled-components’ [ThemeProvider][sc-theme]
+The ThemeProvider component is a wrapper around the styled-components’ [ThemeProvider][1]
 
 Wrap the root of your application with the `ThemeProvider` component,
 which adds the Design System theme to context for use in styled-components
-and sets typographic defaults.
+and sets typographic defaults (including loading our webfont, Averta).
 This should only be included once in your application.
 
 ```jsx
@@ -13,8 +13,4 @@ This should only be included once in your application.
 </ThemeProvider>
 ```
 
-| Prop                | Type  | Description                                               |
-| ------------------- | ----- | --------------------------------------------------------- |
-| `customBreakpoints` | Array | Array of em number values to override default breakpoints |
-
-[sc-theme]: https://www.styled-components.com/docs/advanced#theming
+[1]:	https://www.styled-components.com/docs/advanced#theming
