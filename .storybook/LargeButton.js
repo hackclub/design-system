@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { LargeButton, Button } from '../src'
+import { LargeButton } from '../src'
 
 storiesOf('LargeButton', module)
   .add(

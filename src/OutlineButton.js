@@ -1,28 +1,24 @@
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { color } from 'styled-system'
 import Button from './Button'
 import theme from './theme'
 
-const OutlineButton = styled(Button)`
-  background-color: transparent;
+const OutlineButton = Button.extend`
+  box-shadow: none !important;
+  background-color: transparent !important;
+  color: ${props => props.theme.colors[props.color || props.bg]};
   border-width: 2px;
   border-style: solid;
-  color: ${props => props.theme.colors.blue};
-  border-color: ${props => props.theme.colors.blue};
-
-  &:hover {
-    color: ${props => (props.disabled ? null : props.theme.colors.darkBlue)};
-    border-color: ${props =>
-      props.disabled ? null : props.theme.colors.darkBlue};
-    background-color: transparent;
-  }
+  border-color: currentColor;
 `
 
-OutlineButton.defaultProps = {
-  theme: theme
-}
-
 OutlineButton.displayName = 'OutlineButton'
+
+OutlineButton.defaultProps = {
+  theme,
+  color: 'primary',
+  f: 3,
+  m: 0,
+  px: 3,
+  py: 2
+}
 
 export default OutlineButton

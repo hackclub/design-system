@@ -6,23 +6,19 @@ describe('OutlineButton', () => {
   test('renders', () => {
     const json = renderer.create(<OutlineButton />).toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('border-style', 'solid')
+    expect(json).toHaveStyleRule('background-color', 'transparent !important')
   })
 
   test('disabled prop sets', () => {
     const json = renderer.create(<OutlineButton disabled />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-color', theme.colors.blue)
-    expect(json).toHaveStyleRule('color', theme.colors.blue)
+    expect(json).toHaveStyleRule('opacity', '0.25')
   })
 
-  test('without disabled prop sets', () => {
-    const json = renderer.create(<OutlineButton />).toJSON()
+  test('with custom color', () => {
+    const json = renderer.create(<OutlineButton color="white" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-color', theme.colors.darkBlue, {
-      modifier: ':hover'
-    })
-    expect(json).toHaveStyleRule('color', theme.colors.darkBlue, {
-      modifier: ':hover'
-    })
+    expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 })
