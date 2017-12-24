@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LargeButton larger 1`] = `
+.c0 {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #7280ed;
+  color: #ffffff;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition: .125s box-shadow ease-out;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
+  border-radius: 4px;
+  border-width: 0;
+  border-style: solid;
+}
+
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.125);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.125);
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:48em) {
+  .c0 {
+    font-size: 24px;
+  }
+}
+
+<a
+  className="c0"
+  color="white"
+/>
+`;
+
+exports[`LargeButton renders 1`] = `
+.c0 {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition: .125s box-shadow ease-out;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
+  border-radius: 4px;
+  border-width: 0;
+  border-style: solid;
+}
+
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 12px 2px rgba(228,45,66,.25);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 4px 16px 2px rgba(228,45,66,.375);
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:48em) {
+  .c0 {
+    font-size: 24px;
+  }
+}
+
+<a
+  className="c0"
+  color="white"
+/>
+`;

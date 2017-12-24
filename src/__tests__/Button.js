@@ -12,6 +12,7 @@ describe('Button', () => {
     const json = renderer.create(<Button bg="accent" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.accent)
+    expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
   test('inverted', () => {
