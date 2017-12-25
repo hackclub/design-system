@@ -3,6 +3,13 @@ import { fontSize, space, width, color, propTypes } from 'styled-system'
 import theme from './theme'
 import PropTypes from 'prop-types'
 
+const chevron = () => {
+  const props = `xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'`
+  const slate = '%23' + theme.colors.slate.replace('#', '')
+  const pathProps = `fill='${slate}' d='M2 0L0 2h4zm0 5L0 3h4z'`
+  return `%3Csvg ${props}%3E%3Cpath ${pathProps}/%3E%3C/svg%3E`
+}
+
 const Input = styled.input`
   appearance: none;
   display: block;
@@ -32,6 +39,11 @@ const Input = styled.input`
     box-shadow: 0 0 0 2px ${props => props.theme.colors.blue[2]};
   }
 
+  &[type='select'] {
+    background: #fff url("data:image/svg+xml;charset=utf8,${chevron()}") no-repeat right .75rem center;
+    background-size: .5rem;
+  }
+
   ${fontSize} ${space} ${width} ${color};
 `
 
@@ -55,5 +67,8 @@ Input.defaultProps = {
   color: 'inherit',
   bg: 'transparent'
 }
+
+export const InputSelect = Input.withComponent('select')
+export const InputTextarea = Input.withComponent('textarea')
 
 export default Input

@@ -3,9 +3,7 @@ import { space, fontSize, fontWeight, color, propTypes } from 'styled-system'
 import theme from './theme'
 
 const Label = styled.label`
-  display: flex;
-  align-items: center;
-
+  display: block;
   ${space} ${fontSize} ${color} ${fontWeight};
 `
 
