@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section renders 1`] = `
+.c0 {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+<section
+  align="center"
+  className="c0"
+  color="white"
+  direction="column"
+  justify="center"
+  px={3}
+  py={
+    Array [
+      4,
+      5,
+    ]
+  }
+/>
+`;

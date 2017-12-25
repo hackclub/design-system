@@ -18,6 +18,7 @@ export { default as Link } from './Link'
 export { default as Module } from './Module'
 export { default as OutlineButton } from './OutlineButton'
 export { default as Radio } from './Radio'
+export { default as Section } from './Section'
 export { default as Text } from './Text'
 export { default as Truncate } from './Truncate'
 
