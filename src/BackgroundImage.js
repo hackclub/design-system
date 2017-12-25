@@ -1,6 +1,5 @@
-import styled from 'styled-components'
+import Box from './Box'
 import PropTypes from 'prop-types'
-import { width } from 'styled-system'
 import theme from './theme'
 
 const image = props =>
@@ -8,29 +7,23 @@ const image = props =>
 
 const height = props => (props.height ? { height: props.height } : null)
 
-const BackgroundImage = styled.div`
+const BackgroundImage = Box.extend`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: ${props => props.theme.colors.gray};
-  ${image} ${height} ${width};
+  background-color: ${props => props.theme.colors.smoke};
+  ${image} ${height};
 `
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
+
+BackgroundImage.displayName = 'BackgroundImage'
 
 BackgroundImage.propTypes = {
   /** background-image url */
-  image: PropTypes.string,
-  width: numberStringOrArray
+  image: PropTypes.string
 }
 
 BackgroundImage.defaultProps = {
-  theme: theme
+  theme
 }
-
-BackgroundImage.displayName = 'BackgroundImage'
 
 export default BackgroundImage

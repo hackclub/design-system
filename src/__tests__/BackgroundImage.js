@@ -11,10 +11,12 @@ describe('BackgroundImage', () => {
   test('renders with image', () => {
     const json = renderer.create(<BackgroundImage image="hello.png" />).toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-image', 'url(hello.png)')
   })
 
   test('renders with height', () => {
-    const json = renderer.create(<BackgroundImage height="320px" />).toJSON()
+    const json = renderer.create(<BackgroundImage height="256px" />).toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('height', '256px')
   })
 })
