@@ -26,8 +26,8 @@
     "styled-system": "^1.1.1"
   },
   "devDependencies": {
-    "@storybook/addon-info": "^3.2.19",
-    "@storybook/react": "^3.2.19",
+    "@storybook/addon-info": "v3.3.0-rc.0",
+    "@storybook/react": "v3.3.0-rc.0",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
