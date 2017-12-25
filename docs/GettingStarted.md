@@ -3,7 +3,7 @@
 Install the Design System in your application
 
 ```sh
-npm install --save hackclub-design-system
+npm install @hackclub/design-system
 ```
 
 ## ThemeProvider
@@ -15,7 +15,7 @@ This should only be included once in your application.
 
 ```jsx
 import React from 'react'
-import { ThemeProvider } from 'hackclub-design-system'
+import { ThemeProvider } from '@hackclub/design-system'
 
 const App = () => (
   <ThemeProvider>
@@ -40,7 +40,7 @@ With effective use of the UI primitives, you can reduce the need to write custom
 
 ```jsx
 import React from 'react'
-import { Box, Text } from 'hackclub-design-system'
+import { Box, Text } from '@hackclub/design-system'
 
 const SomeView = props => (
   <Box bg="primary" p={3}>

@@ -1,5 +1,5 @@
 {
-  "name": "hackclub-design-system",
+  "name": "@hackclub/design-system",
   "version": "0.0.1",
   "description": "Hack Club Design System",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
     "deploy": "storybook-to-ghpages",
     "storybook": "build-storybook -c .storybook -o .site",
     "coverage": "jest --coverage",
-    "fmt": "prettier **/*.js --single-quote --no-semi --write",
+    "fmt": "prettier {.storybook,scripts,src,dist}/**/*.js --single-quote --no-semi --write",
     "test": "jest"
   },
   "author": "Lachlan Campbell",

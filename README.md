@@ -3,10 +3,10 @@
 https://hackclub.github.io/design-system/
 
 ```sh
-npm install hackclub-design-system
+npm install @hackclub/design-system
 ```
 
-This project is _heavily_ inspired by [Priceline’s awesome design system][pcln].
+This project is heavily inspired by [Priceline.com’s design system][pcln].
 
 ## Contributing
 
