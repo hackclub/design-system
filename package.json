@@ -10,7 +10,7 @@
     "icons": "node scripts/build-icons",
     "deploy": "storybook-to-ghpages",
     "storybook": "build-storybook -c .storybook -o .site",
-    "coverage": "jest --coverage",
+    "coverage": "jest --coverage && serve coverage -o",
     "fmt": "prettier {.storybook,scripts,src,dist}/**/*.js --single-quote --no-semi --write",
     "test": "jest"
   },
@@ -21,6 +21,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "palx": "^1.0.2",
     "prop-types": "^15.6.0",
+    "serve": "^6.4.3",
     "styled-components": "^2.4.0",
     "styled-system": "^1.1.1"
   },

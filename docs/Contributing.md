@@ -46,6 +46,14 @@ If you make intentional changes to an existing component, you will need to updat
 npm test -- -u
 ```
 
+If you want to check test coverage (goal is 100% coverage):
+
+```sh
+npm run coverage
+```
+
+Jest will run, generate a coverage report, and open it in your browser.
+
 ### Storybook
 
 We use [Storybook][storybook] for isolated UI component development.
