@@ -19,6 +19,7 @@ describe('theme', () => {
 
   test('cx works', () => {
     expect(theme.cx('red.5')).toBe(theme.colors.red[5])
+    expect(theme.cx('#ff6d00')).toBe('#ff6d00')
   })
 
   test('scales are objects', () => {

@@ -4,7 +4,7 @@ import theme from './theme'
 const OutlineButton = Button.extend`
   box-shadow: none !important;
   background-color: transparent !important;
-  color: ${props => props.theme.colors[props.color || props.bg]};
+  color: ${props => props.theme.colors[props.color]};
   border-width: 2px;
   border-style: solid;
   border-color: currentColor;
