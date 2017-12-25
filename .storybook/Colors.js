@@ -20,7 +20,7 @@ const Pre = Text.withComponent('pre').extend`font-family: ${theme.mono};`
 const Card = ({ name, color }) => (
   <Box>
     <Chip name={name} bg={color} />
-    <Text fontSize={2} bold>
+    <Text fontSize={2} m={0} bold>
       {name}
     </Text>
     <Pre fontSize={0} m={0} color="muted">
