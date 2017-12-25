@@ -5,7 +5,7 @@ import { Field } from '..'
 describe('Field', () => {
   test('renders', () => {
     const json = renderer
-      .create(<Field id="renders" label="Renders" />)
+      .create(<Field name="renders" label="Renders" />)
       .toJSON()
     expect(json).toMatchSnapshot()
   })

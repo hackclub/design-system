@@ -51,6 +51,11 @@ exports[`Input renders 1`] = `
   box-shadow: 0 0 0 2px #add9f5;
 }
 
+.c0[type='select'] {
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+  background-size: .5rem;
+}
+
 <input
   className="c0"
   color="inherit"
@@ -108,6 +113,11 @@ exports[`Input renders with custom fontSize 1`] = `
   outline: none;
   border-color: #2d9ee4;
   box-shadow: 0 0 0 2px #add9f5;
+}
+
+.c0[type='select'] {
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+  background-size: .5rem;
 }
 
 <input
@@ -168,6 +178,11 @@ exports[`Input renders with custom spacing 1`] = `
   outline: none;
   border-color: #2d9ee4;
   box-shadow: 0 0 0 2px #add9f5;
+}
+
+.c0[type='select'] {
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+  background-size: .5rem;
 }
 
 <input

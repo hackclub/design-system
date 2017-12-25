@@ -25,7 +25,7 @@ const Field = ({ type, name, label, p, error, ...props }) => {
       textarea: InputTextarea
     }[type] || Input
   return (
-    <Label className={type} id={name} my={2}>
+    <Label className={type} id={name} mb={2}>
       <Flex align="center" mb="2px" wrap>
         {label}
         {error && <Error children={error} />}

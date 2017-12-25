@@ -50,7 +50,7 @@ const Input = styled.input`
 Input.displayName = 'Input'
 
 Input.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   ...propTypes.fontSize,
   ...propTypes.space,
   ...propTypes.width,
