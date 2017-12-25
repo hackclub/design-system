@@ -13,14 +13,14 @@ Contributing doesn’t necessarily mean committing code, we also encourage you t
 
 To contribute code to the Design System, first you’ll need to set it up for local development.
 
-### Clone the repo:
+### Clone the repo
 
 ```sh
 git clone https://github.com/hackclub/design-system.git
 cd design-system
 ```
 
-### Install dependencies:
+### Install dependencies
 
 ```sh
 npm install
