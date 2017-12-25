@@ -12,9 +12,8 @@ This project is heavily inspired by [Priceline.com’s design system][pcln].
 
 Please be sure to read the [Contributing](docs/Contributing.md) doc :)
 
-## Documentation
+## [Documentation](docs)
 
-* [Docs](docs)
 * [Getting Started](docs/GettingStarted.md)
 * [Contributing](docs/Contributing.md)
 * [Theme](docs/Theme.md)
