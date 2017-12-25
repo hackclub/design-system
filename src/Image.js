@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import Box from './Box'
 
-const Image = styled.img`
+const Image = Box.withComponent('img').extend`
   display: block;
   max-width: 100%;
   height: auto;
