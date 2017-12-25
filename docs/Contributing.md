@@ -84,10 +84,6 @@ the test, and the storybook demo.
    documentation. Create `.storybook/New.js` following the format of
    [this example storybook][example_storybook] demoing sample usage and props.
 
-## Troubleshooting
-
-You may run into the following error `ERROR in ./icons.json` when running storybook. The problem occur when the icons.json is not built yet. Running `npm run icons` should fix the problem.
-
 [jest]: https://facebook.github.io/jest/
 [snapshots]: https://facebook.github.io/jest/docs/en/snapshot-testing.html#content
 [storybook]: https://storybook.js.org
