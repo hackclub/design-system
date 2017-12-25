@@ -71,14 +71,14 @@ open http://localhost:8000/
 To make a new component you’ll need to make three files: the source code,
 the test, and the storybook demo.
 
-1. **Source file.** This goes in `src/New.js`, and should a
-   `styled-component` with `export default New` at the end and
+1. **Source file.** This goes in `src/New.js`, and should export a
+   `styled-component` with `export default New` at the end and the component’s
    `propTypes` defined. Add an export to `src/index.js` so the component can be
    used elsewhere.
-2. **Test.** The test should verify the core functionality is working using
+2. **Test.** The test should verify the core functionality works, using
    Jest’s snapshot testing. It should be located at `src/__tests__/New.js`,
    and follow the others’ formats, like [this example test][example_test].
-   When you’ve written the test, check that it passes (`npm test -- -u`) and
+   Once you’ve written the test, check that it passes (`npm test -- -u`) and
    verify 100% test coverage of your component (`npm run coverage`).
 3. **Storybook.** We use the storybook as a development environment and for
    documentation. Create `.storybook/New.js` following the format of
@@ -91,5 +91,5 @@ You may run into the following error `ERROR in ./icons.json` when running storyb
 [jest]: https://facebook.github.io/jest/
 [snapshots]: https://facebook.github.io/jest/docs/en/snapshot-testing.html#content
 [storybook]: https://storybook.js.org
-[example_test]: src/__tests__/Badge.js
-[example_storybook]: .storybook/Badge.js
+[example_test]: ../src/__tests__/Badge.js
+[example_storybook]: ../.storybook/Badge.js
