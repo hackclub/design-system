@@ -1,12 +1,12 @@
 import Text from './Text'
 import theme from './theme'
 
-const Badge = Text.withComponent('div').extend`
-  border-radius: 99999px;
+const Badge = Text.span.extend`
+  border-radius: ${props => props.theme.radius};
   display: inline-block;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 `
 
 Badge.displayName = 'Badge'

@@ -20,12 +20,26 @@ storiesOf('Badge', module)
   )
   .add('All colors', () => (
     <Base>
-      <Badge bg="primary">primary</Badge>
-      <Badge bg="accent">accent</Badge>
-      <Badge bg="error">error</Badge>
-      <Badge bg="warning">warning</Badge>
-      <Badge bg="success">success</Badge>
-      <Badge bg="info">info</Badge>
-      <Badge bg="muted">muted</Badge>
+      <Badge bg="primary" mr={2}>
+        primary
+      </Badge>
+      <Badge bg="accent" mr={2}>
+        accent
+      </Badge>
+      <Badge bg="error" mr={2}>
+        error
+      </Badge>
+      <Badge bg="warning" mr={2}>
+        warning
+      </Badge>
+      <Badge bg="success" mr={2}>
+        success
+      </Badge>
+      <Badge bg="info" mr={2}>
+        info
+      </Badge>
+      <Badge bg="muted" mr={2}>
+        muted
+      </Badge>
     </Base>
   ))
