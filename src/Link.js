@@ -14,9 +14,9 @@ Link.propTypes = {
 }
 
 Link.defaultProps = {
+  theme,
   color: 'info',
-  underline: false,
-  theme: theme
+  underline: false
 }
 
 export default Link

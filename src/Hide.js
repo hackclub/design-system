@@ -41,7 +41,7 @@ Hide.propTypes = {
 }
 
 Hide.defaultProps = {
-  theme: theme
+  theme
 }
 
 export default Hide

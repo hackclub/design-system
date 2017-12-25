@@ -17,11 +17,11 @@ Label.propTypes = {
 }
 
 Label.defaultProps = {
+  theme,
   fontSize: 2,
   fontWeight: 'bold',
   color: 'black',
-  w: 1,
-  theme: theme
+  w: 1
 }
 
 export default Label
