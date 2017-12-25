@@ -6,12 +6,12 @@
   "scripts": {
     "prepare": "npm run icons && babel src -d dist --ignore __tests__",
     "precommit": "npm run fmt",
-    "start": "start-storybook -p 8000 -c .storybook",
+    "dev": "start-storybook -p 8000 -c .storybook",
+    "build": "rm -rf .site && build-storybook -c .storybook -o .site",
+    "start": "serve .site -p 9001",
     "icons": "node scripts/build-icons",
-    "deploy": "storybook-to-ghpages",
-    "storybook": "build-storybook -c .storybook -o .site",
-    "coverage": "jest --coverage && serve coverage -o",
     "fmt": "prettier {.storybook,scripts,src,dist}/**/*.js --single-quote --no-semi --write",
+    "coverage": "jest --coverage && serve coverage -o",
     "test": "jest"
   },
   "author": "Lachlan Campbell",
@@ -33,6 +33,7 @@
     "lint-staged": "^6.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "serve": "^6.4.3",
     "stylis": "^3.4.5",
     "svgi": "^1.1.0"
   },
@@ -44,8 +45,7 @@
     "prettier": "^1.9.2",
     "jest": "^22.0.4",
     "jest-styled-components": "^4.9.0",
-    "react-test-renderer": "^16.2.0",
-    "serve": "^6.4.3"
+    "react-test-renderer": "^16.2.0"
   },
   "jest": {
     "coverageReporters": [

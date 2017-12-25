@@ -62,7 +62,7 @@ documentation for all the available components.
 To run storybook locally:
 
 ```sh
-npm start
+npm run dev
 open http://localhost:8000/
 ```
 
