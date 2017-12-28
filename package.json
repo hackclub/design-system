@@ -9,6 +9,7 @@
     "dev": "start-storybook -p 8000 -c .storybook",
     "build": "rm -rf .site && build-storybook -c .storybook -o .site",
     "start": "serve .site -p 9001",
+    "deploy": "storybook-to-ghpages",
     "icons": "node scripts/build-icons",
     "fmt": "prettier {.storybook,scripts,src,dist}/**/*.js --single-quote --no-semi --write",
     "coverage": "jest --coverage && serve coverage -o",
@@ -27,8 +28,8 @@
     "serve": "^6.4.3"
   },
   "devDependencies": {
-    "@storybook/addon-info": "v3.3.0-rc.0",
-    "@storybook/react": "v3.3.0-rc.0",
+    "@storybook/addon-info": "v3.3.1",
+    "@storybook/react": "v3.3.1",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
