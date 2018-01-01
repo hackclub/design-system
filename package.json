@@ -28,8 +28,8 @@
     "serve": "^6.4.3"
   },
   "devDependencies": {
-    "@storybook/addon-info": "v3.3.1",
-    "@storybook/react": "v3.3.1",
+    "@storybook/addon-info": "v3.3.3",
+    "@storybook/react": "v3.3.3",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -38,7 +38,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme": "^3.2.0",
+    "enzyme": "^3.3.0",
     "material-design-icons": "^3.0.1",
     "prettier": "^1.9.2",
     "jest": "^22.0.4",
