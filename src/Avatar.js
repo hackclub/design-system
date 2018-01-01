@@ -12,7 +12,7 @@ const Avatar = Box.withComponent('img').extend`
 Avatar.displayName = 'Badge'
 
 Avatar.propTypes = {
-  size: PropTypes.number
+  size: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 }
 
 Avatar.defaultProps = {
