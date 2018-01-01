@@ -1,11 +1,10 @@
 {
   "name": "@hackclub/design-system",
-  "version": "0.0.1",
+  "version": "0.0.1-0",
   "description": "Hack Club Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run icons && babel src -d dist --ignore __tests__",
-    "precommit": "npm run fmt",
+    "prepare": "npm run icons && babel src -d dist --ignore __tests__ && npm run fmt",
     "dev": "start-storybook -p 8000 -c .storybook",
     "build": "rm -rf .site && build-storybook -c .storybook -o .site",
     "start": "serve .site -p 9001",
