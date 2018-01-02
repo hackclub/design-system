@@ -12,11 +12,12 @@ exports[`Badge accepts custom bg and color 1`] = `
   border-radius: 4px;
   display: inline-block;
   font-weight: normal;
-  text-transform: uppercase;
   -webkit-letter-spacing: 0.04em;
   -moz-letter-spacing: 0.04em;
   -ms-letter-spacing: 0.04em;
   letter-spacing: 0.04em;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
 <span
@@ -38,11 +39,12 @@ exports[`Badge renders 1`] = `
   border-radius: 4px;
   display: inline-block;
   font-weight: normal;
-  text-transform: uppercase;
   -webkit-letter-spacing: 0.04em;
   -moz-letter-spacing: 0.04em;
   -ms-letter-spacing: 0.04em;
   letter-spacing: 0.04em;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
 <span

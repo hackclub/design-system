@@ -197,6 +197,9 @@ Object {
     24,
     32,
     48,
+    64,
+    72,
+    96,
   ],
   "fontWeights": Object {
     "bold": 700,
@@ -210,9 +213,9 @@ Object {
   ],
   "mono": "SFMono-Regular,\\"Roboto Mono\\",Menlo,monospace",
   "radii": Array [
-    0,
-    4,
-    8,
+    "0px",
+    "4px",
+    "8px",
   ],
   "radius": "4px",
   "regular": 400,
