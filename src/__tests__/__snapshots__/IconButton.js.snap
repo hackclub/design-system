@@ -17,6 +17,7 @@ exports[`IconButton renders without props 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
+  line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

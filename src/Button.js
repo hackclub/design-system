@@ -11,6 +11,7 @@ const Button = Box.withComponent('a').extend`
   text-decoration: none;
   font-family: inherit;
   font-weight: ${props => props.theme.bold};
+  line-height: 1.125;
   appearance: none;
   cursor: pointer;
   transition: .125s box-shadow ease-out;

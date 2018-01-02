@@ -17,6 +17,7 @@ exports[`Button custom bg 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
+  line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -63,6 +64,7 @@ exports[`Button disabled prop sets 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
+  line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -111,6 +113,7 @@ exports[`Button inverted 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
+  line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -159,6 +162,7 @@ exports[`Button renders 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
+  line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -205,6 +209,7 @@ exports[`Button without disabled prop sets 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
+  line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

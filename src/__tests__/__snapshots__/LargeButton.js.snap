@@ -16,6 +16,7 @@ exports[`LargeButton larger 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
+  line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -45,12 +46,6 @@ exports[`LargeButton larger 1`] = `
   }
 }
 
-@media screen and (min-width:48em) {
-  .c0 {
-    font-size: 24px;
-  }
-}
-
 <a
   className="c0"
   color="white"
@@ -73,6 +68,7 @@ exports[`LargeButton renders 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
+  line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -99,12 +95,6 @@ exports[`LargeButton renders 1`] = `
 @media screen and (min-width:32em) {
   .c0 {
     font-size: 20px;
-  }
-}
-
-@media screen and (min-width:48em) {
-  .c0 {
-    font-size: 24px;
   }
 }
 
