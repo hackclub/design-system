@@ -60,7 +60,7 @@ export const font =
   'Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif'
 export const mono = 'SFMono-Regular,"Roboto Mono",Menlo,monospace'
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
+export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 64, 72, 96]
 
 export const regular = 400
 export const bold = 700
