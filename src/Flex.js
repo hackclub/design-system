@@ -2,7 +2,6 @@ import {
   alignSelf,
   alignItems,
   justifyContent,
-  flexWrap,
   flexDirection,
   flex,
   propTypes
@@ -10,16 +9,18 @@ import {
 import Box from './Box'
 import PropTypes from 'prop-types'
 
+const wrap = props => (props.wrap ? { flexWrap: 'wrap' } : null)
+
 const Flex = Box.extend`
   display: flex;
-  ${alignSelf} ${alignItems} ${justifyContent} ${flexWrap} ${flexDirection} ${flex};
+  ${alignSelf} ${alignItems} ${justifyContent} ${wrap} ${flexDirection} ${flex};
 `
 
 Flex.propTypes = {
+  wrap: PropTypes.bool,
   ...propTypes.alignSelf,
   ...propTypes.alignItems,
   ...propTypes.justifyContent,
-  ...propTypes.flexWrap,
   ...propTypes.flexDirection,
   ...propTypes.flex
 }
