@@ -2,6 +2,7 @@
 
 exports[`Text align prop sets text-align 1`] = `
 .c0 {
+  margin: 0px;
   text-align: center;
 }
 
@@ -12,6 +13,7 @@ exports[`Text align prop sets text-align 1`] = `
 
 exports[`Text bold prop sets font-weight 1`] = `
 .c0 {
+  margin: 0px;
   font-weight: 700;
 }
 
@@ -22,6 +24,7 @@ exports[`Text bold prop sets font-weight 1`] = `
 
 exports[`Text caps prop sets text-transform 1`] = `
 .c0 {
+  margin: 0px;
   text-transform: uppercase;
 }
 
@@ -32,6 +35,7 @@ exports[`Text caps prop sets text-transform 1`] = `
 
 exports[`Text mt prop sets margin-top 1`] = `
 .c0 {
+  margin: 0px;
   margin-top: 8px;
 }
 
@@ -42,6 +46,7 @@ exports[`Text mt prop sets margin-top 1`] = `
 
 exports[`Text regular prop sets font-weight 1`] = `
 .c0 {
+  margin: 0px;
   font-weight: 400;
 }
 
@@ -51,7 +56,11 @@ exports[`Text regular prop sets font-weight 1`] = `
 `;
 
 exports[`Text renders 1`] = `
+.c0 {
+  margin: 0px;
+}
+
 <p
-  className=""
+  className="c0"
 />
 `;

@@ -37,7 +37,8 @@ Text.propTypes = {
 }
 
 Text.defaultProps = {
-  theme
+  theme,
+  m: 0
 }
 
 Text.span = Text.withComponent('span')

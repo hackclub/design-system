@@ -186,6 +186,7 @@ exports[`Field with error 1`] = `
 
 .c2 {
   font-size: 14px;
+  margin: 0px;
   margin-left: 4px;
   margin-top: 0px;
   margin-bottom: 0px;

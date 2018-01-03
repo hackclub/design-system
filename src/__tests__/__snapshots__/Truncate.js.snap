@@ -2,6 +2,7 @@
 
 exports[`Truncate generates styles 1`] = `
 .c0 {
+  margin: 0px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -16,6 +17,7 @@ exports[`Truncate generates styles 1`] = `
 
 exports[`Truncate renders 1`] = `
 .c0 {
+  margin: 0px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
