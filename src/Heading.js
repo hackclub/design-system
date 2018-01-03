@@ -28,7 +28,7 @@ Heading.h2.defaultProps = {
 
 Heading.h3 = Heading.withComponent('h3')
 Heading.h3.defaultProps = {
-  regular: true,
+  bold: true,
   f: 4,
   m: 0
 }
