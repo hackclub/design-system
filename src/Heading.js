@@ -1,7 +1,7 @@
 import Text from './Text'
 import theme from './theme'
 
-const Heading = Text.withComponent('h2')
+const Heading = Text.withComponent('h2').extend`line-height: 1.25;`
 
 Heading.displayName = 'Heading'
 

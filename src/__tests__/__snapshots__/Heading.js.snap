@@ -5,11 +5,11 @@ exports[`Heading renders 1`] = `
   font-size: 32px;
   margin: 0px;
   font-weight: 400;
+  line-height: 1.25;
 }
 
 <h2
   className="c0"
-  fontSize={5}
 />
 `;
 
@@ -20,12 +20,12 @@ exports[`Heading uses <Text> component properties 1`] = `
   color: #e42d42;
   font-weight: 400;
   text-align: center;
+  line-height: 1.25;
 }
 
 <h2
   className="c0"
   color="primary"
-  fontSize={5}
 />
 `;
 
@@ -34,11 +34,11 @@ exports[`Heading with default theme font size, when fontSize prop not used 1`] =
   font-size: 32px;
   margin: 0px;
   font-weight: 400;
+  line-height: 1.25;
 }
 
 <h2
   className="c0"
-  fontSize={5}
 />
 `;
 
@@ -46,11 +46,11 @@ exports[`Heading with h1-h6 dot-notation 1`] = `
 .c0 {
   font-size: 48px;
   margin: 0px;
+  line-height: 1.25;
 }
 
 <h1
   className="c0"
-  fontSize={6}
 />
 `;
 
@@ -58,11 +58,11 @@ exports[`Heading with h1-h6 dot-notation 2`] = `
 .c0 {
   font-size: 32px;
   margin: 0px;
+  line-height: 1.25;
 }
 
 <h2
   className="c0"
-  fontSize={5}
 />
 `;
 
@@ -70,11 +70,11 @@ exports[`Heading with h1-h6 dot-notation 3`] = `
 .c0 {
   font-size: 24px;
   margin: 0px;
+  line-height: 1.25;
 }
 
 <h3
   className="c0"
-  fontSize={4}
 />
 `;
 
@@ -82,11 +82,11 @@ exports[`Heading with h1-h6 dot-notation 4`] = `
 .c0 {
   font-size: 20px;
   margin: 0px;
+  line-height: 1.25;
 }
 
 <h4
   className="c0"
-  fontSize={3}
 />
 `;
 
@@ -94,11 +94,11 @@ exports[`Heading with h1-h6 dot-notation 5`] = `
 .c0 {
   font-size: 16px;
   margin: 0px;
+  line-height: 1.25;
 }
 
 <h5
   className="c0"
-  fontSize={2}
 />
 `;
 
@@ -107,10 +107,10 @@ exports[`Heading with h1-h6 dot-notation 6`] = `
   font-size: 12px;
   margin: 0px;
   text-transform: uppercase;
+  line-height: 1.25;
 }
 
 <h6
   className="c0"
-  fontSize={0}
 />
 `;
