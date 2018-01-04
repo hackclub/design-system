@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
   fontSize,
+  fontWeight,
   space,
   color,
   responsiveStyle,
@@ -21,7 +22,7 @@ export const bold = props =>
 const align = responsiveStyle('text-align', 'align')
 
 const Text = styled.p`
-  ${fontSize} ${space} ${color} ${caps} ${regular} ${bold} ${align};
+  ${fontSize} ${space} ${color} ${caps} ${bold} ${regular} ${fontWeight} ${align};
 `
 
 Text.displayName = 'Text'
@@ -33,6 +34,7 @@ Text.propTypes = {
   regular: PropTypes.bool,
   bold: PropTypes.bool,
   ...propTypes.fontSize,
+  ...propTypes.fontWeight,
   ...propTypes.space,
   ...propTypes.color
 }
