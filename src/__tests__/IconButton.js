@@ -6,15 +6,22 @@ import { shallow } from 'enzyme'
 import { IconButton } from '..'
 
 describe('IconButton', () => {
+  test('renders', () => {
+    const json = renderer.create(<IconButton />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('renders with circle prop', () => {
+    const json = renderer.create(<IconButton circle />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('border-radius', '9999px')
+    expect(json).toHaveStyleRule('padding', '8px')
+  })
+
   test('executes onClick prop on click', () => {
     const handleClick = jest.fn()
     const wrapper = shallow(<IconButton onClick={handleClick} />)
     wrapper.simulate('click')
     expect(handleClick).toBeCalled()
-  })
-
-  test('renders without props', () => {
-    const json = renderer.create(<IconButton />).toJSON()
-    expect(json).toMatchSnapshot()
   })
 })

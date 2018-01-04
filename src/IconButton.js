@@ -1,18 +1,19 @@
 import React from 'react'
-import styled from 'styled-components'
 import Icon from './Icon'
 import Button from './Button'
 import PropTypes from 'prop-types'
+import theme from './theme'
 
-const Base = styled(Button.button)`
-  padding: 0 !important;
-  background-color: transparent !important;
+const Base = Button.button.extend`
   box-shadow: none !important;
-
-  &:hover {
-    background-color: transparent;
-    box-shadow: none !important;
-  }
+  line-height: 0 !important;
+  ${props =>
+    props.circle
+      ? {
+          borderRadius: '9999px',
+          padding: props.theme.space[props.p || 2] + 'px'
+        }
+      : null};
 `
 
 const IconButton = ({ name, size, color, ...props }) => (
@@ -22,8 +23,15 @@ const IconButton = ({ name, size, color, ...props }) => (
 IconButton.displayName = 'IconButton'
 
 IconButton.propTypes = {
+  name: PropTypes.string,
   onClick: PropTypes.func,
-  title: PropTypes.string
+  circle: PropTypes.bool
+}
+
+IconButton.defaultProps = {
+  theme,
+  bg: 'transparent',
+  circle: false
 }
 
 export default IconButton
