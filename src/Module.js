@@ -22,7 +22,7 @@ const Module = ({ icon, heading, body, color = 'white', ...props }) => (
   <ModuleBase color={color}>
     <Icon size={3 * 16} mr={[2, 0]} name={icon} color={color} />
     <div>
-      <Heading my={1} fontSize={3} bold children={heading} />
+      <Heading.h2 my={1} fontSize={3} children={heading} />
       <Text m={0} fontSize={2} children={body} />
     </div>
   </ModuleBase>
