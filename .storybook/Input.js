@@ -9,7 +9,7 @@ storiesOf('Input', module)
     withInfo({
       inline: true,
       text:
-        'Simple styled input component that accepts a color and whether or not to show an error container.'
+        'Simple styled input component that accepts a color and optionally, an error message.'
     })(() => <Input my={3} id="hello" />)
   )
   .add('With external label', () => (
