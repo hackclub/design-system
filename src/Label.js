@@ -1,5 +1,12 @@
 import styled from 'styled-components'
-import { space, fontSize, fontWeight, color, propTypes } from 'styled-system'
+import {
+  color,
+  fontSize,
+  fontWeight,
+  space,
+  width,
+  propTypes
+} from 'styled-system'
 import theme from './theme'
 
 const Label = styled.label`
@@ -10,17 +17,17 @@ const Label = styled.label`
 Label.displayName = 'Label'
 
 Label.propTypes = {
-  ...propTypes.space,
-  ...propTypes.fontSize,
   ...propTypes.color,
-  ...propTypes.fontWeight
+  ...propTypes.fontSize,
+  ...propTypes.fontWeight,
+  ...propTypes.space,
+  ...propTypes.width
 }
 
 Label.defaultProps = {
   theme,
-  fontSize: 2,
-  fontWeight: 'bold',
   color: 'black',
+  fontSize: 2,
   w: 1
 }
 
