@@ -3,7 +3,7 @@ import Flex from './Flex'
 const Section = Flex.withComponent('section').extend.attrs({
   align: 'center',
   justify: 'center',
-  direction: 'column',
+  flexDirection: 'column',
   color: 'white',
   py: [4, 5],
   px: 3
