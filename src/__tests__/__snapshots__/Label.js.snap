@@ -5,13 +5,11 @@ exports[`Label it renders 1`] = `
   display: block;
   font-size: 16px;
   color: #384046;
-  font-weight: 700;
 }
 
 <label
   className="c0"
   color="black"
   fontSize={2}
-  fontWeight="bold"
 />
 `;
