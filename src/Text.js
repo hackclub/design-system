@@ -26,8 +26,9 @@ const Text = styled.p`
 
 Text.displayName = 'Text'
 
+const alignTypes = ['left', 'center', 'right', 'justify']
 Text.propTypes = {
-  align: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
+  align: PropTypes.oneOf(alignTypes, PropTypes.arrayOf(alignTypes)),
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,
