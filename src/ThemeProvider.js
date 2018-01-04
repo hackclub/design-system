@@ -17,14 +17,14 @@ body {
   font-family: Averta;
   font-style: normal;
   font-weight: 400;
-  src: url(https://hackclub.com/fonts/averta-regular.woff2) format('woff2'), url(https://hackclub.com/fonts/averta-regular.woff) format('woff');
+  src: url(//hackclub.com/fonts/averta-regular.woff2) format('woff2'), url(//hackclub.com/fonts/averta-regular.woff) format('woff');
   unicode-range: U + 0000 - F8FE, U + F900-FFFF;
 }
 @font-face {
   font-family: Averta;
   font-style: normal;
   font-weight: 700;
-  src: url(https://hackclub.com/fonts/averta-bold.woff2) format('woff2'), url(https://hackclub.com/fonts/averta-bold.woff) format('woff');
+  src: url(//hackclub.com/fonts/averta-bold.woff2) format('woff2'), url(//hackclub.com/fonts/averta-bold.woff) format('woff');
   unicode-range: U + 0000 - F8FE, U + F900-FFFF;
 }
 `
