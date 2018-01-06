@@ -18,7 +18,7 @@ export const Error = Text.extend.attrs({
   &:before { content: '— '; }
 `
 
-const Field = ({ type, name, label, p, error, ...props }) => {
+const Field = ({ type, name, label, placeholder, error, ...props }) => {
   const Component =
     {
       select: InputSelect,
@@ -30,7 +30,7 @@ const Field = ({ type, name, label, p, error, ...props }) => {
         {label}
         {error && <Error children={error} />}
       </Flex>
-      <Component name={name} type={type} placeholder={p} {...props} />
+      <Component name={name} type={type} placeholder={placeholder} {...props} />
     </Label>
   )
 }
@@ -46,7 +46,7 @@ Field.propTypes = {
   /** validation message */
   error: PropTypes.string,
   /** placeholder text */
-  p: PropTypes.string
+  placeholder: PropTypes.string
 }
 
 Field.defaultProps = {

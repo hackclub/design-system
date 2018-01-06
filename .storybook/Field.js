@@ -9,14 +9,14 @@ storiesOf('Field', module)
     withInfo({
       inline: true,
       text: 'Compond component for form fields.'
-    })(() => <Field name="fname" label="First name" p="Zach" />)
+    })(() => <Field name="fname" label="First name" placeholder="Zach" />)
   )
   .add('with error', () => (
     <Field
       name="email"
       type="email"
       label="Email"
-      p="zach@hackclub.com"
+      placeholder="zach@hackclub.com"
       error="can’t be blank"
     />
   ))
@@ -25,7 +25,7 @@ storiesOf('Field', module)
       name="comment"
       type="textarea"
       label="Write a comment"
-      p="Be nice :)"
+      placeholder="Be nice :)"
     />
   ))
   .add('select type', () => (
