@@ -3,10 +3,6 @@ import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
 import { Box, Flex, Text, theme } from '../src'
 
-const RelativeBox = styled(Box)`
-  position: relative;
-`
-
 const keys = Object.keys(theme.colors).filter(
   key => !Array.isArray(theme.colors[key])
 )
