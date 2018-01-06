@@ -9,7 +9,7 @@ const Avatar = Box.withComponent('img').extend`
   height: ${props => props.size};
 `
 
-Avatar.displayName = 'Badge'
+Avatar.displayName = 'Avatar'
 
 Avatar.propTypes = {
   size: PropTypes.oneOfType([PropTypes.number, PropTypes.string])

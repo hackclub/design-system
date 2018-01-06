@@ -4,7 +4,7 @@ import theme from './theme'
 
 const LargeButton = Button.extend``
 
-LargeButton.displayName = LargeButton
+LargeButton.displayName = 'LargeButton'
 
 LargeButton.defaultProps = {
   theme,
