@@ -8,10 +8,7 @@ import theme from './theme'
 
 injectGlobal`
 * { box-sizing: border-box; }
-body {
-  line-height: 1.6;
-  margin: 0;
-}
+body { margin: 0; }
 
 @font-face {
   font-family: Averta;
@@ -31,7 +28,7 @@ body {
 
 export const Base = styled.div`
   font-family: ${props => props.theme.font};
-  line-height: 1.4;
+  line-height: 1.5;
 
   * {
     box-sizing: border-box;
