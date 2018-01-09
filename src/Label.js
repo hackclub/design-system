@@ -12,6 +12,11 @@ import theme from './theme'
 const Label = styled.label`
   display: block;
   ${space} ${fontSize} ${color} ${fontWeight};
+
+  a {
+    color: ${props => props.theme.colors.info};
+    text-decoration: underline;
+  }
 `
 
 Label.displayName = 'Label'
