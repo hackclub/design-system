@@ -7,6 +7,11 @@ exports[`Label it renders 1`] = `
   color: #384046;
 }
 
+.c0 a {
+  color: #2d9ee4;
+  text-decoration: underline;
+}
+
 <label
   className="c0"
   color="black"

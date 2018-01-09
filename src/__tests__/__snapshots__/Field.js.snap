@@ -8,6 +8,11 @@ exports[`Field renders 1`] = `
   color: #384046;
 }
 
+.c0 a {
+  color: #2d9ee4;
+  text-decoration: underline;
+}
+
 .c1 {
   margin-bottom: 2px;
   text-align: center;
@@ -108,6 +113,11 @@ exports[`Field with error 1`] = `
   margin-bottom: 8px;
   font-size: 16px;
   color: #384046;
+}
+
+.c0 a {
+  color: #2d9ee4;
+  text-decoration: underline;
 }
 
 .c1 {

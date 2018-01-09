@@ -3,7 +3,7 @@
 exports[`ThemeProvider Base component includes a font 1`] = `
 .c0 {
   font-family: Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .c0 * {
@@ -18,7 +18,7 @@ exports[`ThemeProvider Base component includes a font 1`] = `
 exports[`ThemeProvider renders 1`] = `
 .c0 {
   font-family: Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .c0 * {
