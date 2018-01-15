@@ -10,7 +10,7 @@ exports[`Avatar renders 1`] = `
 
 <img
   className="c0"
-  size="64px"
+  size={64}
   src="https://hackclub.com/team/zach.png"
 />
 `;
