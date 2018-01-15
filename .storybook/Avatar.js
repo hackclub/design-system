@@ -13,15 +13,10 @@ storiesOf('Avatar', module)
   )
   .add('Team', () => (
     <React.Fragment>
-      {[
-        'zach.png',
-        'max.jpg',
-        'lachlan.jpg',
-        'mingjie.jpg',
-        'victor.png',
-        'athul.jpg'
-      ].map(key => (
-        <Avatar mr={2} src={`https://hackclub.com/team/${key}`} key={key} />
-      ))}
+      {['zach.png', 'max.jpg', 'lachlan.jpg', 'mingjie.jpg', 'athul.jpg'].map(
+        key => (
+          <Avatar mr={2} src={`https://hackclub.com/team/${key}`} key={key} />
+        )
+      )}
     </React.Fragment>
   ))
