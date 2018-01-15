@@ -34,17 +34,7 @@ exports[`Section renders 1`] = `
 }
 
 <section
-  align="center"
   className="c0"
   color="white"
-  flexDirection="column"
-  justify="center"
-  px={3}
-  py={
-    Array [
-      4,
-      5,
-    ]
-  }
 />
 `;
