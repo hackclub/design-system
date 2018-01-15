@@ -19,7 +19,7 @@ Avatar.propTypes = {
 
 Avatar.defaultProps = {
   theme,
-  size: '48px'
+  size: 48
 }
 
 export default Avatar

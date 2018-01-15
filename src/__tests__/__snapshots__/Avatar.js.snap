@@ -4,13 +4,28 @@ exports[`Avatar renders 1`] = `
 .c0 {
   border-radius: 9999px;
   display: inline-block;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
 }
 
 <img
   className="c0"
-  size={64}
+  size={48}
+  src="https://hackclub.com/team/zach.png"
+/>
+`;
+
+exports[`Avatar renders string width 1`] = `
+.c0 {
+  border-radius: 9999px;
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+}
+
+<img
+  className="c0"
+  size="10vw"
   src="https://hackclub.com/team/zach.png"
 />
 `;
