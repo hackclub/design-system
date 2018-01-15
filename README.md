@@ -1,6 +1,6 @@
 # Hack Club Design System
 
-https://hackclub.github.io/design-system/
+https://design.hackclub.com/
 
 ```sh
 npm install @hackclub/design-system
