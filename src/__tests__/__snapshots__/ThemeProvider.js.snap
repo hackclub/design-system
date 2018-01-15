@@ -1,31 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThemeProvider Base component includes a font 1`] = `
-.c0 {
-  font-family: Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
-  line-height: 1.5;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`ThemeProvider renders 1`] = `
-.c0 {
-  font-family: Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
-  line-height: 1.5;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
-  className="c0"
-/>
+exports[`ThemeProvider renders nothing 1`] = `
+Array [
+  <div />,
+  <div />,
+  <div />,
+]
 `;

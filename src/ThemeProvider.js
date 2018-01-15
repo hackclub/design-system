@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled, {
-  ThemeProvider as StyledThemeProvider,
-  injectGlobal
-} from 'styled-components'
+import React, { Fragment } from 'react'
+import styled, { ThemeProvider as Root, injectGlobal } from 'styled-components'
 import theme from './theme'
 
 injectGlobal`
 * { box-sizing: border-box; }
-body { margin: 0; }
+body {
+  margin: 0;
+  font-family: ${theme.font};
+  line-height: 1.5;
+}
 
 @font-face {
   font-family: Averta;
@@ -26,19 +26,12 @@ body { margin: 0; }
 }
 `
 
-export const Base = styled.div`
-  font-family: ${props => props.theme.font};
-  line-height: 1.5;
-
-  * {
-    box-sizing: border-box;
-  }
-`
-
 const ThemeProvider = props => (
-  <StyledThemeProvider theme={theme}>
-    <Base {...props} />
-  </StyledThemeProvider>
+  <Root
+    theme={theme}
+    {...props}
+    children={<Fragment>{props.children}</Fragment>}
+  />
 )
 
 export default ThemeProvider
