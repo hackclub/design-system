@@ -5,7 +5,7 @@ import theme from './theme'
 const px = a => (typeof a === 'number' ? `${a}px` : a)
 
 const Avatar = Box.withComponent('img').extend`
-  border-radius: 9999px;
+  border-radius: ${props => props.theme.pill};
   display: inline-block;
   width: ${props => px(props.size)};
   height: ${props => px(props.size)};

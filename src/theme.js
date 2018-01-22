@@ -68,8 +68,9 @@ export const bold = 700
 export const fontWeights = { regular, bold }
 
 // styled-system’s `borderRadius` function can hook into the `radii` object/array
-export const radii = ['0px', '4px', '8px']
+export const radii = ['0px', '4px', '8px', '16px', '9999px']
 export const radius = '4px'
+export const pill = radii[4]
 
 export const shadowColor = 'rgba(0,0,0,0.125)'
 export const boxShadows = [
@@ -92,6 +93,7 @@ const theme = {
   colors,
   radii,
   radius,
+  pill,
   boxShadows,
   shadowColor,
   cx

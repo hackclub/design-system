@@ -212,10 +212,13 @@ Object {
     "@media screen and (min-width:80em)",
   ],
   "mono": "SFMono-Regular,\\"Roboto Mono\\",Menlo,monospace",
+  "pill": "9999px",
   "radii": Array [
     "0px",
     "4px",
     "8px",
+    "16px",
+    "9999px",
   ],
   "radius": "4px",
   "regular": 400,
