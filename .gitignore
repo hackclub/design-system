@@ -2,7 +2,6 @@ node_modules
 npm-debug.log
 coverage
 dist
-yarn.lock
 .site
 icons.json
 .DS_Store
