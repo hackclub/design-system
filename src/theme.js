@@ -74,10 +74,10 @@ export const pill = radii[4]
 
 export const shadowColor = 'rgba(0,0,0,0.125)'
 export const boxShadows = [
-  `0 0 4px 0 ${shadowColor}`,
-  `0 8px 8px 0 ${shadowColor}`,
+  `0 1px 4px 0 ${shadowColor}`,
+  `0 4px 8px 0 ${shadowColor}`,
   `0 16px 16px 0 ${shadowColor}`,
-  `0 32px 32px 0 ${shadowColor}`
+  `0 24px 32px 0 ${shadowColor}`
 ]
 
 const theme = {
