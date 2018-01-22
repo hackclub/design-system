@@ -24,7 +24,7 @@ exports[`LargeButton larger 1`] = `
   -webkit-transition: .125s box-shadow ease-out;
   transition: .125s box-shadow ease-out;
   box-shadow: 0 2px 12px rgba(0,0,0,0.125);
-  border-radius: 4px;
+  border-radius: 9999px;
   border-width: 0;
   border-style: solid;
 }
@@ -76,7 +76,7 @@ exports[`LargeButton renders 1`] = `
   -webkit-transition: .125s box-shadow ease-out;
   transition: .125s box-shadow ease-out;
   box-shadow: 0 2px 12px rgba(0,0,0,0.125);
-  border-radius: 4px;
+  border-radius: 9999px;
   border-width: 0;
   border-style: solid;
 }

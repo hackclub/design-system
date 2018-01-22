@@ -16,7 +16,7 @@ const Button = Box.withComponent('a').extend`
   cursor: pointer;
   transition: .125s box-shadow ease-out;
   box-shadow: 0 2px 12px ${props => props.theme.shadowColor};
-  border-radius: ${props => props.theme.radius};
+  border-radius: ${props => props.theme.pill};
   border-width: 0;
   border-style: solid;
 

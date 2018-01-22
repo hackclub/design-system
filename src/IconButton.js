@@ -9,11 +9,8 @@ const Base = Button.button.extend`
   line-height: 0 !important;
   ${props =>
     props.circle
-      ? {
-          borderRadius: '9999px',
-          padding: props.theme.space[props.p || 2] + 'px'
-        }
-      : null};
+      ? { padding: props.theme.space[props.p || 2] + 'px' }
+      : { borderRadius: props.theme.radius }};
 `
 
 const IconButton = ({ name, size, color, ...props }) => (
