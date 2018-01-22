@@ -31,11 +31,12 @@ exports[`IconButton renders 1`] = `
   -webkit-transition: .125s box-shadow ease-out;
   transition: .125s box-shadow ease-out;
   box-shadow: 0 2px 12px rgba(0,0,0,0.125);
-  border-radius: 4px;
+  border-radius: 9999px;
   border-width: 0;
   border-style: solid;
   box-shadow: none !important;
   line-height: 0 !important;
+  border-radius: 4px;
 }
 
 .c0:hover,
@@ -99,12 +100,11 @@ exports[`IconButton renders with circle prop 1`] = `
   -webkit-transition: .125s box-shadow ease-out;
   transition: .125s box-shadow ease-out;
   box-shadow: 0 2px 12px rgba(0,0,0,0.125);
-  border-radius: 4px;
+  border-radius: 9999px;
   border-width: 0;
   border-style: solid;
   box-shadow: none !important;
   line-height: 0 !important;
-  border-radius: 9999px;
   padding: 8px;
 }
 

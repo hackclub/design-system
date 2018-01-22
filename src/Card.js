@@ -23,9 +23,10 @@ const boxShadow = props => {
 }
 
 const boxBorder = props => ({
-  border: `${props.borderWidth}px solid ${
-    props.theme.colors[props.borderColor]
-  }`
+  border:
+    props.borderWidth > 0
+      ? `${props.borderWidth}px solid ${props.theme.colors[props.borderColor]}`
+      : null
 })
 
 const Card = styled(Box)`
@@ -36,14 +37,14 @@ Card.propTypes = {
   boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   borderColor: PropTypes.string,
   ...propTypes.borderRadius,
-  borderWidth: PropTypes.oneOf([1, 2])
+  borderWidth: PropTypes.oneOf([0, 1, 2])
 }
 
 Card.defaultProps = {
   theme,
   borderColor: 'smoke',
   borderRadius: 1,
-  borderWidth: 1
+  borderWidth: 0
 }
 
 Card.displayName = 'Card'
