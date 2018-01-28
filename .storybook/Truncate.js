@@ -24,8 +24,8 @@ storiesOf('Truncate', module)
         'Use the <Truncate /> component as an extension of the Text component with pure CSS solution to truncate long string with ellipsis.'
     })(() => <Truncate width={50}>{loripsum}</Truncate>)
   )
-  .add('With Container', () => (
-    <Box width={3 / 10}>
+  .add('inside Box', () => (
+    <Box width={1 / 3}>
       <Truncate>{loripsum}</Truncate>
     </Box>
   ))

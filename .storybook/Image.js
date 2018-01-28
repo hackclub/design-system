@@ -11,13 +11,11 @@ storiesOf('Image', module)
     withInfo({
       text: description,
       inline: true
-    })(() => (
-      <Image src="https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg" />
-    ))
+    })(() => <Image src="https://hackclub.com/about_hacking.jpg" />)
   )
 
   .add('Responsive width, with Box', () => (
     <Box width={1 / 2}>
-      <Image src="https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg" />
+      <Image src="https://hackclub.com/about_hacking.jpg" />
     </Box>
   ))

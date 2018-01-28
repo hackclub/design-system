@@ -4,6 +4,12 @@ import { withInfo } from '@storybook/addon-info'
 import { Icon, Flex, Box, Heading, Text } from '../src'
 import icons from '../icons.js'
 
+const Grid = Box.extend`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 96px);
+  grid-gap: 1rem;
+`
+
 storiesOf('Icon', module)
   .add(
     'Icon component',
@@ -13,20 +19,20 @@ storiesOf('Icon', module)
     })(() => <Icon color="primary" size={48} m={2} name="flag" />)
   )
   .add('All icons', () => (
-    <Box p={3} color="white" bg="blue.5">
-      <Heading.h1 fontSize={3} caps>
-        All icons
+    <Box p={3} m={-3} color="white" bg="blue.5">
+      <Heading.h1 f={[4, 5]} mb={3}>
+        All Icons
       </Heading.h1>
-      <Flex wrap>
+      <Grid>
         {Object.keys(icons).map(name => (
-          <Box key={name} w={[1 / 3, 1 / 5, 1 / 8]} m={2}>
+          <Box key={name}>
             <Icon name={name} size={48} />
             <Text m={0} fontSize={0}>
               {name}
             </Text>
           </Box>
         ))}
-      </Flex>
+      </Grid>
     </Box>
   ))
   .add('Color', () => (

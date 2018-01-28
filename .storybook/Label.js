@@ -31,7 +31,7 @@ storiesOf('Label', module)
       <Label pl={3}>A dash of padding</Label>
     </div>
   ))
-  .add('color', () => (
+  .add('Colors', () => (
     <div>
       <Label color="primary">A primary label</Label>
       <Label color="accent">An accent label</Label>

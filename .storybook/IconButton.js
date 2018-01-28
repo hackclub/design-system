@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { storiesOf, action } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { IconButton } from '../src'
@@ -23,10 +23,20 @@ storiesOf('IconButton', module)
     />
   ))
   .add('Disabled close button', () => (
-    <IconButton
-      disabled
-      name="close"
-      color="error"
-      onClick={action('clicked')}
-    />
+    <Fragment>
+      <IconButton
+        disabled
+        name="close"
+        color="error"
+        onClick={action('clicked')}
+      />
+      <IconButton
+        disabled
+        name="close"
+        bg="error"
+        color="white"
+        circle
+        onClick={action('clicked')}
+      />
+    </Fragment>
   ))
