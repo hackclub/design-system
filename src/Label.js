@@ -1,17 +1,9 @@
-import styled from 'styled-components'
-import {
-  color,
-  fontSize,
-  fontWeight,
-  space,
-  width,
-  propTypes
-} from 'styled-system'
+import Text from './Text'
+import { width, propTypes } from 'styled-system'
 import theme from './theme'
 
-const Label = styled.label`
+const Label = Text.withComponent('label').extend`
   display: block;
-  ${space} ${fontSize} ${color} ${fontWeight};
 
   a {
     color: ${props => props.theme.colors.info};
@@ -22,17 +14,13 @@ const Label = styled.label`
 Label.displayName = 'Label'
 
 Label.propTypes = {
-  ...propTypes.color,
-  ...propTypes.fontSize,
-  ...propTypes.fontWeight,
-  ...propTypes.space,
   ...propTypes.width
 }
 
 Label.defaultProps = {
   theme,
   color: 'black',
-  fontSize: 2,
+  f: 2,
   w: 1
 }
 
