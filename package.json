@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "npm run icons && babel src -d dist --ignore __tests__ && npm run fmt",
-    "dev": "start-storybook -p 8000 -c .storybook",
+    "dev": "start-storybook -p 9000 -c .storybook",
     "build": "rm -rf .site && build-storybook -c .storybook -o .site",
-    "start": "serve .site -p 9001",
+    "start": "serve .site -p 9000",
     "deploy": "storybook-to-ghpages",
     "icons": "node scripts/build-icons",
     "fmt": "prettier {.storybook,scripts,src,dist}/**/*.js --single-quote --no-semi --write",
