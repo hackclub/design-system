@@ -1,8 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Card renders lg shadow 1`] = `
+.c0 {
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 12px 12px 0 rgba(0,0,0,0.16);
+  border-radius: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Card renders small box shadow 1`] = `
 .c0 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.125);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 4px 0 rgba(0,0,0,0.16);
   border-radius: 4px;
 }
 

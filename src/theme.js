@@ -72,12 +72,13 @@ export const radii = ['0px', '4px', '8px', '16px', '9999px']
 export const radius = '4px'
 export const pill = radii[4]
 
-export const shadowColor = 'rgba(0,0,0,0.125)'
+export const shadowColor = 'rgba(0,0,0,0.16)'
+export const baseShadow = '0 0 2px 0 rgba(0,0,0,.08),'
 export const boxShadows = [
-  `0 1px 4px 0 ${shadowColor}`,
-  `0 4px 8px 0 ${shadowColor}`,
-  `0 16px 16px 0 ${shadowColor}`,
-  `0 24px 32px 0 ${shadowColor}`
+  baseShadow + `0 2px 4px 0 ${shadowColor}`,
+  baseShadow + `0 4px 8px 0 ${shadowColor}`,
+  baseShadow + `0 12px 12px 0 ${shadowColor}`,
+  baseShadow + `0 24px 24px 0 ${shadowColor}`
 ]
 
 export const filterProps = props =>

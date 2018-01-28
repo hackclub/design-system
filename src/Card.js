@@ -6,9 +6,9 @@ import { borderRadius, propTypes } from 'styled-system'
 const boxShadow = props => {
   const boxShadows = {
     sm: theme.boxShadows[0],
-    md: theme.boxShadows.slice(0, 2).join(', '),
-    lg: theme.boxShadows.slice(0, 3).join(', '),
-    xl: theme.boxShadows.join(', ')
+    md: theme.boxShadows[1],
+    lg: theme.boxShadows[2],
+    xl: theme.boxShadows[3]
   }
   return { boxShadow: boxShadows[props.boxShadowSize] }
 }

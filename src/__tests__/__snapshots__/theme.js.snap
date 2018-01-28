@@ -4,10 +4,10 @@ exports[`theme snapshot 1`] = `
 Object {
   "bold": 700,
   "boxShadows": Array [
-    "0 1px 4px 0 rgba(0,0,0,0.125)",
-    "0 4px 8px 0 rgba(0,0,0,0.125)",
-    "0 16px 16px 0 rgba(0,0,0,0.125)",
-    "0 24px 32px 0 rgba(0,0,0,0.125)",
+    "0 0 2px 0 rgba(0,0,0,.08),0 2px 4px 0 rgba(0,0,0,0.16)",
+    "0 0 2px 0 rgba(0,0,0,.08),0 4px 8px 0 rgba(0,0,0,0.16)",
+    "0 0 2px 0 rgba(0,0,0,.08),0 12px 12px 0 rgba(0,0,0,0.16)",
+    "0 0 2px 0 rgba(0,0,0,.08),0 24px 24px 0 rgba(0,0,0,0.16)",
   ],
   "breakpoints": Array [
     32,
@@ -222,7 +222,7 @@ Object {
   ],
   "radius": "4px",
   "regular": 400,
-  "shadowColor": "rgba(0,0,0,0.125)",
+  "shadowColor": "rgba(0,0,0,0.16)",
   "space": Array [
     0,
     4,

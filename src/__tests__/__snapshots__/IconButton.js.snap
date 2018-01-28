@@ -30,7 +30,7 @@ exports[`IconButton renders 1`] = `
   cursor: pointer;
   -webkit-transition: .125s box-shadow ease-out;
   transition: .125s box-shadow ease-out;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;
   border-style: solid;
@@ -42,12 +42,12 @@ exports[`IconButton renders 1`] = `
 .c0:hover,
 .c0:focus {
   outline: 0;
-  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.125);
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.16);
 }
 
 .c0:active {
   outline: 0;
-  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.125);
+  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.16);
 }
 
 <button
@@ -99,7 +99,7 @@ exports[`IconButton renders with circle prop 1`] = `
   cursor: pointer;
   -webkit-transition: .125s box-shadow ease-out;
   transition: .125s box-shadow ease-out;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;
   border-style: solid;
@@ -111,12 +111,12 @@ exports[`IconButton renders with circle prop 1`] = `
 .c0:hover,
 .c0:focus {
   outline: 0;
-  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.125);
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.16);
 }
 
 .c0:active {
   outline: 0;
-  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.125);
+  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.16);
 }
 
 <button

@@ -10,6 +10,12 @@ describe('Card', () => {
     expect(json).toHaveStyleRule('border-radius', theme.radius)
   })
 
+  test('renders lg shadow', () => {
+    const json = renderer.create(<Card boxShadowSize="lg" />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('box-shadow', theme.boxShadows[2])
+  })
+
   test('renders with 1px border', () => {
     const json = renderer.create(<Card borderWidth={1} />).toJSON()
     expect(json).toMatchSnapshot()
