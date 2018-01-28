@@ -54,7 +54,7 @@ const aliases = ['sm', 'md', 'lg', 'xl']
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
-export const space = [0, 4, 8, 16, 32, 64, 128]
+export const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
 
 export const font = 'Averta,"Avenir Next","Segoe UI",Roboto,sans-serif'
 export const mono = 'SFMono-Regular,"Roboto Mono",Menlo,monospace'
