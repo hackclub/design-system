@@ -17,7 +17,6 @@ exports[`Box color prop sets color 1`] = `
 
 <div
   className="c0"
-  color="warning"
 />
 `;
 
@@ -54,6 +53,5 @@ exports[`Box width prop sets width 1`] = `
 
 <div
   className="c0"
-  width={0.5}
 />
 `;

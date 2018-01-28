@@ -2,10 +2,10 @@
 
 exports[`Field renders 1`] = `
 .c0 {
-  display: block;
-  margin-bottom: 8px;
   font-size: 16px;
+  margin-bottom: 8px;
   color: #384046;
+  display: block;
 }
 
 .c0 a {
@@ -87,19 +87,15 @@ exports[`Field renders 1`] = `
 <label
   className="text c0"
   color="black"
-  fontSize={2}
   id="renders"
 >
   <div
     className="c1"
-    wrap={true}
   >
     Renders
   </div>
   <input
     className="c2"
-    color="inherit"
-    fontSize={2}
     name="renders"
     placeholder={undefined}
     type="text"
@@ -109,10 +105,10 @@ exports[`Field renders 1`] = `
 
 exports[`Field with error 1`] = `
 .c0 {
-  display: block;
-  margin-bottom: 8px;
   font-size: 16px;
+  margin-bottom: 8px;
   color: #384046;
+  display: block;
 }
 
 .c0 a {
@@ -209,28 +205,20 @@ exports[`Field with error 1`] = `
 <label
   className="text c0"
   color="black"
-  fontSize={2}
   id="error"
 >
   <div
     className="c1"
-    wrap={true}
   >
     Error
     <p
       className="error c2"
-      color="error"
-      f={1}
-      ml={1}
-      my={0}
     >
       error message
     </p>
   </div>
   <input
     className="c3"
-    color="inherit"
-    fontSize={2}
     name="error"
     placeholder={undefined}
     type="text"

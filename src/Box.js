@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
@@ -5,15 +6,18 @@ import {
   width,
   color,
   fontSize,
+  textAlign,
   responsiveStyle,
   propTypes
 } from 'styled-system'
-import theme from './theme'
+import theme, { filterProps } from './theme'
 
-const align = responsiveStyle('text-align', 'align')
-const Box = styled.div`
-  ${space} ${width} ${color} ${fontSize} ${align};
-`
+const Base = props => {
+  const next = filterProps(props)
+  return <div {...next} />
+}
+
+const Box = styled(Base)([], space, width, color, fontSize, textAlign)
 
 Box.displayName = 'Box'
 
@@ -22,7 +26,7 @@ Box.defaultProps = {
 }
 
 Box.propTypes = {
-  align: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
+  ...propTypes.textAlign,
   ...propTypes.fontSize,
   ...propTypes.space,
   ...propTypes.color

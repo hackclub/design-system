@@ -1,5 +1,7 @@
 import palx from 'palx'
 import dotProp from 'dot-prop'
+import { omit } from 'lodash'
+import { removeProps } from 'styled-system'
 
 const red = '#e42d42'
 const blue = '#2d9ce4'
@@ -79,6 +81,24 @@ export const boxShadows = [
   `0 16px 16px 0 ${shadowColor}`,
   `0 24px 32px 0 ${shadowColor}`
 ]
+
+export const filterProps = props =>
+  omit(removeProps(props), [
+    'theme',
+    'sm',
+    'md',
+    'lg',
+    'xl',
+    'color',
+    'fontSize',
+    'f',
+    'image',
+    'maxWidth',
+    'bold',
+    'regular',
+    'caps',
+    'wrap'
+  ])
 
 const theme = {
   breakpoints,

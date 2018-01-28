@@ -8,7 +8,7 @@ storiesOf('Card', module)
     'Card component',
     withInfo({
       inline: true,
-      text: 'Box extendsion to control box-shadow.'
+      text: 'Box extension to control box-shadow.'
     })(() => (
       <div>
         <Card

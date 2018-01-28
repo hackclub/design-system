@@ -2,9 +2,9 @@
 
 exports[`Label it renders 1`] = `
 .c0 {
-  display: block;
   font-size: 16px;
   color: #384046;
+  display: block;
 }
 
 .c0 a {
@@ -15,6 +15,5 @@ exports[`Label it renders 1`] = `
 <label
   className="c0"
   color="black"
-  fontSize={2}
 />
 `;

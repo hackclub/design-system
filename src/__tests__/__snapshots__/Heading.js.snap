@@ -18,8 +18,8 @@ exports[`Heading uses <Text> component properties 1`] = `
   font-size: 32px;
   margin: 0px;
   color: #e42d42;
-  font-weight: 400;
   text-align: center;
+  font-weight: 400;
   line-height: 1.25;
 }
 

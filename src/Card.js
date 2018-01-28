@@ -5,20 +5,12 @@ import { borderRadius, propTypes } from 'styled-system'
 
 const boxShadow = props => {
   const boxShadows = {
-    sm: {
-      'box-shadow': props.theme.boxShadows[0]
-    },
-    md: {
-      'box-shadow': props.theme.boxShadows.slice(0, 2).join(', ')
-    },
-    lg: {
-      'box-shadow': props.theme.boxShadows.slice(0, 3).join(', ')
-    },
-    xl: {
-      'box-shadow': props.theme.boxShadows.join(', ')
-    }
+    sm: theme.boxShadows[0],
+    md: theme.boxShadows.slice(0, 2).join(', '),
+    lg: theme.boxShadows.slice(0, 3).join(', '),
+    xl: theme.boxShadows.join(', ')
   }
-  return boxShadows[props.boxShadowSize]
+  return { boxShadow: boxShadows[props.boxShadowSize] }
 }
 
 const boxBorder = props => ({
@@ -31,9 +23,11 @@ const boxBorder = props => ({
 const Card = Box.extend([], boxShadow, boxBorder, borderRadius)
 
 Card.propTypes = {
-  boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  /** use scale alias for theme values or null to remove shadow */
+  boxShadowSize: PropTypes.oneOf([null, 'sm', 'md', 'lg', 'xl']),
   borderColor: PropTypes.string,
   ...propTypes.borderRadius,
+  /** use 0 to remove border */
   borderWidth: PropTypes.oneOf([0, 1, 2])
 }
 

@@ -1,14 +1,16 @@
+import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
   fontSize,
   fontWeight,
+  textAlign,
   space,
   color,
   responsiveStyle,
   propTypes
 } from 'styled-system'
-import theme from './theme'
+import theme, { filterProps } from './theme'
 
 export const caps = props =>
   props.caps ? { textTransform: 'uppercase' } : null
@@ -19,22 +21,32 @@ export const regular = props =>
 export const bold = props =>
   props.bold ? { fontWeight: props.theme.bold } : null
 
-const align = responsiveStyle('text-align', 'align')
+const Base = props => {
+  const next = filterProps(props)
+  return <p {...next} />
+}
 
-const Text = styled.p`
-  ${fontSize} ${space} ${color} ${caps} ${bold} ${regular} ${fontWeight} ${align};
-`
+const Text = styled(Base)(
+  [],
+  fontSize,
+  space,
+  color,
+  caps,
+  textAlign,
+  bold,
+  regular,
+  fontWeight
+)
 
 Text.displayName = 'Text'
 
-const alignTypes = ['left', 'center', 'right', 'justify']
 Text.propTypes = {
-  align: PropTypes.oneOf(alignTypes, PropTypes.arrayOf(alignTypes)),
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,
   ...propTypes.fontSize,
   ...propTypes.fontWeight,
+  ...propTypes.textAlign,
   ...propTypes.space,
   ...propTypes.color
 }

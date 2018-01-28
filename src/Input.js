@@ -1,6 +1,7 @@
+import React from 'react'
 import styled from 'styled-components'
 import { fontSize, space, width, color, propTypes } from 'styled-system'
-import theme from './theme'
+import theme, { filterProps } from './theme'
 import PropTypes from 'prop-types'
 
 const chevron = () => {
@@ -10,7 +11,12 @@ const chevron = () => {
   return `%3Csvg ${props}%3E%3Cpath ${pathProps}/%3E%3C/svg%3E`
 }
 
-const Input = styled.input`
+const Base = props => {
+  const next = filterProps(props)
+  return <input {...next} />
+}
+
+const Input = styled(Base)`
   appearance: none;
   display: block;
   vertical-align: middle;

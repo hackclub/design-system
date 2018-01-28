@@ -58,8 +58,6 @@ exports[`Input renders 1`] = `
 
 <input
   className="c0"
-  color="inherit"
-  fontSize={2}
   id="renders"
 />
 `;
@@ -122,8 +120,6 @@ exports[`Input renders with custom fontSize 1`] = `
 
 <input
   className="c0"
-  color="inherit"
-  fontSize={4}
   id="fontSize"
 />
 `;
@@ -187,8 +183,6 @@ exports[`Input renders with custom spacing 1`] = `
 
 <input
   className="c0"
-  color="inherit"
-  fontSize={2}
   id="space"
 />
 `;

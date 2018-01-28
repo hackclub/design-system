@@ -77,6 +77,5 @@ exports[`Flex wrap prop 1`] = `
 
 <div
   className="c0"
-  wrap={true}
 />
 `;
