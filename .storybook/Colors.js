@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { Box, Flex, Text, theme } from '../src'
+import { Box, Flex, Text, Heading, theme } from '../src'
 
 const keys = Object.keys(theme.colors).filter(
   key => !Array.isArray(theme.colors[key])
@@ -27,9 +27,9 @@ const Card = ({ name, color }) => (
 
 storiesOf('Color', module).add('Palette', () => (
   <div>
-    <Box p={3}>
-      <h1>Color Palette</h1>
-    </Box>
+    <Heading.h1 p={3} f={[4, 5]}>
+      Color Palette
+    </Heading.h1>
     <Flex wrap>
       {next.map(
         color =>
