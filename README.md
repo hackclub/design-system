@@ -3,7 +3,7 @@
 https://design.hackclub.com/
 
 ```sh
-npm install @hackclub/design-system
+yarn add @hackclub/design-system
 ```
 
 This project is heavily inspired by [Priceline.com’s design system][pcln].

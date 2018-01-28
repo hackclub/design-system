@@ -45,7 +45,7 @@ storiesOf('👋 Welcome!', module).add('About the project', () => (
       </Item>
     </List>
     <Code bg="snow" p={3} my={3}>
-      npm install @hackclub/design-system
+      yarn add @hackclub/design-system
     </Code>
     <Flex align="center" wrap>
       <Button
