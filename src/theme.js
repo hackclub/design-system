@@ -83,11 +83,14 @@ export const boxShadows = [
 export const filterProps = props =>
   omit(removeProps(props), [
     'theme',
+    'xs',
     'sm',
     'md',
     'lg',
     'xl',
     'color',
+    'bg',
+    'fill',
     'fontSize',
     'f',
     'image',
@@ -95,7 +98,10 @@ export const filterProps = props =>
     'bold',
     'regular',
     'caps',
-    'wrap'
+    'wrap',
+    'size',
+    'height',
+    'boxShadowSize'
   ])
 
 const theme = {

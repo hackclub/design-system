@@ -24,7 +24,6 @@ exports[`BackgroundImage renders with height 1`] = `
 
 <div
   className="c0"
-  height="256px"
 />
 `;
 

@@ -7,7 +7,6 @@ exports[`Card renders small box shadow 1`] = `
 }
 
 <div
-  boxShadowSize="sm"
   className="c0"
 />
 `;

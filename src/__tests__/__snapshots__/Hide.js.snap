@@ -63,6 +63,5 @@ exports[`Hide renders with xs prop 1`] = `
 
 <div
   className="c0"
-  xs={true}
 />
 `;
