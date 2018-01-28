@@ -37,4 +37,10 @@ describe('Box', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.accent)
   })
+
+  test('bg prop sets custom background color', () => {
+    const json = renderer.create(<Box bg="#ff6d00" />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-color', '#ff6d00')
+  })
 })

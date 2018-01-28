@@ -10,6 +10,16 @@ exports[`Box bg prop sets background color 1`] = `
 />
 `;
 
+exports[`Box bg prop sets custom background color 1`] = `
+.c0 {
+  background-color: #ff6d00;
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Box color prop sets color 1`] = `
 .c0 {
   color: #e4732d;

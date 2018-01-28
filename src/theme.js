@@ -1,6 +1,5 @@
 import palx from 'palx'
-import dotProp from 'dot-prop'
-import { omit } from 'lodash'
+import { get, omit } from 'lodash'
 import { removeProps } from 'styled-system'
 
 const red = '#e42d42'
@@ -32,8 +31,7 @@ export const colors = {
   ...palette
 }
 
-export const cx = key =>
-  dotProp.has(colors, key) ? dotProp.get(colors, key) : key
+export const cx = key => get(colors, key, key)
 
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
