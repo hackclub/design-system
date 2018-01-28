@@ -2,14 +2,17 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { ThemeProvider, theme } from '..'
 import { Base } from '../ThemeProvider'
+import styled from 'styled-components'
+
+const Content = styled.p`
+  color: ${props => props.theme.colors.primary};
+`
 
 describe('ThemeProvider', () => {
-  test('renders nothing', () => {
+  test('renders content with theme', () => {
     const json = renderer.create(
       <ThemeProvider>
-        <div />
-        <div />
-        <div />
+        <Content>Hello!</Content>
       </ThemeProvider>
     )
     expect(json).toMatchSnapshot()

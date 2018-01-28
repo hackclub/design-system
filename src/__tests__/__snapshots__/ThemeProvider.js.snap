@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThemeProvider renders nothing 1`] = `
-Array [
-  <div />,
-  <div />,
-  <div />,
-]
+exports[`ThemeProvider renders content with theme 1`] = `
+.c0 {
+  color: #e42d42;
+}
+
+<p
+  className="c0"
+>
+  Hello!
+</p>
 `;
