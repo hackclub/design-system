@@ -17,18 +17,18 @@
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.5",
     "palx": "^1.0.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "serve": "^6.4.9",
-    "styled-components": "^3.0.2",
-    "styled-system": "^1.1.1"
+    "styled-components": "^3.1.6",
+    "styled-system": "^1.1.4"
   },
   "devDependencies": {
-    "@storybook/addon-info": "v3.3.11",
-    "@storybook/react": "v3.3.11",
+    "@storybook/addon-info": "v3.3.12",
+    "@storybook/react": "v3.3.12",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
