@@ -20,6 +20,11 @@ const Base = props => {
 const Box = styled(Base)([], space, width, color, fontSize, textAlign)
 
 Box.displayName = 'Box'
+Box.header = Box.withComponent('header')
+Box.main = Box.withComponent('main')
+Box.article = Box.withComponent('article')
+Box.section = Box.withComponent('section')
+Box.footer = Box.withComponent('footer')
 
 Box.defaultProps = {
   theme
