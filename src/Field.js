@@ -39,7 +39,7 @@ Field.displayName = 'Field'
 
 Field.propTypes = {
   /** choose alternate field type (like email, textarea, or select) */
-  type: PropTypes.oneOf(['text', 'email', 'password', 'textarea', 'select']),
+  type: PropTypes.oneOf(['text', 'email', 'password', 'textarea', 'select', 'number']),
   name: PropTypes.string.isRequired,
   /** label text */
   label: PropTypes.string.isRequired,
