@@ -14,7 +14,6 @@ export const Error = Text.extend.attrs({
   my: 0
 })`
   font-weight: normal;
-  text-transform: lowercase;
   &:before { content: '— '; }
 `
 
