@@ -1,8 +1,23 @@
 import PropTypes from 'prop-types'
 import Button from './Button'
-import theme from './theme'
+import theme, { hexa } from './theme'
 
-const LargeButton = Button.extend``
+const LargeButton = Button.extend`
+  box-shadow: 0 2px 12px ${props => props.theme.shadowColor};
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 12px 2px
+      ${props =>
+        props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
+  }
+
+  &:active {
+    box-shadow: 0 4px 16px 2px
+      ${props =>
+        props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
+  }
+`
 
 LargeButton.displayName = 'LargeButton'
 
