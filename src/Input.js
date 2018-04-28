@@ -29,7 +29,7 @@ const Input = styled(Base)`
   border-width: 1px;
   border-style: solid;
   border-color: ${props => props.theme.colors.smoke};
-  transition: 0.125s box-shadow ease-out;
+  transition: ${props => props.theme.transition} box-shadow;
 
   ::placeholder {
     color: ${props => props.theme.colors.grey};
