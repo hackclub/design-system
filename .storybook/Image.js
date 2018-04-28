@@ -3,19 +3,23 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Image, Box } from '../src'
 
-const description = 'A low-level layout component that renders an image'
+const text = 'A low-level layout component that renders an image'
+const props = {
+  src: 'https://hackclub.com/lah_1.jpg',
+  alt: 'Smiling students at a hackathon'
+}
 
 storiesOf('Image', module)
   .add(
     'Image component',
     withInfo({
-      text: description,
+      text,
       inline: true
-    })(() => <Image src="https://hackclub.com/about_hacking.jpg" />)
+    })(() => <Image {...props} />)
   )
 
   .add('Responsive width, with Box', () => (
     <Box width={1 / 2}>
-      <Image src="https://hackclub.com/about_hacking.jpg" />
+      <Image {...props} />
     </Box>
   ))
