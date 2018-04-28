@@ -8,9 +8,7 @@ const Base = Button.button.extend`
   box-shadow: none !important;
   line-height: 0 !important;
   ${props =>
-    props.circle
-      ? { padding: props.theme.space[props.p || 2] + 'px' }
-      : { borderRadius: props.theme.radius }};
+    props.circle && { padding: props.theme.space[props.p || 2] + 'px' }};
 `
 
 const IconButton = ({ name, size, color, ...props }) => (

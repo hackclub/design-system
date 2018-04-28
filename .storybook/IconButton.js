@@ -13,7 +13,15 @@ storiesOf('IconButton', module)
       <IconButton name="close" color="error" onClick={action('clicked')} />
     ))
   )
-  .add('Plus button', () => (
+  .add('Rectangular button', () => (
+    <IconButton
+      name="send"
+      bg="info"
+      color="white"
+      onClick={action('clicked')}
+    />
+  ))
+  .add('Circular button', () => (
     <IconButton
       name="add"
       bg="success"
@@ -22,7 +30,7 @@ storiesOf('IconButton', module)
       onClick={action('clicked')}
     />
   ))
-  .add('Disabled close button', () => (
+  .add('Disabled circular buttons', () => (
     <Fragment>
       <IconButton
         disabled
