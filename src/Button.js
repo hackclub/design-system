@@ -44,7 +44,7 @@ const Button = Box.withComponent('a').extend`
         : props.theme.shadowColor};
   }
 
-  ${props => (props.disabled ? 'opacity: 0.25' : null)};
+  ${props => props.disabled && { opacity: 0.25, cursor: 'not-allowed' }};
 `
 
 Button.displayName = 'Button'
