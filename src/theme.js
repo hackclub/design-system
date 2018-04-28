@@ -81,6 +81,19 @@ export const boxShadows = [
   baseShadow + `0 24px 24px 0 ${shadowColor}`
 ]
 
+export const hexa = (color, alpha) => {
+  const hex = cx(color)
+  const r = parseInt(hex.slice(1, 3), 16),
+    g = parseInt(hex.slice(3, 5), 16),
+    b = parseInt(hex.slice(5, 7), 16)
+
+  if (alpha >= 0) {
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`
+  } else {
+    return `rgb(${r}, ${g}, ${b})`
+  }
+}
+
 export const filterProps = props =>
   omit(removeProps(props), [
     'theme',
@@ -121,7 +134,8 @@ const theme = {
   pill,
   boxShadows,
   shadowColor,
-  cx
+  cx,
+  hexa
 }
 
 export default theme
