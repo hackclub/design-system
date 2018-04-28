@@ -26,15 +26,16 @@ describe('Button', () => {
     const json = renderer.create(<Button disabled />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('opacity', '0.25')
+    expect(json).toHaveStyleRule('cursor', 'not-allowed')
   })
 
   test('without disabled prop sets', () => {
-    const json = renderer.create(<Button bg="success" />).toJSON()
+    const json = renderer.create(<Button bg="success" inverted />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.success)
+    expect(json).toHaveStyleRule('color', theme.colors.success)
     expect(json).toHaveStyleRule(
       'box-shadow',
-      `0 2px 12px 2px ${theme.shadowColor}`,
+      `0 2px 6px ${theme.shadowColor}`,
       {
         modifier: ':hover'
       }

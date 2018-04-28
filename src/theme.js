@@ -1,5 +1,5 @@
 import palx from 'palx'
-import { get, omit } from 'lodash'
+import { includes, get, omit } from 'lodash'
 import { removeProps } from 'styled-system'
 
 const red = '#e42d42'
@@ -72,9 +72,9 @@ export const bold = 700
 export const fontWeights = { regular, bold }
 
 // styled-system’s `borderRadius` function can hook into the `radii` object/array
-export const radii = ['0px', '4px', '8px', '16px', '9999px']
+export const pill = '9999px'
+export const radii = ['0px', '4px', '8px', '16px', pill]
 export const radius = '4px'
-export const pill = radii[4]
 
 export const shadowColor = 'rgba(0,0,0,0.16)'
 export const baseShadow = '0 0 2px 0 rgba(0,0,0,.08),'
@@ -87,6 +87,7 @@ export const boxShadows = [
 
 export const hexa = (color, alpha) => {
   const hex = cx(color)
+  if (!includes(hex, '#')) return shadowColor
   const r = parseInt(hex.slice(1, 3), 16),
     g = parseInt(hex.slice(3, 5), 16),
     b = parseInt(hex.slice(5, 7), 16)
