@@ -1,17 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Divider borderColor prop sets borderColor 1`] = `
+exports[`Divider bg prop sets background-color 1`] = `
 .c0 {
   margin-left: 0px;
   margin-right: 0px;
+  background-color: accent;
+  height: 3px;
   border: 0;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-color: accent;
+  background-color: #7280ed;
 }
 
 <hr
   className="c0"
+  height="3px"
+/>
+`;
+
+exports[`Divider borderColor prop sets background-color 1`] = `
+.c0 {
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 3px;
+  border: 0;
+  background-color: #7280ed;
+}
+
+<hr
+  className="c0"
+  height="3px"
+/>
+`;
+
+exports[`Divider color prop sets background-color 1`] = `
+.c0 {
+  margin-left: 0px;
+  margin-right: 0px;
+  color: accent;
+  height: 3px;
+  border: 0;
+  background-color: #7280ed;
+}
+
+<hr
+  className="c0"
+  color="accent"
+  height="3px"
+/>
+`;
+
+exports[`Divider height prop 1`] = `
+.c0 {
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 4px;
+  border: 0;
+  background-color: #dde1e4;
+}
+
+<hr
+  className="c0"
+  height="4px"
 />
 `;
 
@@ -19,13 +67,13 @@ exports[`Divider renders 1`] = `
 .c0 {
   margin-left: 0px;
   margin-right: 0px;
+  height: 3px;
   border: 0;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-color: smoke;
+  background-color: #dde1e4;
 }
 
 <hr
   className="c0"
+  height="3px"
 />
 `;

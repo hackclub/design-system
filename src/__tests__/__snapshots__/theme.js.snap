@@ -188,7 +188,7 @@ Object {
     ],
   },
   "cx": [Function],
-  "font": "Averta,\\"Avenir Next\\",\\"Segoe UI\\",Roboto,sans-serif",
+  "font": "Averta,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif",
   "fontSizes": Array [
     12,
     14,
@@ -205,12 +205,15 @@ Object {
     "bold": 700,
     "regular": 400,
   },
-  "mediaQueries": Array [
-    "@media screen and (min-width:32em)",
-    "@media screen and (min-width:48em)",
-    "@media screen and (min-width:64em)",
-    "@media screen and (min-width:80em)",
-  ],
+  "hexa": [Function],
+  "mediaQueries": Object {
+    "0": "@media screen and (min-width:32em)",
+    "1": "@media screen and (min-width:48em)",
+    "2": "@media screen and (min-width:64em)",
+    "3": "@media screen and (min-width:80em)",
+    "reduceMotion": "@media (prefers-reduced-motion: reduce)",
+    "reduceTransparency": "@media (prefers-reduced-transparency: reduce)",
+  },
   "mono": "SFMono-Regular,\\"Roboto Mono\\",Menlo,monospace",
   "pill": "9999px",
   "radii": Array [

@@ -10,6 +10,7 @@ exports[`Field renders 1`] = `
 
 .c0 a {
   color: #2d9ee4;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
@@ -113,6 +114,7 @@ exports[`Field with error 1`] = `
 
 .c0 a {
   color: #2d9ee4;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
@@ -195,7 +197,6 @@ exports[`Field with error 1`] = `
   margin-bottom: 0px;
   color: #b52434;
   font-weight: normal;
-  text-transform: lowercase;
 }
 
 .c2:before {
