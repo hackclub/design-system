@@ -56,7 +56,8 @@ addAliases(mediaQueries, aliases)
 
 export const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
 
-export const font = 'Averta,"Avenir Next","Segoe UI",Roboto,sans-serif'
+export const font =
+  'Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif'
 export const mono = 'SFMono-Regular,"Roboto Mono",Menlo,monospace'
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 64, 72, 96]
