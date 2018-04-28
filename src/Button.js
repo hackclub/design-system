@@ -57,7 +57,6 @@ Button.defaultProps = {
   theme,
   bg: 'primary',
   color: 'white',
-  inverted: false,
   f: 3,
   m: 0,
   px: 3,
