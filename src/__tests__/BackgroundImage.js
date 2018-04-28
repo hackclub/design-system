@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { BackgroundImage } from '..'
+import { theme, BackgroundImage } from '..'
 
 const props = {
   src:
@@ -21,5 +21,16 @@ describe('BackgroundImage', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('height', '256px')
+  })
+
+  test('scale', () => {
+    const json = renderer.create(<BackgroundImage scale {...props} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-size', 'auto 100%')
+    expect(json).toHaveStyleRule(
+      'background-size',
+      `auto ${theme.scaleFactor * 100}%`,
+      { modifier: ':hover' }
+    )
   })
 })

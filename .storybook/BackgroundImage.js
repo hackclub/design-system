@@ -23,21 +23,24 @@ storiesOf('BackgroundImage', module)
       </BackgroundImage>
     ))
   )
-  .add('Fixed Height', () => (
+  .add('Fixed height', () => (
     <BackgroundImage height={256} width={512} {...props}>
-      <Box p={4}>
-        <Text fontSize={6} bold align="center" color="white">
-          Hello
-        </Text>
-      </Box>
+      <Text fontSize={6} bold align="center" color="white" p={4}>
+        Height
+      </Text>
     </BackgroundImage>
   ))
   .add('Responsive', () => (
-    <BackgroundImage width={[128, 256, 512]} height={256} {...props}>
-      <Box p={4}>
-        <Text fontSize={6} bold align="center" color="white">
-          Hello
-        </Text>
-      </Box>
+    <BackgroundImage width={[128, 256, 512]} height="256px" {...props}>
+      <Text fontSize={6} bold align="center" color="white" p={4}>
+        Hello
+      </Text>
+    </BackgroundImage>
+  ))
+  .add('Scale', () => (
+    <BackgroundImage height="512px" scale {...props}>
+      <Text fontSize={6} bold align="center" color="white" p={4}>
+        Hover
+      </Text>
     </BackgroundImage>
   ))
