@@ -197,6 +197,77 @@ exports[`Button renders 1`] = `
 />
 `;
 
+exports[`Button scale 1`] = `
+.c0 {
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.125;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition: .125s box-shadow ease-out;
+  transition: .125s box-shadow ease-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+  border-radius: 9999px;
+  border-width: 0;
+  border-style: solid;
+  -webkit-transition: -webkit-transform 0.125s ease-out;
+  -webkit-transition: transform 0.125s ease-out;
+  transition: transform 0.125s ease-out;
+  will-change: transform;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 6px rgba(228,45,66,0.25);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
+}
+
+.c0:hover,
+.c0:focus {
+  -webkit-transform: scale(1.0625);
+  -ms-transform: scale(1.0625);
+  transform: scale(1.0625);
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+  }
+}
+
+<a
+  className="c0"
+  color="white"
+  scale={true}
+/>
+`;
+
 exports[`Button without disabled prop sets 1`] = `
 .c0 {
   margin: 0px;

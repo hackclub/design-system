@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Box from './Box'
 import theme, { cx, hexa } from './theme'
+import { css } from 'styled-components'
 
 const Button = Box.withComponent('a').extend`
   -webkit-font-smoothing: antialiased;
@@ -39,6 +40,19 @@ const Button = Box.withComponent('a').extend`
   }
 
   ${props => props.disabled && { opacity: 0.25, cursor: 'not-allowed' }};
+
+  ${props => props.scale && css`
+    transition: transform 0.125s ease-out;
+    will-change: transform;
+    transform: scale(1);
+    &:hover,
+    &:focus {
+      transform: scale(${props => props.theme.scaleFactor});
+    }
+    ${props => props.theme.mediaQueries.reduceMotion} {
+      transform: none !important;
+    }
+  `};
 `
 
 Button.displayName = 'Button'

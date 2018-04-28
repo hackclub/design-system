@@ -225,6 +225,7 @@ Object {
   ],
   "radius": "4px",
   "regular": 400,
+  "scaleFactor": 1.0625,
   "shadowColor": "rgba(0,0,0,0.16)",
   "space": Array [
     0,

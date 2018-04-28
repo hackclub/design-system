@@ -71,6 +71,8 @@ export const bold = 700
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = { regular, bold }
 
+export const scaleFactor = 17/16
+
 // styled-system’s `borderRadius` function can hook into the `radii` object/array
 export const pill = '9999px'
 export const radii = ['0px', '4px', '8px', '16px', pill]
@@ -137,6 +139,7 @@ const theme = {
   radii,
   radius,
   pill,
+  scaleFactor,
   boxShadows,
   shadowColor,
   cx,

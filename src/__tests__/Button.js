@@ -22,6 +22,18 @@ describe('Button', () => {
     expect(json).toHaveStyleRule('color', theme.colors.accent)
   })
 
+  test('scale', () => {
+    const json = renderer.create(<Button scale />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('will-change', 'transform')
+    expect(json).toHaveStyleRule('transform', 'scale(1)')
+    expect(json).toHaveStyleRule(
+      'transform',
+      `scale(${theme.scaleFactor})`,
+      { modifier: ':hover' }
+    )
+  })
+
   test('disabled prop sets', () => {
     const json = renderer.create(<Button disabled />).toJSON()
     expect(json).toMatchSnapshot()
@@ -36,9 +48,7 @@ describe('Button', () => {
     expect(json).toHaveStyleRule(
       'box-shadow',
       `0 2px 6px ${theme.shadowColor}`,
-      {
-        modifier: ':hover'
-      }
+      { modifier: ':hover' }
     )
   })
 })
