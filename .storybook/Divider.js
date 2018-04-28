@@ -3,25 +3,21 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Divider, Flex } from '../src'
 
-const ColumnFlex = Flex.extend`
-  flex-direction: column;
-`
-
 storiesOf('Divider', module)
   .add(
     'Divider component',
     withInfo({
-      text:
-        'Styled <hr /> with settings for padding, margin, width, and borderColor',
+      text: 'Styled <hr /> with settings for padding, margin, width, and color',
       inline: true
     })(() => <Divider />)
   )
   .add('Margin', () => <Divider m={3} />)
-  .add('Width', () => <Divider p={3} width={1 / 2} />)
-  .add('Pixel Width', () => <Divider width={256} />)
-  .add('VW Width', () => <Divider width="50vw" />)
-  .add('Border Color', () => <Divider m={3} borderColor="accent" />)
-  .add('Directional Margin', () => (
+  .add('Width', () => <Divider m={3} width={1 / 2} />)
+  .add('Pixel width', () => <Divider width={256} />)
+  .add('VW width', () => <Divider width="50vw" />)
+  .add('Color', () => <Divider m={3} color="accent" />)
+  .add('Height', () => <Divider m={3} color="accent" height="4px" />)
+  .add('Directional margin', () => (
     <div>
       <Divider mt={3} />
       <Divider mr={3} />
@@ -31,12 +27,12 @@ storiesOf('Divider', module)
       <Divider my={3} />
     </div>
   ))
-  .add('Inside Column Flex', () => (
-    <ColumnFlex>
+  .add('Inside flex column', () => (
+    <Flex flexDirection="column">
       <Divider />
       <Divider ml={4} mr={4} />
       <Divider ml={4} />
       <Divider ml={4} mr={5} />
       <Divider mx={2} />
-    </ColumnFlex>
+    </Flex>
   ))

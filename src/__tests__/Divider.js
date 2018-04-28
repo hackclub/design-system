@@ -8,9 +8,15 @@ describe('Divider', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('borderColor prop sets borderColor', () => {
-    const json = renderer.create(<Divider borderColor="accent" />).toJSON()
+  test('color prop sets background-color', () => {
+    const json = renderer.create(<Divider color="accent" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-color', 'accent')
+    expect(json).toHaveStyleRule('background-color', theme.colors.accent)
+  })
+
+  test('height prop', () => {
+    const json = renderer.create(<Divider height="4px" />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('height', '4px')
   })
 })
