@@ -15,7 +15,7 @@ const Button = Box.withComponent('a').extend`
   line-height: 1.125;
   appearance: none;
   cursor: pointer;
-  transition: .125s box-shadow ease-out;
+  transition: ${props => props.theme.transition} box-shadow;
   box-shadow: 0 2px 4px ${props => props.theme.shadowColor};
   border-radius: ${props => props.theme.pill};
   border-width: 0;
@@ -42,7 +42,7 @@ const Button = Box.withComponent('a').extend`
   ${props => props.disabled && { opacity: 0.25, cursor: 'not-allowed' }};
 
   ${props => props.scale && css`
-    transition: transform 0.125s ease-out;
+    transition: ${props => props.theme.transition} all;
     will-change: transform;
     transform: scale(1);
     &:hover,
@@ -58,7 +58,10 @@ const Button = Box.withComponent('a').extend`
 Button.displayName = 'Button'
 
 Button.propTypes = {
-  inverted: PropTypes.bool
+  /** flip colors */
+  inverted: PropTypes.bool,
+  /** add hover/focus animation */
+  scale: PropTypes.bool
 }
 
 Button.defaultProps = {

@@ -72,6 +72,7 @@ export const bold = 700
 export const fontWeights = { regular, bold }
 
 export const scaleFactor = 17/16
+export const transition = '0.125s ease-out'
 
 // styled-system’s `borderRadius` function can hook into the `radii` object/array
 export const pill = '9999px'
@@ -140,6 +141,7 @@ const theme = {
   radius,
   pill,
   scaleFactor,
+  transition,
   boxShadows,
   shadowColor,
   cx,

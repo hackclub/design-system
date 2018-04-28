@@ -27,11 +27,9 @@ describe('Button', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('will-change', 'transform')
     expect(json).toHaveStyleRule('transform', 'scale(1)')
-    expect(json).toHaveStyleRule(
-      'transform',
-      `scale(${theme.scaleFactor})`,
-      { modifier: ':hover' }
-    )
+    expect(json).toHaveStyleRule('transform', `scale(${theme.scaleFactor})`, {
+      modifier: ':hover'
+    })
   })
 
   test('disabled prop sets', () => {

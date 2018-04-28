@@ -22,8 +22,8 @@ exports[`OutlineButton disabled prop sets 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  -webkit-transition: .125s box-shadow ease-out;
-  transition: .125s box-shadow ease-out;
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;
@@ -78,8 +78,8 @@ exports[`OutlineButton renders 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  -webkit-transition: .125s box-shadow ease-out;
-  transition: .125s box-shadow ease-out;
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;
@@ -131,8 +131,8 @@ exports[`OutlineButton with custom color 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  -webkit-transition: .125s box-shadow ease-out;
-  transition: .125s box-shadow ease-out;
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;

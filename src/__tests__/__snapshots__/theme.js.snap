@@ -238,5 +238,6 @@ Object {
     256,
     512,
   ],
+  "transition": "0.125s ease-out",
 }
 `;
