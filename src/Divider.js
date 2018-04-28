@@ -1,13 +1,13 @@
 import Box from './Box'
 import PropTypes from 'prop-types'
-import theme, { cx } from './theme'
+import { cx } from './theme'
 
 const Divider = Box.withComponent('hr').extend`
   height: ${props => props.height};
   border: 0;
   border-radius: ${props => props.theme.pill};
   background-color: ${props =>
-    cx(props.color || props.borderColor || props.bg || theme.colors.smoke)};
+    cx(props.color || props.borderColor || props.bg || 'smoke')};
 `
 
 Divider.displayName = 'Divider'
