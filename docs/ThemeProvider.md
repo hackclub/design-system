@@ -4,11 +4,11 @@ The ThemeProvider component is a wrapper around the styled-components’ [ThemeP
 
 Wrap the root of your application with the `ThemeProvider` component,
 which adds the Design System theme to context for use in styled-components
-and sets typographic defaults (including loading our webfont, Averta).
+and sets typographic defaults (including, optionally, loading our webfont, Averta).
 This should only be included once in your application.
 
 ```jsx
-<ThemeProvider>
+<ThemeProvider webfonts>
   <Heading>Hello</Heading>
 </ThemeProvider>
 ```

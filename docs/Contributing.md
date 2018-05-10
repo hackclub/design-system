@@ -23,7 +23,7 @@ cd design-system
 ### Install dependencies
 
 ```sh
-npm install
+yarn
 ```
 
 ### Running tests
@@ -31,25 +31,19 @@ npm install
 We use [Jest][jest] for testing, including unit tests for functionality and [snapshot testing][snapshots] for components.
 
 ```sh
-npm test
-```
-
-To run tests in watch mode (useful for TDD):
-
-```sh
-npm test -- --watch
+yarn test
 ```
 
 If you make intentional changes to an existing component, you will need to update its snapshot:
 
 ```sh
-npm test -- -u
+yarn test -u
 ```
 
 If you want to check test coverage (goal is 100% coverage):
 
 ```sh
-npm run coverage
+yarn run coverage
 ```
 
 Jest will run, generate a coverage report, and open it in your browser.
@@ -62,7 +56,7 @@ documentation for all the available components.
 To run storybook locally:
 
 ```sh
-npm run dev
+yarn run dev
 open http://localhost:8000/
 ```
 

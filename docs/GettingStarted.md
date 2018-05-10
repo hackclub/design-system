@@ -3,7 +3,7 @@
 Install the Design System in your application
 
 ```sh
-npm install @hackclub/design-system
+yarn add @hackclub/design-system
 ```
 
 ## ThemeProvider
@@ -18,19 +18,10 @@ import React from 'react'
 import { ThemeProvider } from '@hackclub/design-system'
 
 const App = () => (
-  <ThemeProvider>
+  <ThemeProvider webfonts>
     <h1>Hello</h1>
   </ThemeProvider>
 )
-```
-
-```jsx
-// Example usage with styled-components
-import styled from 'styled-components'
-
-const Section = styled.section`
-  background-color: ${props => props.theme.colors.primary};
-`
 ```
 
 ## Primitive UI Components
