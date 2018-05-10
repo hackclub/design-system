@@ -41,18 +41,35 @@ const Button = Box.withComponent('a').extend`
 
   ${props => props.disabled && { opacity: 0.25, cursor: 'not-allowed' }};
 
-  ${props => props.scale && css`
-    transition: ${props => props.theme.transition} all;
-    will-change: transform;
-    transform: scale(1);
-    &:hover,
-    &:focus {
-      transform: scale(${props => props.theme.scaleFactor});
-    }
-    ${props => props.theme.mediaQueries.reduceMotion} {
-      transform: none !important;
-    }
-  `};
+  ${props =>
+    props.scale &&
+    css`
+      transition: ${props => props.theme.transition} all;
+      will-change: transform;
+      transform: scale(1);
+      &:hover,
+      &:focus {
+        transform: scale(${props => props.theme.scaleFactor});
+      }
+      ${props => props.theme.mediaQueries.reduceMotion} {
+        transform: none !important;
+      }
+    `};
+
+  ${props =>
+    props.chevronLeft &&
+    css`
+      &:before {
+        content: '« ';
+      }
+    `};
+  ${props =>
+    props.chevronRight &&
+    css`
+      &:after {
+        content: ' »';
+      }
+    `};
 `
 
 Button.displayName = 'Button'
@@ -61,7 +78,11 @@ Button.propTypes = {
   /** flip colors */
   inverted: PropTypes.bool,
   /** add hover/focus animation */
-  scale: PropTypes.bool
+  scale: PropTypes.bool,
+  /** add left text arrows */
+  chevronLeft: PropTypes.bool,
+  /** add right text arrows */
+  chevronRight: PropTypes.bool
 }
 
 Button.defaultProps = {

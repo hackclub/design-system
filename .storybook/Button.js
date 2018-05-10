@@ -44,3 +44,13 @@ storiesOf('Button', module)
   .add('Width', () => <Button w={1}>Full Width</Button>)
   .add('Disabled', () => <Button disabled>Disabled</Button>)
   .add('Scale', () => <Button scale>Scale</Button>)
+  .add('Chevrons', () => (
+    <Flex wrap>
+      <Button bg="info" mr={3} chevronLeft>
+        Back
+      </Button>
+      <Button bg="success" chevronRight>
+        Forward
+      </Button>
+    </Flex>
+  ))

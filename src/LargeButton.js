@@ -25,7 +25,6 @@ LargeButton.defaultProps = {
   theme,
   bg: 'primary',
   color: 'white',
-  inverted: false,
   f: [2, 3],
   py: 3,
   px: 4
