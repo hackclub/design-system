@@ -63,7 +63,7 @@ exports[`IconButton renders 1`] = `
     width={24}
   >
     <path
-      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z "
+      d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z "
     />
   </svg>
 </button>
@@ -133,7 +133,7 @@ exports[`IconButton renders with circle prop 1`] = `
     width={24}
   >
     <path
-      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z "
+      d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z "
     />
   </svg>
 </button>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from './Icon'
+import Icon from './MDIcon'
 import Button from './Button'
 import PropTypes from 'prop-types'
 import theme from './theme'
@@ -11,13 +11,22 @@ const Base = Button.button.extend`
     props.circle && { padding: props.theme.space[props.p || 2] + 'px' }};
 `
 
-const IconButton = ({ name, size, color, ...props }) => (
-  <Base children={<Icon name={name} size={size} color={color} />} {...props} />
-)
+const IconButton = ({ set, name, size, color, ...props }) => {
+  const Icon = {
+    md: MDIcon
+  }[set]
+  return (
+    <Base
+      children={<Icon name={name} size={size} color={color} />}
+      {...props}
+    />
+  )
+}
 
 IconButton.displayName = 'IconButton'
 
 IconButton.propTypes = {
+  set: PropTypes.oneOf(['md']),
   name: PropTypes.string,
   onClick: PropTypes.func,
   circle: PropTypes.bool
@@ -25,6 +34,7 @@ IconButton.propTypes = {
 
 IconButton.defaultProps = {
   theme,
+  set: 'md',
   bg: 'transparent',
   circle: false
 }
