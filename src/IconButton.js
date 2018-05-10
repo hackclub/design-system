@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from './MDIcon'
+import Icon from './Icon'
 import Button from './Button'
 import PropTypes from 'prop-types'
 import theme from './theme'
@@ -12,12 +12,9 @@ const Base = Button.button.extend`
 `
 
 const IconButton = ({ set, name, size, color, ...props }) => {
-  const Icon = {
-    md: MDIcon
-  }[set]
   return (
     <Base
-      children={<Icon name={name} size={size} color={color} />}
+      children={<Icon set={set} name={name} size={size} color={color} />}
       {...props}
     />
   )
