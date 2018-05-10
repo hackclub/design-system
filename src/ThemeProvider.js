@@ -3,11 +3,43 @@ import styled, { ThemeProvider as Root, injectGlobal } from 'styled-components'
 import theme from './theme'
 
 injectGlobal`
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  font-weight: inherit;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+html,
 body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  padding: 0;
   margin: 0;
+  font-size: ${theme.fontSizes[2]}px;
   font-family: ${theme.font};
   line-height: 1.5;
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
 }
 
 @font-face {
