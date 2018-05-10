@@ -59,8 +59,8 @@ addAliases(mediaQueries, aliases)
 
 export const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
 
-export const font =
-  'Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif'
+const emoji = '"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"'
+export const font = `Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif,${emoji}`
 export const mono = 'SFMono-Regular,"Roboto Mono",Menlo,monospace'
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 64, 72, 96]
@@ -71,7 +71,7 @@ export const bold = 700
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = { regular, bold }
 
-export const scaleFactor = 17/16
+export const scaleFactor = 17 / 16
 export const transition = '0.125s ease-out'
 
 // styled-system’s `borderRadius` function can hook into the `radii` object/array
