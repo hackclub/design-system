@@ -49,7 +49,7 @@ body {
   position: relative;
   height: 100%;
   max-height: 100%;
-  width: 100vw;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
