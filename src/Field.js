@@ -3,6 +3,7 @@ import Label from './Label'
 import Flex from './Flex'
 import Text from './Text'
 import Input, { InputSelect, InputTextarea } from './Input'
+import Slider from './Slider'
 import PropTypes from 'prop-types'
 import theme from './theme'
 
@@ -21,6 +22,7 @@ const Field = ({ type, name, label, placeholder, error, ...props }) => {
   const Component =
     {
       select: InputSelect,
+      slider: Slider,
       textarea: InputTextarea
     }[type] || Input
   return (

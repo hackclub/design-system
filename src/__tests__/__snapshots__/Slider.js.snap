@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider renders 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  border-radius: 9999px;
+  height: 4px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #dde1e4;
+  color: #e42d42;
+}
+
+.c0::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  border: 0;
+  border-radius: 9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+<input
+  className="c0"
+  color="primary"
+  id="renders"
+  type="range"
+/>
+`;
