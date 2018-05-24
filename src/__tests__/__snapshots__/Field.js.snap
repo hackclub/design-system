@@ -98,7 +98,6 @@ exports[`Field renders 1`] = `
   <input
     className="c2"
     name="renders"
-    placeholder={undefined}
     type="text"
   />
 </label>
@@ -221,7 +220,6 @@ exports[`Field with error 1`] = `
   <input
     className="c3"
     name="error"
-    placeholder={undefined}
     type="text"
   />
 </label>

@@ -56,7 +56,6 @@ exports[`IconButton renders 1`] = `
 >
   <svg
     className="c1"
-    color={undefined}
     fill="currentcolor"
     height={24}
     viewBox="0 0 24 24"
@@ -126,7 +125,6 @@ exports[`IconButton renders with circle prop 1`] = `
 >
   <svg
     className="c1"
-    color={undefined}
     fill="currentcolor"
     height={24}
     viewBox="0 0 24 24"
