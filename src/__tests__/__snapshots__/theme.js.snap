@@ -188,7 +188,7 @@ Object {
     ],
   },
   "cx": [Function],
-  "font": "Averta,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif",
+  "font": "Averta,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
   "fontSizes": Array [
     12,
     14,
