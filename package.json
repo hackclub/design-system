@@ -11,6 +11,7 @@
     "deploy": "storybook-to-ghpages",
     "icons": "node scripts/build-icons",
     "fmt": "prettier {.storybook,scripts,src,dist}/**/*.js --single-quote --no-semi --write",
+    "flow": "flow",
     "coverage": "jest --coverage && serve coverage -o",
     "test": "jest"
   },
@@ -34,6 +35,7 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^23.0.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.3.0",
