@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { ThemeProvider as Root, injectGlobal, css } from 'styled-components'
 import PropTypes from 'prop-types'
-import theme from './theme'
+import defaults from './theme'
 
 const fontsCss = css`
   @font-face {
@@ -43,10 +43,10 @@ body {
 body {
   padding: 0;
   margin: 0;
-  font-size: ${theme.fontSizes[2]}px;
-  font-family: ${theme.font};
-  line-height: 1.5;
   position: relative;
+  font-size: ${defaults.fontSizes[2]}px;
+  font-family: ${defaults.font};
+  line-height: ${defaults.lineHeight};
   height: 100%;
   max-height: 100%;
   width: 100%;
@@ -82,7 +82,7 @@ ThemeProvider.propTypes = {
 }
 
 ThemeProvider.defaultProps = {
-  theme,
+  theme: defaults,
   webfonts: false
 }
 
