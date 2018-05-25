@@ -25,11 +25,12 @@ const fontsCss = css`
 `
 
 injectGlobal`
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   font-weight: inherit;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -43,16 +44,15 @@ body {
 body {
   padding: 0;
   margin: 0;
-  position: relative;
   font-size: ${defaults.fontSizes[2]}px;
   font-family: ${defaults.font};
   line-height: ${defaults.lineHeight};
-  height: 100%;
-  max-height: 100%;
   width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 a {
