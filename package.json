@@ -38,6 +38,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "flow-bin": "^0.73.0",
     "jest": "^23.0.0",
     "jest-styled-components": "^5.0.1",
     "material-design-icons": "^3.0.1",
