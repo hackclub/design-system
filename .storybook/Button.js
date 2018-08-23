@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Button } from '../src'
+import { Button, Flex } from '../src'
 
 storiesOf('Button', module)
   .add(
@@ -12,7 +12,7 @@ storiesOf('Button', module)
     })(() => <Button>Button</Button>)
   )
   .add('Colors', () => (
-    <div>
+    <Flex wrap>
       <Button mr={2}>Button</Button>
       <Button bg="accent" mr={2}>
         Accent
@@ -23,7 +23,34 @@ storiesOf('Button', module)
       <Button bg="accent" inverted mr={2}>
         Inverted
       </Button>
-    </div>
+    </Flex>
+  ))
+  .add('Font size', () => (
+    <Flex align="baseline" wrap>
+      <Button mr={2} f={1}>
+        Size 1
+      </Button>
+      <Button bg="accent" mr={2} f={2}>
+        Size 2
+      </Button>
+      <Button bg="info" mr={2} f={3}>
+        Size 3
+      </Button>
+      <Button bg="accent" inverted mr={2} f={4}>
+        Size 4
+      </Button>
+    </Flex>
   ))
   .add('Width', () => <Button w={1}>Full Width</Button>)
   .add('Disabled', () => <Button disabled>Disabled</Button>)
+  .add('Scale', () => <Button scale>Scale</Button>)
+  .add('Chevrons', () => (
+    <Flex wrap>
+      <Button bg="info" mr={3} chevronLeft>
+        Back
+      </Button>
+      <Button bg="success" chevronRight>
+        Forward
+      </Button>
+    </Flex>
+  ))

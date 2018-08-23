@@ -1,5 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`LargeButton inverted 1`] = `
+.c0 {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.125;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+  border-radius: 9999px;
+  border-width: 0;
+  border-style: solid;
+  background-color: #ffffff;
+  color: #e42d42;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
+}
+
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.16);
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.16);
+}
+
+.c0:active {
+  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.16);
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+<a
+  className="c0"
+  color="white"
+/>
+`;
+
 exports[`LargeButton larger 1`] = `
 .c0 {
   padding-left: 32px;
@@ -13,6 +78,7 @@ exports[`LargeButton larger 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
@@ -21,23 +87,33 @@ exports[`LargeButton larger 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  -webkit-transition: .125s box-shadow ease-out;
-  transition: .125s box-shadow ease-out;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;
   border-style: solid;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
 .c0:hover,
 .c0:focus {
   outline: 0;
-  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 6px rgba(114,128,237,0.25);
 }
 
 .c0:active {
   outline: 0;
-  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 8px 2px rgba(114,128,237,0.25);
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: 0 2px 12px 2px rgba(114,128,237,0.25);
+}
+
+.c0:active {
+  box-shadow: 0 4px 16px 2px rgba(114,128,237,0.25);
 }
 
 @media screen and (min-width:32em) {
@@ -65,6 +141,7 @@ exports[`LargeButton renders 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
@@ -73,23 +150,33 @@ exports[`LargeButton renders 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  -webkit-transition: .125s box-shadow ease-out;
-  transition: .125s box-shadow ease-out;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;
   border-style: solid;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
 .c0:hover,
 .c0:focus {
   outline: 0;
-  box-shadow: 0 2px 12px 2px rgba(228,45,66,.25);
+  box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
 .c0:active {
   outline: 0;
-  box-shadow: 0 4px 16px 2px rgba(228,45,66,.375);
+  box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: 0 2px 12px 2px rgba(228,45,66,0.25);
+}
+
+.c0:active {
+  box-shadow: 0 4px 16px 2px rgba(228,45,66,0.25);
 }
 
 @media screen and (min-width:32em) {

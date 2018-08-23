@@ -20,6 +20,7 @@ exports[`IconButton renders 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
@@ -28,26 +29,25 @@ exports[`IconButton renders 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  -webkit-transition: .125s box-shadow ease-out;
-  transition: .125s box-shadow ease-out;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;
   border-style: solid;
   box-shadow: none !important;
   line-height: 0 !important;
-  border-radius: 4px;
 }
 
 .c0:hover,
 .c0:focus {
   outline: 0;
-  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.16);
 }
 
 .c0:active {
   outline: 0;
-  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.16);
 }
 
 <button
@@ -56,14 +56,13 @@ exports[`IconButton renders 1`] = `
 >
   <svg
     className="c1"
-    color={undefined}
     fill="currentcolor"
     height={24}
     viewBox="0 0 24 24"
     width={24}
   >
     <path
-      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z "
+      d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z "
     />
   </svg>
 </button>
@@ -89,6 +88,7 @@ exports[`IconButton renders with circle prop 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
@@ -97,9 +97,9 @@ exports[`IconButton renders with circle prop 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  -webkit-transition: .125s box-shadow ease-out;
-  transition: .125s box-shadow ease-out;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border-width: 0;
   border-style: solid;
@@ -111,12 +111,12 @@ exports[`IconButton renders with circle prop 1`] = `
 .c0:hover,
 .c0:focus {
   outline: 0;
-  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.16);
 }
 
 .c0:active {
   outline: 0;
-  box-shadow: 0 4px 16px 2px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.16);
 }
 
 <button
@@ -125,14 +125,13 @@ exports[`IconButton renders with circle prop 1`] = `
 >
   <svg
     className="c1"
-    color={undefined}
     fill="currentcolor"
     height={24}
     viewBox="0 0 24 24"
     width={24}
   >
     <path
-      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z "
+      d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z "
     />
   </svg>
 </button>

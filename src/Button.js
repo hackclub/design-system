@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Box from './Box'
-import theme from './theme'
+import theme, { cx, hexa } from './theme'
+import { css } from 'styled-components'
 
 const Button = Box.withComponent('a').extend`
   -webkit-font-smoothing: antialiased;
@@ -14,50 +15,80 @@ const Button = Box.withComponent('a').extend`
   line-height: 1.125;
   appearance: none;
   cursor: pointer;
-  transition: .125s box-shadow ease-out;
-  box-shadow: 0 2px 12px ${props => props.theme.shadowColor};
+  transition: ${props => props.theme.transition} box-shadow;
+  box-shadow: 0 2px 4px ${props => props.theme.shadowColor};
   border-radius: ${props => props.theme.pill};
   border-width: 0;
   border-style: solid;
 
   ${props =>
-    props.inverted
-      ? {
-          backgroundColor: props.theme.colors[props.color],
-          color: props.theme.colors[props.bg]
-        }
-      : null};
+    props.inverted && {
+      backgroundColor: cx(props.color),
+      color: cx(props.bg)
+    }};
 
   &:hover, &:focus {
     outline: 0;
-    box-shadow: 0 2px 12px 2px ${props =>
-      !props.inverted && props.bg === 'primary'
-        ? 'rgba(228,45,66,.25)'
-        : props.theme.shadowColor};
+    box-shadow: 0 2px 6px ${props =>
+      props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
   }
 
   &:active {
     outline: 0;
-    box-shadow: 0 4px 16px 2px ${props =>
-      !props.inverted && props.bg === 'primary'
-        ? 'rgba(228,45,66,.375)'
-        : props.theme.shadowColor};
+    box-shadow: 0 2px 8px 2px ${props =>
+      props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
   }
 
-  ${props => (props.disabled ? 'opacity: 0.25' : null)};
+  ${props => props.disabled && { opacity: 0.25, cursor: 'not-allowed' }};
+
+  ${props =>
+    props.scale &&
+    css`
+      transition: ${props => props.theme.transition} all;
+      will-change: transform;
+      transform: scale(1);
+      &:hover,
+      &:focus {
+        transform: scale(${props => props.theme.scaleFactor});
+      }
+      ${props => props.theme.mediaQueries.reduceMotion} {
+        transform: none !important;
+      }
+    `};
+
+  ${props =>
+    props.chevronLeft &&
+    css`
+      &:before {
+        content: '« ';
+      }
+    `};
+  ${props =>
+    props.chevronRight &&
+    css`
+      &:after {
+        content: ' »';
+      }
+    `};
 `
 
 Button.displayName = 'Button'
 
 Button.propTypes = {
-  inverted: PropTypes.bool
+  /** flip colors */
+  inverted: PropTypes.bool,
+  /** add hover/focus animation */
+  scale: PropTypes.bool,
+  /** add left text arrows */
+  chevronLeft: PropTypes.bool,
+  /** add right text arrows */
+  chevronRight: PropTypes.bool
 }
 
 Button.defaultProps = {
   theme,
   bg: 'primary',
   color: 'white',
-  inverted: false,
   f: 3,
   m: 0,
   px: 3,

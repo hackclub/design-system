@@ -22,6 +22,11 @@ describe('theme', () => {
     expect(theme.cx('#ff6d00')).toBe('#ff6d00')
   })
 
+  test('hexa works', () => {
+    expect(theme.hexa('primary')).toBe('rgb(228, 45, 66)')
+    expect(theme.hexa('primary', 0.5)).toBe('rgba(228, 45, 66, 0.5)')
+  })
+
   test('scales are objects', () => {
     expect(typeof space).toBe('object')
     expect(typeof fontSizes).toBe('object')
@@ -37,6 +42,12 @@ describe('theme', () => {
   test('media queries have aliases', () => {
     aliases.forEach((alias, i) =>
       expect(theme.mediaQueries[alias]).toEqual(theme.mediaQueries[i])
+    )
+    expect(theme.mediaQueries.reduceMotion).toEqual(
+      '@media (prefers-reduced-motion: reduce)'
+    )
+    expect(theme.mediaQueries.reduceTransparency).toEqual(
+      '@media (prefers-reduced-transparency: reduce)'
     )
   })
 })

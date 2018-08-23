@@ -6,10 +6,13 @@ exports[`BackgroundImage renders 1`] = `
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #dde1e4;
+  background-image: url(https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
 }
 
 <div
+  aria-label="Wooden desk with tools and chair"
   className="c0"
+  src="https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 />
 `;
 
@@ -19,24 +22,47 @@ exports[`BackgroundImage renders with height 1`] = `
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #dde1e4;
+  background-image: url(https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
   height: 256px;
 }
 
 <div
+  aria-label="Wooden desk with tools and chair"
   className="c0"
+  src="https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 />
 `;
 
-exports[`BackgroundImage renders with image 1`] = `
+exports[`BackgroundImage scale 1`] = `
 .c0 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #dde1e4;
-  background-image: url(hello.png);
+  background-image: url(https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
+  overflow: hidden;
+  -webkit-transition: 0.125s ease-out background-size;
+  transition: 0.125s ease-out background-size;
+  will-change: background-size;
+  background-size: auto 100%;
+}
+
+.c0:hover {
+  background-size: auto 106.25%;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transition: none;
+    transition: none;
+    background-size: cover !important;
+  }
 }
 
 <div
+  aria-label="Wooden desk with tools and chair"
   className="c0"
+  scale={true}
+  src="https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 />
 `;

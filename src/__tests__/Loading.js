@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Icon } from '..'
+import { Loading } from '..'
 
-describe('Icon', () => {
+describe('Loading', () => {
   test('renders', () => {
-    const json = renderer.create(<Icon set="md" name="flag" />).toJSON()
+    const json = renderer.create(<Loading />).toJSON()
     expect(json).toMatchSnapshot()
   })
 })

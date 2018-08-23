@@ -1,10 +1,10 @@
 {
   "name": "@hackclub/design-system",
-  "version": "0.0.1-9",
+  "version": "0.0.1-10",
   "description": "Hack Club Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run icons && babel src -d dist --ignore __tests__ && npm run fmt",
+    "prepare": "yarn run icons && babel src -d dist --ignore __tests__ && yarn run fmt",
     "dev": "start-storybook -p 9000 -c .storybook",
     "build": "rm -rf .site && build-storybook -c .storybook -o .site",
     "start": "serve .site -p 9000",
@@ -17,32 +17,32 @@
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.10",
     "palx": "1.0.2",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "serve": "^6.4.9",
-    "styled-components": "^3.1.6",
-    "styled-system": "^1.1.4"
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "serve": "^6.5.8",
+    "styled-components": "^3.2.6",
+    "styled-system": "1.1.4"
   },
   "devDependencies": {
-    "@storybook/addon-info": "v3.3.12",
-    "@storybook/react": "v3.3.12",
-    "@storybook/storybook-deployer": "^2.2.0",
+    "@storybook/addon-info": "v3.4.5",
+    "@storybook/react": "v3.4.5",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.1.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^22.1.4",
-    "jest-styled-components": "^4.11.0-0",
+    "jest": "^23.0.0",
+    "jest-styled-components": "^5.0.1",
     "material-design-icons": "^3.0.1",
-    "prettier": "^1.10.2",
-    "react-test-renderer": "^16.2.0"
+    "prettier": "^1.12.1",
+    "react-test-renderer": "^16.4.0"
   },
   "jest": {
     "coverageReporters": [

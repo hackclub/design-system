@@ -1,4 +1,5 @@
 import Box from './Box'
+import PropTypes from 'prop-types'
 
 const Image = Box.withComponent('img').extend`
   display: block;
@@ -7,5 +8,9 @@ const Image = Box.withComponent('img').extend`
 `
 
 Image.displayName = 'Image'
+
+Image.propTypes = {
+  alt: PropTypes.string.isRequired
+}
 
 export default Image

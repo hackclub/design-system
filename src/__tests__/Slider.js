@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Icon } from '..'
+import { Slider, theme } from '..'
 
-describe('Icon', () => {
+describe('Slider', () => {
   test('renders', () => {
-    const json = renderer.create(<Icon set="md" name="flag" />).toJSON()
+    const json = renderer.create(<Slider id="renders" />).toJSON()
     expect(json).toMatchSnapshot()
   })
 })

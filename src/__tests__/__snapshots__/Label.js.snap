@@ -9,6 +9,7 @@ exports[`Label it renders 1`] = `
 
 .c0 a {
   color: #2d9ee4;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 

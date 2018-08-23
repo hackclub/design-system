@@ -10,6 +10,7 @@ exports[`Field renders 1`] = `
 
 .c0 a {
   color: #2d9ee4;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
@@ -44,8 +45,8 @@ exports[`Field renders 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #dde1e4;
-  -webkit-transition: 0.125s box-shadow ease-out;
-  transition: 0.125s box-shadow ease-out;
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
   font-size: 16px;
   margin: 0px;
   padding-left: 8px;
@@ -97,7 +98,6 @@ exports[`Field renders 1`] = `
   <input
     className="c2"
     name="renders"
-    placeholder={undefined}
     type="text"
   />
 </label>
@@ -113,6 +113,7 @@ exports[`Field with error 1`] = `
 
 .c0 a {
   color: #2d9ee4;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
@@ -147,8 +148,8 @@ exports[`Field with error 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #dde1e4;
-  -webkit-transition: 0.125s box-shadow ease-out;
-  transition: 0.125s box-shadow ease-out;
+  -webkit-transition: 0.125s ease-out box-shadow;
+  transition: 0.125s ease-out box-shadow;
   font-size: 16px;
   margin: 0px;
   padding-left: 8px;
@@ -195,7 +196,6 @@ exports[`Field with error 1`] = `
   margin-bottom: 0px;
   color: #b52434;
   font-weight: normal;
-  text-transform: lowercase;
 }
 
 .c2:before {
@@ -220,7 +220,6 @@ exports[`Field with error 1`] = `
   <input
     className="c3"
     name="error"
-    placeholder={undefined}
     type="text"
   />
 </label>
