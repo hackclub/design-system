@@ -39,17 +39,18 @@ const Field = ({ type, name, label, placeholder, error, ...props }) => {
 Field.displayName = 'Field'
 
 Field.propTypes = {
-  /** choose alternate field type (like email, textarea, slider, or select) */
+  /** choose alternate field type (like email, password, textarea, or select) */
   type: PropTypes.oneOf([
-    'text',
-    'email',
-    'password',
-    'file',
     'checkbox',
-    'tel',
-    'url',
-    'textarea',
+    'email',
+    'file',
+    'number',
+    'password',
     'select'
+    'tel',
+    'textarea',
+    'url',
+    'text'
   ]),
   name: PropTypes.string.isRequired,
   /** label text */
