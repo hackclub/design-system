@@ -1,25 +1,22 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { BlockLink, BackgroundImage, Box, Text } from '../src'
+import { Avatar } from '../src'
 
-storiesOf('BlockLink', module).add(
-  'BlockLink',
-  withInfo({
-    inline: true,
-    text: `<BlockLink /> is a styled-components wrapper of <Link /> component to remove text-decoration and color styles, and set display as block.`
-  })(() => (
-    <BlockLink href="https://hackclub.com" target="_blank">
-      <BackgroundImage
-        src="https://hackclub.com/lah_2.jpg"
-        width="640px"
-      >
-        <Box p={4}>
-          <Text align="center" color="white">
-            Click to open hackclub.com in a new tab!
-          </Text>
-        </Box>
-      </BackgroundImage>
-    </BlockLink>
+storiesOf('Avatar', module)
+  .add(
+    'Avatar component',
+    withInfo({
+      inline: true,
+      text: 'A circular avatar image primitive.'
+    })(() => <Avatar src="https://hackclub.com/team/zach.png" size={64} />)
+  )
+  .add('Team', () => (
+    <React.Fragment>
+      {['zach.png', 'max.jpg', 'lachlan.jpg', 'mingjie.jpg', 'athul.jpg'].map(
+        key => (
+          <Avatar mr={2} src={`https://hackclub.com/team/${key}`} key={key} />
+        )
+      )}
+    </React.Fragment>
   ))
-)
