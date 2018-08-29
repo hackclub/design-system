@@ -102,30 +102,6 @@ export const hexa = (color, alpha) => {
   }
 }
 
-export const filterProps = props =>
-  omit(removeProps(props), [
-    'theme',
-    'xs',
-    'sm',
-    'md',
-    'lg',
-    'xl',
-    'color',
-    'bg',
-    'fill',
-    'fontSize',
-    'f',
-    'image',
-    'maxWidth',
-    'bold',
-    'regular',
-    'caps',
-    'wrap',
-    'size',
-    'height',
-    'boxShadowSize'
-  ])
-
 const theme = {
   breakpoints,
   mediaQueries,

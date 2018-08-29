@@ -17,6 +17,7 @@
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
+    "clean-tag": "^1.0.4",
     "lodash": "^4.17.10",
     "palx": "1.0.2",
     "prop-types": "^15.6.1",

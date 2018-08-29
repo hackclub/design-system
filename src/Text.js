@@ -10,7 +10,8 @@ import {
   responsiveStyle,
   propTypes
 } from 'styled-system'
-import theme, { filterProps } from './theme'
+import theme from './theme'
+import tag from 'clean-tag'
 
 export const caps = props =>
   props.caps ? { textTransform: 'uppercase' } : null
@@ -21,12 +22,7 @@ export const regular = props =>
 export const bold = props =>
   props.bold ? { fontWeight: props.theme.bold } : null
 
-const Base = props => {
-  const next = filterProps(props)
-  return <p {...next} />
-}
-
-const Text = styled(Base)(
+const Text = styled(tag)(
   [],
   fontSize,
   space,
@@ -53,6 +49,7 @@ Text.propTypes = {
 
 Text.defaultProps = {
   theme,
+  is: 'p',
   m: 0
 }
 
