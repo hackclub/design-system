@@ -8,7 +8,7 @@ storiesOf('Field', module)
     'Field component',
     withInfo({
       inline: true,
-      text: 'Compond component for form fields.'
+      text: 'Compound component for form fields.'
     })(() => <Field name="fname" label="First name" placeholder="Zach" />)
   )
   .add('with error', () => (
