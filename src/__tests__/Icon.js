@@ -4,7 +4,7 @@ import { Icon } from '..'
 
 describe('Icon', () => {
   test('renders', () => {
-    const json = renderer.create(<Icon set="md" name="flag" />).toJSON()
+    const json = renderer.create(<Icon name="flag" />).toJSON()
     expect(json).toMatchSnapshot()
   })
 })

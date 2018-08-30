@@ -10,6 +10,12 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
+"@hackclub/icons@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@hackclub/icons/-/icons-0.0.1.tgz#9a512e9600d9408bdbd75f8a218f72b887e0cbee"
+  dependencies:
+    react "^16.4.2"
+
 "@storybook/addon-actions@3.4.5":
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.4.5.tgz#ba0d0c0c74357c0852e0b890b404214975df40a8"

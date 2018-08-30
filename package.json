@@ -4,19 +4,19 @@
   "description": "Hack Club Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "yarn run icons && babel src -d dist --ignore __tests__ && yarn run fmt",
+    "prepare": "babel src -d dist --ignore __tests__ && yarn run fmt",
     "dev": "start-storybook -p 9000 -c .storybook",
     "build": "rm -rf .site && build-storybook -c .storybook -o .site",
     "start": "serve .site -p 9000",
     "deploy": "storybook-to-ghpages",
-    "icons": "node scripts/build-icons",
-    "fmt": "prettier {.storybook,scripts,src,dist}/**/*.js --single-quote --no-semi --write",
+    "fmt": "prettier {.storybook,src,dist}/**/*.js --single-quote --no-semi --write",
     "coverage": "jest --coverage && serve coverage -o",
     "test": "jest"
   },
   "author": "Lachlan Campbell",
   "license": "MIT",
   "dependencies": {
+    "@hackclub/icons": "^0.0.1",
     "clean-tag": "^1.0.4",
     "lodash": "^4.17.10",
     "palx": "1.0.2",

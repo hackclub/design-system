@@ -1,22 +1,24 @@
-import React from 'react'
-import MDIcon from './MDIcon'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import Box from './Box'
+import HCIcon from '@hackclub/icons'
 
-const Icon = ({ set, ...props }) => {
-  const Component = {
-    md: MDIcon
-  }[set]
-  return <Component {...props} />
-}
+const Icon = styled(Box.withComponent(HCIcon))`
+  flex: none;
+`
 
 Icon.displayName = 'Icon'
 
 Icon.propTypes = {
-  set: PropTypes.oneOf(['md'])
+  /** which icon to draw */
+  glyph: PropTypes.string,
+  /** width/height, numbers in px */
+  size: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 }
 
 Icon.defaultProps = {
-  set: 'md'
+  glyph: 'flag',
+  size: 24
 }
 
 export default Icon
