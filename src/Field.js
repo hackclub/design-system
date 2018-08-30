@@ -46,7 +46,7 @@ Field.propTypes = {
     'file',
     'number',
     'password',
-    'select'
+    'select',
     'tel',
     'textarea',
     'url',
