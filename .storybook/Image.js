@@ -17,7 +17,6 @@ storiesOf('Image', module)
       inline: true
     })(() => <Image {...props} />)
   )
-
   .add('Responsive width, with Box', () => (
     <Box width={1 / 2}>
       <Image {...props} />
