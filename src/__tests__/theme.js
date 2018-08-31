@@ -3,8 +3,6 @@ import theme, { cx, colors, space, fontSizes, boxShadows } from '../theme'
 const aliases = ['sm', 'md', 'lg', 'xl']
 
 describe('theme', () => {
-  console.warn = jest.genMockFunction()
-
   test('exports an object', () => {
     expect(typeof theme).toBe('object')
   })

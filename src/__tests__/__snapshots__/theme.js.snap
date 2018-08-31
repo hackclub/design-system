@@ -205,6 +205,7 @@ Object {
     "bold": 700,
     "regular": 400,
   },
+  "gradient": [Function],
   "hexa": [Function],
   "mediaQueries": Object {
     "0": "@media screen and (min-width:32em)",

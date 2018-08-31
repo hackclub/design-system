@@ -102,6 +102,12 @@ export const hexa = (color, alpha) => {
   }
 }
 
+export const gradient = (color1, color2) =>
+  css`radial-gradient(
+    ellipse farthest-corner at top left,
+    ${cx(color1)} 0%, ${cx(color2)} 100%
+  )`
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -121,7 +127,8 @@ const theme = {
   boxShadows,
   shadowColor,
   cx,
-  hexa
+  hexa,
+  gradient
 }
 
 export default theme
