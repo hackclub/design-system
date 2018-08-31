@@ -31,7 +31,7 @@ const Field = ({ type, name, label, placeholder, error, ...props }) => {
         {label}
         {error && <Error children={error} />}
       </Flex>
-      <Component name={name} type={type} placeholder={placeholder} {...props} />
+      <Component name={name} type={type} placeholder={placeholder} style={type === textarea ? {resize: 'vertical'} : null} {...props} />
     </Label>
   )
 }
