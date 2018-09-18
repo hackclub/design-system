@@ -108,6 +108,30 @@ export const gradient = (color1, color2) =>
     ${cx(color1)} 0%, ${cx(color2)} 100%
   )`
 
+export const filterProps = props =>
+  omit(removeProps(props), [
+    'theme',
+    'xs',
+    'sm',
+    'md',
+    'lg',
+    'xl',
+    'color',
+    'bg',
+    'fill',
+    'fontSize',
+    'f',
+    'image',
+    'maxWidth',
+    'bold',
+    'regular',
+    'caps',
+    'wrap',
+    'size',
+    'height',
+    'boxShadowSize'
+  ])
+
 const theme = {
   breakpoints,
   mediaQueries,

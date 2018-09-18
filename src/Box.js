@@ -10,10 +10,14 @@ import {
   responsiveStyle,
   propTypes
 } from 'styled-system'
-import theme from './theme'
-import tag from 'clean-tag'
+import theme, { filterProps } from './theme'
 
-const Box = styled(tag.div)([], space, width, color, fontSize, textAlign)
+const Base = props => {
+  const next = filterProps(props)
+  return <div {...next} />
+}
+
+const Box = styled(Base)([], space, width, color, fontSize, textAlign)
 
 Box.displayName = 'Box'
 Box.header = Box.withComponent('header')
