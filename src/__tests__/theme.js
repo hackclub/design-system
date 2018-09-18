@@ -26,9 +26,10 @@ describe('theme', () => {
   })
 
   test('gradient works', () => {
-    expect(theme.gradient('accent', 'info')).toInclude('radial')
-    expect(theme.gradient('accent', 'info')).toInclude(cx('accent'))
-    expect(theme.gradient('accent', 'info')).toInclude(cx('info'))
+    const sample = theme.gradient('accent', 'info')
+    expect(sample).toMatch('radial-gradient')
+    expect(sample).toMatch(cx('accent'))
+    expect(sample).toMatch(cx('info'))
   })
 
   test('scales are objects', () => {
