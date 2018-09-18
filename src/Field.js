@@ -45,6 +45,7 @@ Field.propTypes = {
   /** choose alternate field type (like email, password, textarea, or select) */
   type: PropTypes.oneOf([
     'checkbox',
+    'date',
     'email',
     'file',
     'number',
