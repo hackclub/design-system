@@ -53,12 +53,12 @@ describe('Button', () => {
   test('left chevron', () => {
     const json = renderer.create(<Button chevronLeft />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('content', `'‹'`, { modifier: ':before' })
+    expect(json).toHaveStyleRule('content', `'«'`, { modifier: ':before' })
   })
 
   test('right chevron', () => {
     const json = renderer.create(<Button chevronRight />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('content', `'›'`, { modifier: ':after' })
+    expect(json).toHaveStyleRule('content', `'»'`, { modifier: ':after' })
   })
 })
