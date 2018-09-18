@@ -26,8 +26,7 @@ exports[`LargeButton inverted 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
   background-color: #ffffff;
   color: #e42d42;
   text-transform: uppercase;
@@ -87,8 +86,7 @@ exports[`LargeButton larger 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
   text-transform: uppercase;
   box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
@@ -146,8 +144,7 @@ exports[`LargeButton renders 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
   text-transform: uppercase;
   box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }

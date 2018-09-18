@@ -18,8 +18,7 @@ const Button = Box.withComponent('a').extend`
   transition: ${({ theme }) => theme.transition} box-shadow;
   box-shadow: 0 2px 4px ${({ theme }) => theme.shadowColor};
   border-radius: ${({ theme }) => theme.pill};
-  border-width: 0;
-  border-style: solid;
+  border: none;
 
   ${props =>
     props.inverted && {
@@ -52,7 +51,7 @@ const Button = Box.withComponent('a').extend`
         transform: scale(${({ theme }) => theme.scaleFactor});
       }
       ${({ theme }) => theme.mediaQueries.reduceMotion} {
-        transform: none !important;
+        transform: none;
       }
     `};
 
@@ -60,14 +59,16 @@ const Button = Box.withComponent('a').extend`
     props.chevronLeft &&
     css`
       &:before {
-        content: '‹ ';
+        content: '‹';
+        padding-right: 0.25em;
       }
     `};
   ${props =>
     props.chevronRight &&
     css`
       &:after {
-        content: ' ›';
+        content: '›';
+        padding-left: 0.25em;
       }
     `};
 `

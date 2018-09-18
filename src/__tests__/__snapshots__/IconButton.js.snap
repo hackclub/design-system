@@ -27,8 +27,7 @@ exports[`IconButton renders 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
 }
 
 .c1:hover,
@@ -349,8 +348,7 @@ exports[`IconButton renders with circle prop 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
 }
 
 .c1:hover,

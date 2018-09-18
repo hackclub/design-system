@@ -27,8 +27,7 @@ exports[`Button custom bg 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
 }
 
 .c0:hover,
@@ -75,8 +74,7 @@ exports[`Button disabled prop sets 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
   opacity: 0.25;
   cursor: not-allowed;
 }
@@ -126,8 +124,7 @@ exports[`Button inverted 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
   background-color: #ffffff;
   color: #7280ed;
 }
@@ -176,8 +173,7 @@ exports[`Button left chevron 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
 }
 
 .c0:hover,
@@ -192,7 +188,8 @@ exports[`Button left chevron 1`] = `
 }
 
 .c0:before {
-  content: '« ';
+  content: '‹';
+  padding-right: 0.25em;
 }
 
 <a
@@ -228,8 +225,7 @@ exports[`Button renders 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
 }
 
 .c0:hover,
@@ -276,8 +272,7 @@ exports[`Button right chevron 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
 }
 
 .c0:hover,
@@ -292,7 +287,8 @@ exports[`Button right chevron 1`] = `
 }
 
 .c0:after {
-  content: ' »';
+  content: '›';
+  padding-left: 0.25em;
 }
 
 <a
@@ -328,8 +324,7 @@ exports[`Button scale 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
   -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) all;
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) all;
   will-change: transform;
@@ -358,9 +353,9 @@ exports[`Button scale 1`] = `
 
 @media (prefers-reduced-motion:reduce) {
   .c0 {
-    -webkit-transform: none !important;
-    -ms-transform: none !important;
-    transform: none !important;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 }
 
@@ -398,8 +393,7 @@ exports[`Button without disabled prop sets 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
+  border: none;
   background-color: #ffffff;
   color: #2de473;
 }
