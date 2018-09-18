@@ -9,7 +9,7 @@ storiesOf('Icon', module)
     withInfo({
       inline: true,
       text: 'A wrapper component for @hackclub/icons.'
-    })(() => <Icon name="flag" color="primary" size={48} />)
+    })(() => <Icon glyph="flag" color="primary" size={48} />)
   )
   .add('Examples', () => (
     <div>

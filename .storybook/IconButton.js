@@ -10,12 +10,16 @@ storiesOf('IconButton', module)
       inline: true,
       text: 'Use the <IconButton /> component to render a primitive button.'
     })(() => (
-      <IconButton name="close" color="error" onClick={action('clicked')} />
+      <IconButton
+        glyph="view-close"
+        color="error"
+        onClick={action('clicked')}
+      />
     ))
   )
   .add('Rectangular button', () => (
     <IconButton
-      name="send"
+      glyph="send"
       bg="info"
       color="white"
       onClick={action('clicked')}
@@ -23,7 +27,7 @@ storiesOf('IconButton', module)
   ))
   .add('Circular button', () => (
     <IconButton
-      name="add"
+      glyph="checkmark"
       bg="success"
       color="white"
       circle
@@ -34,13 +38,13 @@ storiesOf('IconButton', module)
     <Fragment>
       <IconButton
         disabled
-        name="close"
+        glyph="view-close"
         color="error"
         onClick={action('clicked')}
       />
       <IconButton
         disabled
-        name="close"
+        glyph="view-close"
         bg="error"
         color="white"
         circle

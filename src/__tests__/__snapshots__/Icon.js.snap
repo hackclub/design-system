@@ -8,14 +8,265 @@ exports[`Icon renders 1`] = `
 }
 
 <svg
-  className="c0"
-  fill="currentcolor"
+  aria-label="flag"
+  className="c0 "
+  clipRule="evenodd"
+  fill="currentColor"
+  fillRule="evenodd"
   height={24}
-  viewBox="0 0 24 24"
+  preserveAspectRatio="xMidYMid meet"
+  strokeLinejoin="round"
+  strokeMiterlimit="1.414"
+  theme={
+    Object {
+      "bold": 700,
+      "boxShadows": Array [
+        "0 0 2px 0 rgba(0,0,0,.08),0 2px 4px 0 rgba(0,0,0,0.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 4px 8px 0 rgba(0,0,0,0.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 12px 12px 0 rgba(0,0,0,0.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 24px 24px 0 rgba(0,0,0,0.16)",
+      ],
+      "breakpoints": Array [
+        32,
+        48,
+        64,
+        80,
+      ],
+      "colors": Object {
+        "accent": "#7280ed",
+        "base": "#2d9ce4",
+        "black": "#384046",
+        "blue": Array [
+          "#e6f4fc",
+          "#cce7f8",
+          "#add9f5",
+          "#8bc9f0",
+          "#62b6eb",
+          "#2d9ee4",
+          "#298fce",
+          "#247db4",
+          "#1d6795",
+          "#154a6b",
+        ],
+        "cyan": Array [
+          "#e7fcfa",
+          "#ccf9f3",
+          "#aff5ed",
+          "#8cf0e5",
+          "#63ebdb",
+          "#2de4cf",
+          "#29cebb",
+          "#24b5a5",
+          "#1e9789",
+          "#166d63",
+        ],
+        "error": "#b52434",
+        "fuschia": Array [
+          "#faebfc",
+          "#f5d4fa",
+          "#efbaf6",
+          "#e89bf2",
+          "#df73ed",
+          "#cf2de4",
+          "#bb29ce",
+          "#a424b5",
+          "#881d95",
+          "#61156b",
+        ],
+        "gray": Array [
+          "#f9f9fa",
+          "#ebeeef",
+          "#dde1e4",
+          "#cdd4d8",
+          "#bcc5cb",
+          "#a9b5bc",
+          "#93a2ab",
+          "#7a8c97",
+          "#606e77",
+          "#384046",
+        ],
+        "green": Array [
+          "#eafce7",
+          "#d2f9cd",
+          "#b7f5b0",
+          "#99f08d",
+          "#73eb64",
+          "#42e42d",
+          "#3cce29",
+          "#35b524",
+          "#2c971e",
+          "#206d16",
+        ],
+        "indigo": Array [
+          "#ebedfc",
+          "#d4d8f9",
+          "#bac1f6",
+          "#9aa4f2",
+          "#7280ed",
+          "#2d42e4",
+          "#283bcd",
+          "#2334b3",
+          "#1d2a92",
+          "#141e66",
+        ],
+        "info": "#2d9ee4",
+        "lime": Array [
+          "#f2fbe4",
+          "#e5f8c6",
+          "#d6f4a6",
+          "#c6ef83",
+          "#b3ea5b",
+          "#9ee42d",
+          "#8fce29",
+          "#7eb524",
+          "#69971e",
+          "#4c6d16",
+        ],
+        "muted": "#7a8c97",
+        "orange": Array [
+          "#fcefe7",
+          "#f9ddcc",
+          "#f5caaf",
+          "#f0b38d",
+          "#eb9763",
+          "#e4732d",
+          "#ce6829",
+          "#b45b24",
+          "#954b1d",
+          "#6b3615",
+        ],
+        "pink": Array [
+          "#fcebf6",
+          "#fad5eb",
+          "#f6bbdf",
+          "#f29cd1",
+          "#ed73be",
+          "#e42d9e",
+          "#ce298f",
+          "#b5247d",
+          "#961e68",
+          "#6b154a",
+        ],
+        "primary": "#e42d42",
+        "red": Array [
+          "#fcebed",
+          "#fad5d9",
+          "#f6bcc2",
+          "#f29da7",
+          "#ed7582",
+          "#e42d42",
+          "#ce293c",
+          "#b52434",
+          "#951d2b",
+          "#6b151f",
+        ],
+        "silver": "#7a8c97",
+        "slate": "#606e77",
+        "smoke": "#dde1e4",
+        "snow": "#f9f9fa",
+        "success": "#2de473",
+        "teal": Array [
+          "#e7fcef",
+          "#cdf9de",
+          "#b0f5ca",
+          "#8df0b3",
+          "#64eb98",
+          "#2de473",
+          "#29ce68",
+          "#24b55c",
+          "#1e974c",
+          "#166d37",
+        ],
+        "violet": Array [
+          "#f2ebfc",
+          "#e3d4fa",
+          "#d1baf6",
+          "#bd9bf2",
+          "#a173ed",
+          "#732de4",
+          "#6829cd",
+          "#5a23b3",
+          "#4a1d93",
+          "#341467",
+        ],
+        "warning": "#e4732d",
+        "white": "#ffffff",
+        "yellow": Array [
+          "#fbf9e3",
+          "#f7f2c4",
+          "#f3eaa4",
+          "#efe280",
+          "#ead959",
+          "#e4cf2d",
+          "#cebb29",
+          "#b5a524",
+          "#97891e",
+          "#6d6316",
+        ],
+      },
+      "cx": [Function],
+      "font": "Averta,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        72,
+        96,
+      ],
+      "fontWeights": Object {
+        "bold": 700,
+        "regular": 400,
+      },
+      "gradient": [Function],
+      "hexa": [Function],
+      "mediaQueries": Object {
+        "0": "@media screen and (min-width:32em)",
+        "1": "@media screen and (min-width:48em)",
+        "2": "@media screen and (min-width:64em)",
+        "3": "@media screen and (min-width:80em)",
+        "reduceMotion": "@media (prefers-reduced-motion: reduce)",
+        "reduceTransparency": "@media (prefers-reduced-transparency: reduce)",
+      },
+      "mono": "SFMono-Regular,\\"Roboto Mono\\",Menlo,monospace",
+      "pill": "9999px",
+      "radii": Array [
+        "0px",
+        "4px",
+        "8px",
+        "16px",
+        "9999px",
+      ],
+      "radius": "4px",
+      "regular": 400,
+      "scaleFactor": 1.0625,
+      "shadowColor": "rgba(0,0,0,0.16)",
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+      ],
+      "transition": "0.125s ease-out",
+    }
+  }
+  viewBox="0 0 32 32"
   width={24}
+  xmlns="http://www.w3.org/2000/svg"
 >
-  <path
-    d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z "
-  />
+  <g>
+    <path
+      d="M10.953 5.034a1 1 0 0 0-1.225.707L4.034 26.992a1 1 0 1 0 1.932.517l5.694-21.25a1 1 0 0 0-.707-1.225zm2.107 9.005c.425-1.703.798-3.036 1.225-4.079.429-1.058.766-1.43.912-1.532a.216.216 0 0 0 .022-.023l.017.003c.131-.022.133-.021.353.073l.065.028c.584.23 1.492.826 2.826 2.076 1.584 1.462 3.173 2.338 4.36 2.738a9.906 9.906 0 0 0 2.045.4c-.312 1.161-.627 2.297-1.028 3.334-.405 1.061-.756 1.774-1.284 2.307-.385.41-.719.542-1.131.527-.519-.018-1.447-.289-2.901-1.37-1.746-1.291-3.25-2.073-4.327-2.514a17.61 17.61 0 0 0-1.498-.524c.08-.375.193-.838.344-1.444zm12.104-1.615a.522.522 0 0 1 0 0zm-13.21 2.816l.017.008a.08.08 0 0 1-.017-.008zm-.834-1.685c1.727-6.93 3.174-9.634 8.727-4.43 2.833 2.655 4.933 2.646 6.14 2.641 1.16-.005 1.494-.007.86 2.359-1.294 4.83-3.053 10.796-9.5 6-2.638-1.962-4.392-2.486-5.449-2.801-1.526-.456-1.599-.478-.778-3.769z"
+    />
+  </g>
 </svg>
 `;
