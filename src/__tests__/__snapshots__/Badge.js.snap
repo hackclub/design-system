@@ -27,6 +27,7 @@ exports[`Badge accepts custom bg and color 1`] = `
 <span
   className="c0 c1"
   color="accent"
+  fontSize={1}
 />
 `;
 
@@ -57,5 +58,6 @@ exports[`Badge renders 1`] = `
 <span
   className="c0 c1"
   color="white"
+  fontSize={1}
 />
 `;

@@ -43,6 +43,8 @@ Object {
       "#1e9789",
       "#166d63",
     ],
+    "dark": "#17171d",
+    "darker": "#121217",
     "error": "#b52434",
     "fuschia": Array [
       "#faebfc",

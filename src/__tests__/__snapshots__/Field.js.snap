@@ -95,6 +95,7 @@ exports[`Field renders 1`] = `
 <label
   className="text c0 c1"
   color="black"
+  fontSize={2}
   id="renders"
 >
   <div
@@ -222,6 +223,7 @@ exports[`Field with error 1`] = `
 <label
   className="text c0 c1"
   color="black"
+  fontSize={2}
   id="error"
 >
   <div

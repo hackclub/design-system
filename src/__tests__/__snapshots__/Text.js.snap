@@ -14,7 +14,7 @@ exports[`Text align prop sets text-align 1`] = `
 exports[`Text bold prop sets font-weight 1`] = `
 .c0 {
   margin: 0px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 <p
@@ -47,7 +47,7 @@ exports[`Text mt prop sets margin-top 1`] = `
 exports[`Text regular prop sets font-weight 1`] = `
 .c0 {
   margin: 0px;
-  font-weight: 400;
+  font-weight: regular;
 }
 
 <p

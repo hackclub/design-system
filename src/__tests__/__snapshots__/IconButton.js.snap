@@ -2,12 +2,21 @@
 
 exports[`IconButton renders 1`] = `
 .c1 {
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  font-size: inherit;
   font-family: inherit;
   font-weight: 700;
   line-height: 1.125;
@@ -47,6 +56,7 @@ exports[`IconButton renders 1`] = `
 <button
   className="c0 c1"
   color="white"
+  fontSize={3}
 >
   <svg
     aria-label="flag"
@@ -101,6 +111,8 @@ exports[`IconButton renders 1`] = `
             "#1e9789",
             "#166d63",
           ],
+          "dark": "#17171d",
+          "darker": "#121217",
           "error": "#b52434",
           "fuschia": Array [
             "#faebfc",
@@ -315,12 +327,21 @@ exports[`IconButton renders 1`] = `
 
 exports[`IconButton renders with circle prop 1`] = `
 .c1 {
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  font-size: inherit;
   font-family: inherit;
   font-weight: 700;
   line-height: 1.125;
@@ -361,6 +382,7 @@ exports[`IconButton renders with circle prop 1`] = `
 <button
   className="c0 c1"
   color="white"
+  fontSize={3}
 >
   <svg
     aria-label="flag"
@@ -415,6 +437,8 @@ exports[`IconButton renders with circle prop 1`] = `
             "#1e9789",
             "#166d63",
           ],
+          "dark": "#17171d",
+          "darker": "#121217",
           "error": "#b52434",
           "fuschia": Array [
             "#faebfc",

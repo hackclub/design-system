@@ -20,5 +20,6 @@ exports[`Label it renders 1`] = `
 <label
   className="c0 c1"
   color="black"
+  fontSize={2}
 />
 `;
