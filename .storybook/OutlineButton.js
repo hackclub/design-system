@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { OutlineButton } from '../src'
+import { OutlineButton, LargeButton } from '../src'
 
 storiesOf('OutlineButton', module)
   .add(
@@ -14,13 +14,14 @@ storiesOf('OutlineButton', module)
   .add('Colors', () => (
     <div>
       <OutlineButton mr={3}>Button</OutlineButton>
-      <OutlineButton color="accent" mr={3}>
+      <OutlineButton bg="accent" mr={3}>
         Accent
       </OutlineButton>
-      <OutlineButton color="success" mr={3}>
+      <OutlineButton bg="success" mr={3}>
         Success
       </OutlineButton>
+      <LargeButton bg="success">Large</LargeButton>
     </div>
   ))
-  .add('Width', () => <OutlineButton w={1}>Full Width</OutlineButton>)
+  .add('Width', () => <OutlineButton width={1}>Full Width</OutlineButton>)
   .add('Disabled', () => <OutlineButton disabled>Disabled</OutlineButton>)

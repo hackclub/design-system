@@ -7,7 +7,7 @@ describe('OutlineButton', () => {
     const json = renderer.create(<OutlineButton />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border-style', 'solid')
-    expect(json).toHaveStyleRule('background-color', 'transparent !important')
+    expect(json).toHaveStyleRule('background', 'transparent')
   })
 
   test('disabled prop sets', () => {
@@ -17,7 +17,7 @@ describe('OutlineButton', () => {
   })
 
   test('with custom color', () => {
-    const json = renderer.create(<OutlineButton color="white" />).toJSON()
+    const json = renderer.create(<OutlineButton bg="white" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('color', theme.colors.white)
   })
