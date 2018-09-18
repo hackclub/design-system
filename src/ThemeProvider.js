@@ -63,6 +63,10 @@ injectGlobal`
   textarea {
     resize: none;
   }
+
+  strong {
+    font-weight: bold;
+  }
 `
 
 const ThemeProvider = ({ theme, webfonts, ...props }) => {
