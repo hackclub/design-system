@@ -7,6 +7,13 @@ exports[`Link renders 1`] = `
   text-decoration: none;
 }
 
+.c0:before,
+.c0:after {
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
 <a
   className="c0"
   color="info"
@@ -15,11 +22,46 @@ exports[`Link renders 1`] = `
 </a>
 `;
 
+exports[`Link renders hoverline 1`] = `
+.c0 {
+  color: #2d9ee4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:before,
+.c0:after {
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+<a
+  className="c0"
+  color="info"
+>
+  Hoverline
+</a>
+`;
+
 exports[`Link renders underline 1`] = `
 .c0 {
   color: #2d9ee4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0:before,
+.c0:after {
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  display: inline-block;
 }
 
 <a

@@ -60,14 +60,14 @@ const Button = Box.withComponent('a').extend`
     props.chevronLeft &&
     css`
       &:before {
-        content: '« ';
+        content: '‹ ';
       }
     `};
   ${props =>
     props.chevronRight &&
     css`
       &:after {
-        content: ' »';
+        content: ' ›';
       }
     `};
 `

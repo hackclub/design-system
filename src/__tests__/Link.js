@@ -13,4 +13,13 @@ describe('Link', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-decoration', 'underline')
   })
+
+  test('renders hoverline', () => {
+    const json = renderer.create(<Link hoverline>Hoverline</Link>).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('text-decoration', 'none')
+    expect(json).toHaveStyleRule('text-decoration', 'underline', {
+      modifier: ':hover'
+    })
+  })
 })

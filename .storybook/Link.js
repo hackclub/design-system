@@ -20,8 +20,13 @@ storiesOf('Link', module)
       Open the homepage in same tab
     </Link>
   ))
-  .add('Color', () => (
-    <Link href="https://hackclub.com" color="primary" bold>
+  .add('Color underline', () => (
+    <Link href="https://hackclub.com" color="primary" bold underline>
       I’m extra Hack Club
+    </Link>
+  ))
+  .add('Chevrons', () => (
+    <Link href="https://hackclub.com" fontSize={3} hoverline bold chevronRight>
+      Explore more
     </Link>
   ))
