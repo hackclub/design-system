@@ -25,6 +25,12 @@ describe('theme', () => {
     expect(theme.hexa('primary', 0.5)).toBe('rgba(228, 45, 66, 0.5)')
   })
 
+  test('gradient works', () => {
+    expect(theme.gradient('accent', 'info')).toInclude('radial')
+    expect(theme.gradient('accent', 'info')).toInclude(cx('accent'))
+    expect(theme.gradient('accent', 'info')).toInclude(cx('info'))
+  })
+
   test('scales are objects', () => {
     expect(typeof space).toBe('object')
     expect(typeof fontSizes).toBe('object')

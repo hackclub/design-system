@@ -103,7 +103,7 @@ export const hexa = (color, alpha) => {
 }
 
 export const gradient = (color1, color2) =>
-  css`radial-gradient(
+  `radial-gradient(
     ellipse farthest-corner at top left,
     ${cx(color1)} 0%, ${cx(color2)} 100%
   )`
