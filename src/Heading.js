@@ -1,7 +1,10 @@
+import styled from 'styled-components'
 import Text from './Text'
 import theme from './theme'
 
-const Heading = Text.withComponent('h2').extend`line-height: 1.25;`
+const Heading = styled(Text.withComponent('h2'))`
+  line-height: 1.25;
+`
 
 Heading.displayName = 'Heading'
 

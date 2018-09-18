@@ -11,7 +11,9 @@ const next = keys.map(key => ({ key, value: theme.colors[key] }))
 
 const Chip = props => <Box w={1} p={5} {...props} />
 
-const Pre = Text.withComponent('pre').extend`font-family: ${theme.mono};`
+const Pre = styled(Text.withComponent('pre'))`
+  font-family: ${theme.mono};
+`
 
 const Card = ({ name, color }) => (
   <Box>

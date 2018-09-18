@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import Box from './Box'
 import PropTypes from 'prop-types'
 import theme from './theme'
@@ -21,7 +22,7 @@ const breakpoints = props => ({
 const hidden = key => props =>
   props[key] ? { [breakpoints(props)[key]]: { display: 'none' } } : null
 
-const Hide = Box.extend(
+const Hide = styled(Box)(
   [],
   hidden('xs'),
   hidden('sm'),

@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import {
   alignSelf,
   alignItems,
@@ -11,7 +12,7 @@ import PropTypes from 'prop-types'
 
 const wrap = props => (props.wrap ? { flexWrap: 'wrap' } : null)
 
-const Flex = Box.extend`
+const Flex = styled(Box)`
   display: flex;
   ${alignSelf} ${alignItems} ${justifyContent} ${wrap} ${flexDirection} ${flex};
 `

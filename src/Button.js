@@ -4,7 +4,7 @@ import Box from './Box'
 import theme, { cx, hexa } from './theme'
 import { css } from 'styled-components'
 
-const Button = Box.withComponent('a').extend`
+const Button = styled(Box.withComponent('a'))`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -26,16 +26,19 @@ const Button = Box.withComponent('a').extend`
       color: cx(props.bg)
     }};
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     outline: 0;
-    box-shadow: 0 2px 6px ${props =>
-      props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
+    box-shadow: 0 2px 6px
+      ${props =>
+        props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
   }
 
   &:active {
     outline: 0;
-    box-shadow: 0 2px 8px 2px ${props =>
-      props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
+    box-shadow: 0 2px 8px 2px
+      ${props =>
+        props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
   }
 
   ${props => props.disabled && { opacity: 0.25, cursor: 'not-allowed' }};

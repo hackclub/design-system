@@ -1,8 +1,9 @@
+import styled from 'styled-components'
 import Box from './Box'
 import theme from './theme'
 import PropTypes from 'prop-types'
 
-const Container = Box.extend`
+const Container = styled(Box)`
   max-width: ${props => props.maxWidth}rem;
 `
 

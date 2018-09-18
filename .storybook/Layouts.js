@@ -36,7 +36,9 @@ storiesOf('Layout Examples', module)
   ))
   .add('Navbar', () => (
     <Flex p={2} align="center" color="white" bg="accent">
-      <Icon glyph="menu" mr={2} />
+      <Border mr={3}>
+        <Icon glyph="menu" />
+      </Border>
       <Text bold mx={2}>
         Hello
       </Text>
@@ -56,9 +58,10 @@ storiesOf('Layout Examples', module)
     </Flex>
   ))
 
-const Border = Box.extend`
+const Border = styled(Box)`
   border: 1px solid ${({ theme }) => theme.colors.smoke};
   border-radius: ${({ theme }) => theme.radius};
+  line-height: 0;
 `
 
 const Tile = ({ image, title, text }) => (

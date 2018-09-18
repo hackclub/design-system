@@ -9,7 +9,7 @@ exports[`Avatar renders 1`] = `
 }
 
 <img
-  className="c0"
+  className="c0 "
   size={48}
   src="https://hackclub.com/team/zach.png"
 />
@@ -24,7 +24,7 @@ exports[`Avatar renders string width 1`] = `
 }
 
 <img
-  className="c0"
+  className="c0 "
   size="10vw"
   src="https://hackclub.com/team/zach.png"
 />

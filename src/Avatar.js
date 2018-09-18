@@ -1,10 +1,11 @@
+import styled from 'styled-components'
 import Box from './Box'
 import PropTypes from 'prop-types'
 import theme from './theme'
 
 const px = a => (typeof a === 'number' ? `${a}px` : a)
 
-const Avatar = Box.withComponent('img').extend`
+const Avatar = styled(Box.withComponent('img'))`
   border-radius: ${({ theme }) => theme.pill};
   display: inline-block;
   width: ${props => px(props.size)};

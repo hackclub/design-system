@@ -1,13 +1,13 @@
 import Box from './Box'
 import PropTypes from 'prop-types'
 import theme from './theme'
-import { css } from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const src = props => props.src && { backgroundImage: `url(${props.src})` }
 
 const height = props => props.height && { height: props.height }
 
-const BackgroundImage = Box.extend`
+const BackgroundImage = styled(Box)`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,8 +1,7 @@
+import styled from 'styled-components'
 import React from 'react'
 import Box from './Box'
-import { cx } from './theme'
 import { keyframes } from 'styled-components'
-import PropTypes from 'prop-types'
 
 const animation = keyframes`
   0% {
@@ -17,7 +16,7 @@ const animation = keyframes`
   }
 `
 
-const Base = Box.extend`
+const Base = styled(Box)`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -28,11 +27,11 @@ const Base = Box.extend`
   width: 64px;
   height: 64px;
 `
-const Inner = Box.extend`
+const Inner = styled(Box)`
   position: absolute;
   border: 4px solid currentColor;
   opacity: 1;
-  border-radius: ${({ theme }) => theme.radii[4]};
+  border-radius: ${({ theme }) => theme.pill};
   transform-origin: center;
   animation: ${animation} 0.975s ease-out infinite;
 `

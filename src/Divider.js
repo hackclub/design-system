@@ -1,8 +1,9 @@
+import styled from 'styled-components'
 import Box from './Box'
 import PropTypes from 'prop-types'
 import { cx } from './theme'
 
-const Divider = Box.withComponent('hr').extend`
+const Divider = styled(Box.withComponent('hr'))`
   height: ${props => props.height};
   border: 0;
   border-radius: ${({ theme }) => theme.pill};

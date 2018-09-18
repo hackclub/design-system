@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import Box from './Box'
 import theme from './theme'
 import PropTypes from 'prop-types'
@@ -20,7 +21,7 @@ const boxBorder = props => ({
       : null
 })
 
-const Card = Box.extend([], boxShadow, boxBorder, borderRadius)
+const Card = styled(Box)([], boxShadow, boxBorder, borderRadius)
 
 Card.propTypes = {
   /** use scale alias for theme values or null to remove shadow */

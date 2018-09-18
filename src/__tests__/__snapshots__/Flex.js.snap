@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flex align prop 1`] = `
-.c0 {
+.c1 {
   text-align: center;
+}
+
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14,7 +17,7 @@ exports[`Flex align prop 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 />
 `;
 
@@ -30,7 +33,7 @@ exports[`Flex direction prop 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 />
 `;
 
@@ -47,7 +50,7 @@ exports[`Flex justify prop 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 />
 `;
 
@@ -60,7 +63,7 @@ exports[`Flex renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 />
 `;
 
@@ -76,6 +79,6 @@ exports[`Flex wrap prop 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 />
 `;

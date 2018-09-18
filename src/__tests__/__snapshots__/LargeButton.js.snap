@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LargeButton inverted 1`] = `
-.c0 {
+.c2 {
+  margin: 0px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 16px;
@@ -9,6 +10,9 @@ exports[`LargeButton inverted 1`] = `
   background-color: #e42d42;
   color: #ffffff;
   font-size: 20px;
+}
+
+.c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -29,19 +33,22 @@ exports[`LargeButton inverted 1`] = `
   border: none;
   background-color: #ffffff;
   color: #e42d42;
-  text-transform: uppercase;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
-.c0:hover,
-.c0:focus {
+.c1:hover,
+.c1:focus {
   outline: 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.16);
 }
 
-.c0:active {
+.c1:active {
   outline: 0;
   box-shadow: 0 2px 8px 2px rgba(0,0,0,0.16);
+}
+
+.c0 {
+  text-transform: uppercase;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
 .c0:hover,
@@ -54,14 +61,15 @@ exports[`LargeButton inverted 1`] = `
 }
 
 <a
-  className="c0"
+  className="c0 c1 c2"
   color="white"
   fontSize={3}
 />
 `;
 
 exports[`LargeButton larger 1`] = `
-.c0 {
+.c2 {
+  margin: 0px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 16px;
@@ -69,6 +77,9 @@ exports[`LargeButton larger 1`] = `
   background-color: #7280ed;
   color: #ffffff;
   font-size: 20px;
+}
+
+.c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -87,19 +98,22 @@ exports[`LargeButton larger 1`] = `
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border: none;
-  text-transform: uppercase;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
-.c0:hover,
-.c0:focus {
+.c1:hover,
+.c1:focus {
   outline: 0;
   box-shadow: 0 2px 6px rgba(114,128,237,0.25);
 }
 
-.c0:active {
+.c1:active {
   outline: 0;
   box-shadow: 0 2px 8px 2px rgba(114,128,237,0.25);
+}
+
+.c0 {
+  text-transform: uppercase;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
 .c0:hover,
@@ -112,14 +126,15 @@ exports[`LargeButton larger 1`] = `
 }
 
 <a
-  className="c0"
+  className="c0 c1 c2"
   color="white"
   fontSize={3}
 />
 `;
 
 exports[`LargeButton renders 1`] = `
-.c0 {
+.c2 {
+  margin: 0px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 16px;
@@ -127,6 +142,9 @@ exports[`LargeButton renders 1`] = `
   background-color: #e42d42;
   color: #ffffff;
   font-size: 20px;
+}
+
+.c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -145,19 +163,22 @@ exports[`LargeButton renders 1`] = `
   box-shadow: 0 2px 4px rgba(0,0,0,0.16);
   border-radius: 9999px;
   border: none;
-  text-transform: uppercase;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
-.c0:hover,
-.c0:focus {
+.c1:hover,
+.c1:focus {
   outline: 0;
   box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
-.c0:active {
+.c1:active {
   outline: 0;
   box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
+}
+
+.c0 {
+  text-transform: uppercase;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
 .c0:hover,
@@ -170,7 +191,7 @@ exports[`LargeButton renders 1`] = `
 }
 
 <a
-  className="c0"
+  className="c0 c1 c2"
   color="white"
   fontSize={3}
 />

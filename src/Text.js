@@ -7,7 +7,6 @@ import {
   textAlign,
   space,
   color,
-  responsiveStyle,
   propTypes
 } from 'styled-system'
 import theme, { filterProps } from './theme'

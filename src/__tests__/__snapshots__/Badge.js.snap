@@ -1,53 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Badge accepts custom bg and color 1`] = `
-.c0 {
+.c1 {
   font-size: 14px;
+  margin: 0px;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
   background-color: #ffffff;
   color: #7280ed;
+}
+
+.c0 {
   border-radius: 4px;
   display: inline-block;
   font-weight: normal;
-  -webkit-letter-spacing: 0.04em;
-  -moz-letter-spacing: 0.04em;
-  -ms-letter-spacing: 0.04em;
-  letter-spacing: 0.04em;
+  -webkit-letter-spacing: 0.0375em;
+  -moz-letter-spacing: 0.0375em;
+  -ms-letter-spacing: 0.0375em;
+  letter-spacing: 0.0375em;
   line-height: 1.25;
   text-transform: uppercase;
 }
 
 <span
-  className="c0"
+  className="c0 c1"
   color="accent"
 />
 `;
 
 exports[`Badge renders 1`] = `
-.c0 {
+.c1 {
   font-size: 14px;
+  margin: 0px;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
   background-color: #e42d42;
   color: #ffffff;
+}
+
+.c0 {
   border-radius: 4px;
   display: inline-block;
   font-weight: normal;
-  -webkit-letter-spacing: 0.04em;
-  -moz-letter-spacing: 0.04em;
-  -ms-letter-spacing: 0.04em;
-  letter-spacing: 0.04em;
+  -webkit-letter-spacing: 0.0375em;
+  -moz-letter-spacing: 0.0375em;
+  -ms-letter-spacing: 0.0375em;
+  letter-spacing: 0.0375em;
   line-height: 1.25;
   text-transform: uppercase;
 }
 
 <span
-  className="c0"
+  className="c0 c1"
   color="white"
 />
 `;

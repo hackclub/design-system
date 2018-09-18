@@ -1,51 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading renders 1`] = `
-.c0 {
+.c1 {
   font-size: 32px;
   margin: 0px;
   font-weight: 400;
+}
+
+.c0 {
   line-height: 1.25;
 }
 
 <h2
-  className="c0"
+  className="c0 c1"
 />
 `;
 
 exports[`Heading uses <Text> component properties 1`] = `
-.c0 {
+.c1 {
   font-size: 32px;
   margin: 0px;
   color: #e42d42;
   text-align: center;
   font-weight: 400;
+}
+
+.c0 {
   line-height: 1.25;
 }
 
 <h2
-  className="c0"
+  className="c0 c1"
   color="primary"
 />
 `;
 
 exports[`Heading with default theme font size, when fontSize prop not used 1`] = `
-.c0 {
+.c1 {
   font-size: 32px;
   margin: 0px;
   font-weight: 400;
+}
+
+.c0 {
   line-height: 1.25;
 }
 
 <h2
-  className="c0"
+  className="c0 c1"
 />
 `;
 
 exports[`Heading with h1-h6 dot-notation 1`] = `
 .c0 {
-  font-size: 48px;
-  margin: 0px;
   line-height: 1.25;
 }
 
@@ -56,8 +63,6 @@ exports[`Heading with h1-h6 dot-notation 1`] = `
 
 exports[`Heading with h1-h6 dot-notation 2`] = `
 .c0 {
-  font-size: 32px;
-  margin: 0px;
   line-height: 1.25;
 }
 
@@ -68,8 +73,6 @@ exports[`Heading with h1-h6 dot-notation 2`] = `
 
 exports[`Heading with h1-h6 dot-notation 3`] = `
 .c0 {
-  font-size: 24px;
-  margin: 0px;
   line-height: 1.25;
 }
 
@@ -80,8 +83,6 @@ exports[`Heading with h1-h6 dot-notation 3`] = `
 
 exports[`Heading with h1-h6 dot-notation 4`] = `
 .c0 {
-  font-size: 20px;
-  margin: 0px;
   line-height: 1.25;
 }
 
@@ -92,8 +93,6 @@ exports[`Heading with h1-h6 dot-notation 4`] = `
 
 exports[`Heading with h1-h6 dot-notation 5`] = `
 .c0 {
-  font-size: 16px;
-  margin: 0px;
   line-height: 1.25;
 }
 
@@ -104,9 +103,6 @@ exports[`Heading with h1-h6 dot-notation 5`] = `
 
 exports[`Heading with h1-h6 dot-notation 6`] = `
 .c0 {
-  font-size: 12px;
-  margin: 0px;
-  text-transform: uppercase;
   line-height: 1.25;
 }
 

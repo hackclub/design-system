@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link renders 1`] = `
-.c0 {
+.c1 {
+  margin: 0px;
   color: #2d9ee4;
+}
+
+.c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -15,7 +19,7 @@ exports[`Link renders 1`] = `
 }
 
 <a
-  className="c0"
+  className="c0 c1"
   color="info"
 >
   Hello
@@ -23,8 +27,12 @@ exports[`Link renders 1`] = `
 `;
 
 exports[`Link renders hoverline 1`] = `
-.c0 {
+.c1 {
+  margin: 0px;
   color: #2d9ee4;
+}
+
+.c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -43,7 +51,7 @@ exports[`Link renders hoverline 1`] = `
 }
 
 <a
-  className="c0"
+  className="c0 c1"
   color="info"
 >
   Hoverline
@@ -51,8 +59,12 @@ exports[`Link renders hoverline 1`] = `
 `;
 
 exports[`Link renders underline 1`] = `
-.c0 {
+.c1 {
+  margin: 0px;
   color: #2d9ee4;
+}
+
+.c0 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -65,7 +77,7 @@ exports[`Link renders underline 1`] = `
 }
 
 <a
-  className="c0"
+  className="c0 c1"
   color="info"
 >
   Underline

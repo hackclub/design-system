@@ -5,9 +5,10 @@ import Text from './Text'
 import Input, { InputSelect, InputTextarea } from './Input'
 import Slider from './Slider'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import theme from './theme'
 
-export const Error = Text.extend.attrs({
+export const Error = styled(Text).attrs({
   className: 'error',
   color: 'error',
   f: 1,
@@ -15,7 +16,9 @@ export const Error = Text.extend.attrs({
   my: 0
 })`
   font-weight: normal;
-  &:before { content: '— '; }
+  &:before {
+    content: '— ';
+  }
 `
 
 const Field = ({ type, name, label, placeholder, error, ...props }) => {

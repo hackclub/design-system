@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
 import { Box, Flex, Heading, Text, Link, Button, Avatar } from '../src'
+import styled from 'styled-components'
 
 const List = Box.withComponent('ul')
 const Item = Text.withComponent('li')
 const Code = Text.withComponent('pre')
 
-const Flag = Link.extend`
+const Flag = styled(Link)`
   display: inline-block;
   background: url(//hackclub.com/orpheus_flag.svg) no-repeat;
   background-position: top center;

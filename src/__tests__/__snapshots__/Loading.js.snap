@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Loading renders 1`] = `
-.c0 {
+.c1 {
   color: #e42d42;
+}
+
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -25,11 +28,10 @@ exports[`Loading renders 1`] = `
   height: 64px;
 }
 
-.c1 {
+.c2 {
   position: absolute;
   border: 4px solid currentColor;
   opacity: 1;
-  border-radius: 9999px;
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -40,13 +42,13 @@ exports[`Loading renders 1`] = `
 <div
   aria-label="Loading"
   aria-role="presentation"
-  className="c0"
+  className="c0 c1"
 >
   <div
-    className="c1"
+    className="c2 "
   />
   <div
-    className="c1"
+    className="c2 "
   />
 </div>
 `;

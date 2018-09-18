@@ -1,8 +1,9 @@
+import styled from 'styled-components'
 import Text from './Text'
-import { width, propTypes } from 'styled-system'
+import { propTypes } from 'styled-system'
 import theme from './theme'
 
-const Label = Text.withComponent('label').extend`
+const Label = styled(Text.withComponent('label'))`
   display: block;
 
   a {

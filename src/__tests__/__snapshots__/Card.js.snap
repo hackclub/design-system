@@ -7,7 +7,7 @@ exports[`Card renders lg shadow 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 />
 `;
 
@@ -18,7 +18,7 @@ exports[`Card renders small box shadow 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 />
 `;
 
@@ -29,6 +29,6 @@ exports[`Card renders with 1px border 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 />
 `;

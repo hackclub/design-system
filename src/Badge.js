@@ -1,11 +1,12 @@
+import styled from 'styled-components'
 import Text from './Text'
 import theme from './theme'
 
-const Badge = Text.span.extend`
+const Badge = styled(Text.span)`
   border-radius: ${({ theme }) => theme.radius};
   display: inline-block;
   font-weight: normal;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.0375em;
   line-height: 1.25;
   text-transform: uppercase;
 `

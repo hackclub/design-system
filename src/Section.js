@@ -1,7 +1,8 @@
+import styled from 'styled-components'
 import Flex from './Flex'
 import theme from './theme'
 
-const Section = Flex.withComponent('section').extend`
+const Section = styled(Flex.withComponent('section'))`
   text-align: center;
 `
 
