@@ -21,6 +21,8 @@ storiesOf('Badge', module)
         'success',
         'info',
         'muted'
-      ].map(key => <Badge mr={2} bg={key} children={key} key={key} />)}
+      ].map(key => (
+        <Badge mr={2} bg={key} children={key} key={key} />
+      ))}
     </React.Fragment>
   ))

@@ -22,8 +22,8 @@ storiesOf('👋 Welcome!', module).add('About the project', () => (
     <Heading.h1 f={5}>Welcome!</Heading.h1>
     <Text f={3} my={2}>
       This is{' '}
-      <Link href="https://hackclub.com" underline children="Hack Club" />’s
-      Design System.
+      <Link href="https://hackclub.com" underline children="Hack Club" />
+      ’s Design System.
     </Text>
     <Text>It’s a collection of React components designed to:</Text>
     <List>

@@ -9,7 +9,7 @@
     "build": "rm -rf .site && build-storybook -c .storybook -o .site",
     "start": "serve .site -p 9000",
     "deploy": "storybook-to-ghpages",
-    "fmt": "prettier {.storybook,src,dist}/**/*.js --single-quote --no-semi --write",
+    "fmt": "prettier {.storybook,src}/**/*.js --single-quote --no-semi --write",
     "coverage": "jest --coverage && serve coverage -o",
     "test": "jest"
   },
@@ -23,7 +23,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "serve": "^6.5.8",
+    "serve": "^7.0.0",
     "styled-components": "^3.2.6",
     "styled-system": "1.1.4"
   },
