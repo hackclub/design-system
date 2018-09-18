@@ -8,7 +8,7 @@ exports[`LargeButton inverted 1`] = `
   padding-bottom: 16px;
   background-color: #e42d42;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -30,6 +30,7 @@ exports[`LargeButton inverted 1`] = `
   border-style: solid;
   background-color: #ffffff;
   color: #e42d42;
+  text-transform: uppercase;
   box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
@@ -53,15 +54,10 @@ exports[`LargeButton inverted 1`] = `
   box-shadow: 0 4px 16px 2px rgba(0,0,0,0.16);
 }
 
-@media screen and (min-width:32em) {
-  .c0 {
-    font-size: 20px;
-  }
-}
-
 <a
   className="c0"
   color="white"
+  fontSize={3}
 />
 `;
 
@@ -73,7 +69,7 @@ exports[`LargeButton larger 1`] = `
   padding-bottom: 16px;
   background-color: #7280ed;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -93,6 +89,7 @@ exports[`LargeButton larger 1`] = `
   border-radius: 9999px;
   border-width: 0;
   border-style: solid;
+  text-transform: uppercase;
   box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
@@ -116,15 +113,10 @@ exports[`LargeButton larger 1`] = `
   box-shadow: 0 4px 16px 2px rgba(114,128,237,0.25);
 }
 
-@media screen and (min-width:32em) {
-  .c0 {
-    font-size: 20px;
-  }
-}
-
 <a
   className="c0"
   color="white"
+  fontSize={3}
 />
 `;
 
@@ -136,7 +128,7 @@ exports[`LargeButton renders 1`] = `
   padding-bottom: 16px;
   background-color: #e42d42;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -156,6 +148,7 @@ exports[`LargeButton renders 1`] = `
   border-radius: 9999px;
   border-width: 0;
   border-style: solid;
+  text-transform: uppercase;
   box-shadow: 0 2px 12px rgba(0,0,0,0.16);
 }
 
@@ -179,14 +172,9 @@ exports[`LargeButton renders 1`] = `
   box-shadow: 0 4px 16px 2px rgba(228,45,66,0.25);
 }
 
-@media screen and (min-width:32em) {
-  .c0 {
-    font-size: 20px;
-  }
-}
-
 <a
   className="c0"
   color="white"
+  fontSize={3}
 />
 `;

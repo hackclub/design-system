@@ -3,7 +3,8 @@ import Button from './Button'
 import theme, { hexa } from './theme'
 
 const LargeButton = Button.extend`
-  box-shadow: 0 2px 12px ${props => props.theme.shadowColor};
+  text-transform: uppercase;
+  box-shadow: 0 2px 12px ${({ theme }) => theme.shadowColor};
 
   &:hover,
   &:focus {
@@ -25,7 +26,7 @@ LargeButton.defaultProps = {
   theme,
   bg: 'primary',
   color: 'white',
-  f: [2, 3],
+  fontSize: 3,
   py: 3,
   px: 4
 }
