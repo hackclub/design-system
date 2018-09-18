@@ -56,6 +56,10 @@ exports[`Input renders 1`] = `
   background-size: .5rem;
 }
 
+.c0[type='textarea'] {
+  resize: vertical;
+}
+
 <input
   className="c0"
   id="renders"
@@ -116,6 +120,10 @@ exports[`Input renders with custom fontSize 1`] = `
 .c0[type='select'] {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
   background-size: .5rem;
+}
+
+.c0[type='textarea'] {
+  resize: vertical;
 }
 
 <input
@@ -179,6 +187,10 @@ exports[`Input renders with custom spacing 1`] = `
 .c0[type='select'] {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
   background-size: .5rem;
+}
+
+.c0[type='textarea'] {
+  resize: vertical;
 }
 
 <input

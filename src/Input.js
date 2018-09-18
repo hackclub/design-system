@@ -50,6 +50,10 @@ const Input = styled(Base)`
     background-size: .5rem;
   }
 
+  &[type='textarea'] {
+    resize: vertical;
+  }
+
   ${fontSize} ${space} ${width} ${color};
 `
 
