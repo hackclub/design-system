@@ -14,11 +14,9 @@ import theme, { filterProps } from './theme'
 export const caps = props =>
   props.caps ? { textTransform: 'uppercase' } : null
 
-export const regular = props =>
-  props.regular ? { fontWeight: props.theme.regular } : null
+export const regular = props => props.regular && { fontWeight: 'regular' }
 
-export const bold = props =>
-  props.bold ? { fontWeight: props.theme.bold } : null
+export const bold = props => props.bold && { fontWeight: 'bold' }
 
 const Base = props => {
   const next = filterProps(props)

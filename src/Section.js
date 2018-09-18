@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Flex from './Flex'
 import theme from './theme'
 
-const Section = styled(Flex.withComponent('section'))`
+const Section = styled(Flex)`
   text-align: center;
 `
 

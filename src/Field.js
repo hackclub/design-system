@@ -11,7 +11,7 @@ import theme from './theme'
 export const Error = styled(Text).attrs({
   className: 'error',
   color: 'error',
-  f: 1,
+  fontSize: 1,
   ml: 1,
   my: 0
 })`

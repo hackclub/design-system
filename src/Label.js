@@ -21,7 +21,7 @@ Label.propTypes = {
 Label.defaultProps = {
   theme,
   color: 'black',
-  f: 2,
+  fontSize: 2,
   w: 1
 }
 

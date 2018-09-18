@@ -19,7 +19,7 @@ Badge.defaultProps = {
   py: 1,
   bg: 'primary',
   color: 'white',
-  f: 1
+  fontSize: 1
 }
 
 export default Badge

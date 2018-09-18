@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Text from './Text'
 import theme from './theme'
 
-const Heading = styled(Text.withComponent('h2'))`
+const Heading = Text.withComponent('h2').extend`
   line-height: 1.25;
 `
 
@@ -15,7 +15,7 @@ Heading.defaultProps = {
   m: 0
 }
 
-Heading.h1 = Heading.withComponent('h1')
+Heading.h1 = styled(Heading.withComponent('h1'))``
 Heading.h1.defaultProps = {
   bold: true,
   f: 6,

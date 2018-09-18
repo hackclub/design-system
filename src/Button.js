@@ -1,15 +1,23 @@
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import Box from './Box'
 import theme, { cx, hexa } from './theme'
-import { css } from 'styled-components'
+import styled, { css } from 'styled-components'
+import {
+  space,
+  width,
+  color,
+  fontSize,
+  textAlign,
+  propTypes
+} from 'styled-system'
+import PropTypes from 'prop-types'
 
-const Button = styled(Box.withComponent('a'))`
+const Button = Box.withComponent('a').extend`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-size: inherit;
   font-family: inherit;
   font-weight: ${({ theme }) => theme.bold};
   line-height: 1.125;
@@ -62,7 +70,7 @@ const Button = styled(Box.withComponent('a'))`
     props.chevronLeft &&
     css`
       &:before {
-        content: '‹';
+        content: '«';
         padding-right: 0.25em;
       }
     `};
@@ -70,7 +78,7 @@ const Button = styled(Box.withComponent('a'))`
     props.chevronRight &&
     css`
       &:after {
-        content: '›';
+        content: '»';
         padding-left: 0.25em;
       }
     `};
@@ -93,7 +101,7 @@ Button.defaultProps = {
   theme,
   bg: 'primary',
   color: 'white',
-  f: 3,
+  fontSize: 3,
   m: 0,
   px: 3,
   py: 2
