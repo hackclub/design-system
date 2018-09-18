@@ -7716,9 +7716,9 @@ styled-components@3.4.8:
     stylis-rule-sheet "^0.0.10"
     supports-color "^3.2.3"
 
-styled-system@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-1.1.4.tgz#904521a5142e85345c76956c50524e4d05a88af3"
+styled-system@1.1.7:
+  version "1.1.7"
+  resolved "http://registry.npmjs.org/styled-system/-/styled-system-1.1.7.tgz#b9b6906aaec41b9c79f40780e07dc39b81fe93fb"
   dependencies:
     prop-types "^15.6.0"
 
