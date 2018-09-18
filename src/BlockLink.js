@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import Link from './Link'
+import Text from './Text'
 
-const BlockLink = styled(Link)`
+const BlockLink = styled(Text.withComponent('a')).attrs({ color: 'inherit' })`
   display: block;
-  color: inherit;
   text-decoration: none;
 `
 

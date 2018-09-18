@@ -2,21 +2,19 @@
 
 exports[`BlockLink renders 1`] = `
 .c1 {
-  color: #2d9ee4;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  margin: 0px;
+  color: inherit;
 }
 
 .c0 {
   display: block;
-  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 <a
   className="c0 c1"
-  color="info"
+  color="inherit"
 >
   raw text
 </a>
