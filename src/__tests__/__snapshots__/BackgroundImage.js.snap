@@ -41,8 +41,8 @@ exports[`BackgroundImage scale 1`] = `
   background-color: #dde1e4;
   background-image: url(https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
   overflow: hidden;
-  -webkit-transition: 0.125s ease-out background-size;
-  transition: 0.125s ease-out background-size;
+  -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) background-size;
+  transition: 0.1875s cubic-bezier(0.375,0,0.675,1) background-size;
   will-change: background-size;
   background-size: auto 100%;
 }

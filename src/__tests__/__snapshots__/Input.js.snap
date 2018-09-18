@@ -16,8 +16,8 @@ exports[`Input renders 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #dde1e4;
-  -webkit-transition: 0.125s ease-out box-shadow;
-  transition: 0.125s ease-out box-shadow;
+  -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
+  transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   font-size: 16px;
   margin: 0px;
   padding-left: 8px;
@@ -78,8 +78,8 @@ exports[`Input renders with custom fontSize 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #dde1e4;
-  -webkit-transition: 0.125s ease-out box-shadow;
-  transition: 0.125s ease-out box-shadow;
+  -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
+  transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   font-size: 24px;
   margin: 0px;
   padding-left: 8px;
@@ -140,8 +140,8 @@ exports[`Input renders with custom spacing 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #dde1e4;
-  -webkit-transition: 0.125s ease-out box-shadow;
-  transition: 0.125s ease-out box-shadow;
+  -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
+  transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   font-size: 16px;
   margin: 32px;
   padding: 32px;

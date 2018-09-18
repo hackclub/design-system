@@ -256,7 +256,7 @@ exports[`Icon renders 1`] = `
         256,
         512,
       ],
-      "transition": "0.125s ease-out",
+      "transition": "0.1875s cubic-bezier(0.375, 0, 0.675, 1)",
     }
   }
   viewBox="0 0 32 32"

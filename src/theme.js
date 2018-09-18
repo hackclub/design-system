@@ -72,7 +72,7 @@ export const bold = 700
 export const fontWeights = { regular, bold }
 
 export const scaleFactor = 17 / 16
-export const transition = '0.125s ease-out'
+export const transition = `${3 / 16}s cubic-bezier(0.375, 0, 0.675, 1)`
 
 // styled-system’s `borderRadius` function can hook into the `radii` object/array
 export const pill = '9999px'
