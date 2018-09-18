@@ -11,13 +11,13 @@ const Button = Box.withComponent('a').extend`
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: ${props => props.theme.bold};
+  font-weight: ${({ theme }) => theme.bold};
   line-height: 1.125;
   appearance: none;
   cursor: pointer;
-  transition: ${props => props.theme.transition} box-shadow;
-  box-shadow: 0 2px 4px ${props => props.theme.shadowColor};
-  border-radius: ${props => props.theme.pill};
+  transition: ${({ theme }) => theme.transition} box-shadow;
+  box-shadow: 0 2px 4px ${({ theme }) => theme.shadowColor};
+  border-radius: ${({ theme }) => theme.pill};
   border-width: 0;
   border-style: solid;
 
@@ -44,14 +44,14 @@ const Button = Box.withComponent('a').extend`
   ${props =>
     props.scale &&
     css`
-      transition: ${props => props.theme.transition} all;
+      transition: ${({ theme }) => theme.transition} all;
       will-change: transform;
       transform: scale(1);
       &:hover,
       &:focus {
-        transform: scale(${props => props.theme.scaleFactor});
+        transform: scale(${({ theme }) => theme.scaleFactor});
       }
-      ${props => props.theme.mediaQueries.reduceMotion} {
+      ${({ theme }) => theme.mediaQueries.reduceMotion} {
         transform: none !important;
       }
     `};

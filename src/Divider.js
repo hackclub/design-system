@@ -5,7 +5,7 @@ import { cx } from './theme'
 const Divider = Box.withComponent('hr').extend`
   height: ${props => props.height};
   border: 0;
-  border-radius: ${props => props.theme.pill};
+  border-radius: ${({ theme }) => theme.pill};
   background-color: ${props =>
     cx(props.color || props.borderColor || props.bg || 'smoke')};
 `

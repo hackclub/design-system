@@ -32,7 +32,7 @@ const Inner = Box.extend`
   position: absolute;
   border: 4px solid currentColor;
   opacity: 1;
-  border-radius: ${props => props.theme.radii[4]};
+  border-radius: ${({ theme }) => theme.radii[4]};
   transform-origin: center;
   animation: ${animation} 0.975s ease-out infinite;
 `

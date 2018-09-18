@@ -11,22 +11,24 @@ const BackgroundImage = Box.extend`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: ${props => props.theme.colors.smoke};
+  background-color: ${({ theme }) => theme.colors.smoke};
   ${src} ${height};
 
-  ${props => props.scale && css`
-    overflow: hidden;
-    transition: ${props => props.theme.transition} background-size;
-    will-change: background-size;
-    background-size: auto 100%;
-    &:hover {
-      background-size: auto ${props => props.theme.scaleFactor * 100}%;
-    }
-    ${props => props.theme.mediaQueries.reduceMotion} {
-      transition: none;
-      background-size: cover !important;
-    }
-  `};
+  ${props =>
+    props.scale &&
+    css`
+      overflow: hidden;
+      transition: ${({ theme }) => theme.transition} background-size;
+      will-change: background-size;
+      background-size: auto 100%;
+      &:hover {
+        background-size: auto ${({ theme }) => theme.scaleFactor * 100}%;
+      }
+      ${({ theme }) => theme.mediaQueries.reduceMotion} {
+        transition: none;
+        background-size: cover !important;
+      }
+    `};
 `
 
 BackgroundImage.displayName = 'BackgroundImage'

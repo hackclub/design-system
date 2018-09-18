@@ -25,14 +25,14 @@ const Input = styled(Base)`
   line-height: inherit;
   font-family: inherit;
   background-color: transparent;
-  border-radius: ${props => props.theme.radius};
+  border-radius: ${({ theme }) => theme.radius};
   border-width: 1px;
   border-style: solid;
-  border-color: ${props => props.theme.colors.smoke};
-  transition: ${props => props.theme.transition} box-shadow;
+  border-color: ${({ theme }) => theme.colors.smoke};
+  transition: ${({ theme }) => theme.transition} box-shadow;
 
   ::placeholder {
-    color: ${props => props.theme.colors.grey};
+    color: ${({ theme }) => theme.colors.grey};
   }
 
   ::-ms-clear {
@@ -41,8 +41,8 @@ const Input = styled(Base)`
 
   &:focus {
     outline: none;
-    border-color: ${props => props.theme.colors.info};
-    box-shadow: 0 0 0 2px ${props => props.theme.colors.blue[2]};
+    border-color: ${({ theme }) => theme.colors.info};
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.blue[2]};
   }
 
   &[type='select'] {

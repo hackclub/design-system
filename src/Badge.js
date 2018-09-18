@@ -2,7 +2,7 @@ import Text from './Text'
 import theme from './theme'
 
 const Badge = Text.span.extend`
-  border-radius: ${props => props.theme.radius};
+  border-radius: ${({ theme }) => theme.radius};
   display: inline-block;
   font-weight: normal;
   letter-spacing: 0.04em;

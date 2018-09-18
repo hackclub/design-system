@@ -57,8 +57,8 @@ storiesOf('Layout Examples', module)
   ))
 
 const Border = Box.extend`
-  border: 1px solid ${props => props.theme.colors.smoke};
-  border-radius: ${props => props.theme.radius};
+  border: 1px solid ${({ theme }) => theme.colors.smoke};
+  border-radius: ${({ theme }) => theme.radius};
 `
 
 const Tile = ({ image, title, text }) => (

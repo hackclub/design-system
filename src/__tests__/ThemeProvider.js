@@ -5,7 +5,7 @@ import { Base } from '../ThemeProvider'
 import styled from 'styled-components'
 
 const Content = styled.p`
-  color: ${props => props.theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
 `
 
 describe('ThemeProvider', () => {

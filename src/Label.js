@@ -6,7 +6,7 @@ const Label = Text.withComponent('label').extend`
   display: block;
 
   a {
-    color: ${props => props.theme.colors.info};
+    color: ${({ theme }) => theme.colors.info};
     text-decoration: underline;
   }
 `
