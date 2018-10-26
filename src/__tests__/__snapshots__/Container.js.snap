@@ -7,7 +7,7 @@ exports[`Container renders with default theme max-width 1`] = `
 }
 
 .c0 {
-  max-width: 64rem;
+  max-width: 72rem;
 }
 
 <div

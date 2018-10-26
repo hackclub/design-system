@@ -14,7 +14,7 @@ Container.propTypes = {
 }
 
 Container.defaultProps = {
-  maxWidth: 64,
+  maxWidth: 72,
   mx: 'auto'
 }
 

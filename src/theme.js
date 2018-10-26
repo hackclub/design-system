@@ -59,16 +59,16 @@ export const mediaQueries = {
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
-export const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
+export const space = [0, 6, 12, 18, 24, 36, 72, 108, 144, 288, 432]
 
 const emoji = '"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"'
-export const font = `Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif,${emoji}`
+export const font = `"Phantom Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif,${emoji}`
 export const mono = 'SFMono-Regular,"Roboto Mono",Menlo,monospace'
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 64, 72, 96]
+export const fontSizes = [13.5, 16, 18, 24, 27, 36, 48, 54, 72, 96]
 
-export const regular = 400
-export const bold = 700
+export const regular = 'regular'
+export const bold = 'bold'
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = { regular, bold }
@@ -81,8 +81,8 @@ export const pill = '9999px'
 export const radii = ['0px', '4px', '8px', '16px', pill]
 export const radius = '4px'
 
-export const shadowColor = 'rgba(0,0,0,0.16)'
-export const baseShadow = '0 0 2px 0 rgba(0,0,0,.08),'
+export const shadowColor = 'rgba(0,0,0,0.125)'
+export const baseShadow = '0 0 2px 0 rgba(0,0,0,.0625),'
 export const boxShadows = [
   baseShadow + `0 2px 4px 0 ${shadowColor}`,
   baseShadow + `0 4px 8px 0 ${shadowColor}`,

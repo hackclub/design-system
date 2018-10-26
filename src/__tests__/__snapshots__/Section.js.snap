@@ -2,10 +2,10 @@
 
 exports[`Section renders 1`] = `
 .c2 {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #ffffff;
   text-align: center;
 }
@@ -34,8 +34,8 @@ exports[`Section renders 1`] = `
 
 @media screen and (min-width:32em) {
   .c2 {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 }
 

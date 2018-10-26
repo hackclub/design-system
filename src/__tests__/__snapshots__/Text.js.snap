@@ -36,7 +36,7 @@ exports[`Text caps prop sets text-transform 1`] = `
 exports[`Text mt prop sets margin-top 1`] = `
 .c0 {
   margin: 0px;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 <p

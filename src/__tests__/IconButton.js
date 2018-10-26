@@ -15,7 +15,7 @@ describe('IconButton', () => {
     const json = renderer.create(<IconButton circle />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border-radius', '9999px')
-    expect(json).toHaveStyleRule('padding', '8px')
+    expect(json).toHaveStyleRule('padding', '12px')
   })
 
   test('executes onClick prop on click', () => {

@@ -3,13 +3,13 @@
 exports[`OutlineButton disabled prop sets 1`] = `
 .c0 {
   margin: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #e42d42;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -18,7 +18,7 @@ exports[`OutlineButton disabled prop sets 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -26,13 +26,13 @@ exports[`OutlineButton disabled prop sets 1`] = `
   cursor: pointer;
   -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
   border: none;
   opacity: 0.25;
   cursor: not-allowed;
   text-transform: uppercase;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
   background: transparent;
   border-width: 2px;
   border-style: solid;
@@ -80,13 +80,13 @@ exports[`OutlineButton disabled prop sets 1`] = `
 exports[`OutlineButton renders 1`] = `
 .c0 {
   margin: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #e42d42;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -95,7 +95,7 @@ exports[`OutlineButton renders 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -103,11 +103,11 @@ exports[`OutlineButton renders 1`] = `
   cursor: pointer;
   -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
   border: none;
   text-transform: uppercase;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
   background: transparent;
   border-width: 2px;
   border-style: solid;
@@ -154,13 +154,13 @@ exports[`OutlineButton renders 1`] = `
 exports[`OutlineButton with custom color 1`] = `
 .c0 {
   margin: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #ffffff;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -169,7 +169,7 @@ exports[`OutlineButton with custom color 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -177,11 +177,11 @@ exports[`OutlineButton with custom color 1`] = `
   cursor: pointer;
   -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
   border: none;
   text-transform: uppercase;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.16);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.125);
   background: transparent;
   border-width: 2px;
   border-style: solid;
