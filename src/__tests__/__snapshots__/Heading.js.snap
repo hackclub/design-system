@@ -2,7 +2,7 @@
 
 exports[`Heading renders 1`] = `
 .c0 {
-  font-size: 32px;
+  font-size: 36px;
   margin: 0px;
   font-weight: regular;
   line-height: 1.25;
@@ -15,7 +15,7 @@ exports[`Heading renders 1`] = `
 
 exports[`Heading uses <Text> component properties 1`] = `
 .c0 {
-  font-size: 32px;
+  font-size: 36px;
   margin: 0px;
   color: #e42d42;
   text-align: center;
@@ -31,7 +31,7 @@ exports[`Heading uses <Text> component properties 1`] = `
 
 exports[`Heading with default theme font size, when fontSize prop not used 1`] = `
 .c0 {
-  font-size: 32px;
+  font-size: 36px;
   margin: 0px;
   font-weight: regular;
   line-height: 1.25;

@@ -26,10 +26,13 @@ describe('BackgroundImage', () => {
   test('scale', () => {
     const json = renderer.create(<BackgroundImage scale {...props} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-size', 'auto 100%')
     expect(json).toHaveStyleRule(
       'background-size',
-      `auto ${theme.scaleFactor * 100}%`,
+      `auto ${theme.scaleFactor * 100}%`
+    )
+    expect(json).toHaveStyleRule(
+      'background-size',
+      `auto ${(theme.scaleFactor + 1 / 16) * 100}%`,
       { modifier: ':hover' }
     )
   })

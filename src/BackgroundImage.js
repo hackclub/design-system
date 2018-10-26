@@ -11,7 +11,6 @@ const BackgroundImage = styled(Box)`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: ${({ theme }) => theme.colors.smoke};
   ${src} ${height};
 
   ${props =>
@@ -20,9 +19,10 @@ const BackgroundImage = styled(Box)`
       overflow: hidden;
       transition: ${({ theme }) => theme.transition} background-size;
       will-change: background-size;
-      background-size: auto 100%;
+      background-size: auto ${({ theme }) => theme.scaleFactor * 100}%;
       &:hover {
-        background-size: auto ${({ theme }) => theme.scaleFactor * 100}%;
+        background-size: auto
+          ${({ theme }) => (theme.scaleFactor + 1 / 16) * 100}%;
       }
       ${({ theme }) => theme.mediaQueries.reduceMotion} {
         transition: none;
@@ -43,7 +43,8 @@ BackgroundImage.propTypes = {
 }
 
 BackgroundImage.defaultProps = {
-  theme
+  theme,
+  bg: 'smoke'
 }
 
 export default BackgroundImage
