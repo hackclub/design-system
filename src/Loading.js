@@ -37,7 +37,7 @@ const Inner = styled(Box)`
 `
 
 const Loading = props => (
-  <Base aria-role="presentation" aria-label="Loading" {...props}>
+  <Base role="presentation" aria-label="Loading" {...props}>
     <Inner />
     <Inner />
   </Base>
