@@ -7,7 +7,6 @@
     "prepare": "babel src -d dist --ignore __tests__ && yarn run fmt",
     "dev": "start-storybook -p 9000 -c .storybook",
     "build": "rm -rf .site && build-storybook -c .storybook -o .site",
-    "start": "serve .site -p 9000",
     "deploy": "storybook-to-ghpages",
     "fmt": "npx prettier {.storybook,src}/**/*.js --single-quote --no-semi --write",
     "coverage": "jest --coverage && serve coverage -o",
@@ -17,13 +16,11 @@
   "license": "MIT",
   "dependencies": {
     "@hackclub/icons": "^0.0.2",
-    "clean-tag": "^1.0.4",
     "lodash": "^4.17.11",
-    "palx": "^1.0.3",
+    "palx": "1.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "serve": "^10.1.2",
     "styled-components": "^3.4.9",
     "styled-system": "1.1.7"
   },
