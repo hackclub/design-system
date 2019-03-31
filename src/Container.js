@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Box from './Box'
-import theme from './theme'
 import PropTypes from 'prop-types'
 
 const Container = styled(Box)`
@@ -14,6 +13,7 @@ Container.propTypes = {
 }
 
 Container.defaultProps = {
+  width: 1,
   maxWidth: 72,
   mx: 'auto'
 }
