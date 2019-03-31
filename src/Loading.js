@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import React from 'react'
 import Box from './Box'
 import { keyframes } from 'styled-components'
+import theme from './theme'
 
 const animation = keyframes`
   0% {
@@ -26,12 +27,13 @@ const Base = styled(Box)`
   transform: translate(-50%, -50%);
   width: 64px;
   height: 64px;
+  border-radius: 50%;
 `
 const Inner = styled(Box)`
   position: absolute;
   border: 4px solid currentColor;
   opacity: 1;
-  border-radius: ${({ theme }) => theme.pill};
+  border-radius: 50%;
   transform-origin: center;
   animation: ${animation} 0.975s ease-out infinite;
 `
@@ -44,6 +46,7 @@ const Loading = props => (
 )
 
 Loading.defaultProps = {
+  theme,
   color: 'primary'
 }
 
