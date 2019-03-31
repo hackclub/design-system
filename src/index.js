@@ -23,7 +23,6 @@ export { default as OutlineButton } from './OutlineButton'
 export { default as Section } from './Section'
 export { default as Slider } from './Slider'
 export { default as Text } from './Text'
-export { default as Truncate } from './Truncate'
 
 export { default as theme } from './theme'
 export { default as ThemeProvider } from './ThemeProvider'
