@@ -18,6 +18,9 @@ export const regular = props => props.regular && { fontWeight: 'regular' }
 
 export const bold = props => props.bold && { fontWeight: 'bold' }
 
+export const maxWidth = ({ maxWidth }) =>
+  maxWidth && { maxWidth: `${maxWidth}rem` }
+
 const Base = props => {
   const next = filterProps(props)
   return <p {...next} />
@@ -32,7 +35,8 @@ const Text = styled(Base)(
   textAlign,
   bold,
   regular,
-  fontWeight
+  fontWeight,
+  maxWidth
 )
 
 Text.displayName = 'Text'
@@ -41,6 +45,7 @@ Text.propTypes = {
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,
+  maxWidth: PropTypes.number,
   ...propTypes.fontSize,
   ...propTypes.fontWeight,
   ...propTypes.textAlign,

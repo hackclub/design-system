@@ -26,6 +26,12 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('font-weight', 'bold')
   })
 
+  test('maxWidth prop sets max-width', () => {
+    const json = renderer.create(<Text maxWidth={48} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('max-width', '48rem')
+  })
+
   test('caps prop sets text-transform', () => {
     const json = renderer.create(<Text caps />).toJSON()
     expect(json).toMatchSnapshot()
