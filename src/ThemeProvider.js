@@ -66,6 +66,12 @@ injectGlobal`
   strong {
     font-weight: bold;
   }
+
+  pre,
+  code,
+  kbd {
+    font-family: ${theme.mono};
+  }
 `
 
 const ThemeProvider = ({ theme, webfonts, ...props }) => {
