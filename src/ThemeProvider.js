@@ -32,6 +32,8 @@ injectGlobal`
     font-weight: inherit;
     -webkit-appearance: none;
     -moz-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   html,
