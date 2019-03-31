@@ -1,6 +1,6 @@
 {
   "name": "@hackclub/design-system",
-  "version": "0.0.1-15",
+  "version": "0.0.1-16",
   "description": "Hack Club Design System",
   "main": "dist/index.js",
   "scripts": {
