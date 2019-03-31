@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { Image } from '..'
 
-const imageSrc = 'https://hackclub.com/lah_1.jpg'
+const imageSrc = 'https://hackclub.com/social-photo_2.jpg'
 
 describe('Image', () => {
   test('renders', () => {

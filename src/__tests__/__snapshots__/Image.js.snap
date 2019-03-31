@@ -10,6 +10,6 @@ exports[`Image renders 1`] = `
 <img
   alt="Smiling students at a hackathon"
   className="c0 "
-  src="https://hackclub.com/lah_1.jpg"
+  src="https://hackclub.com/social-photo_2.jpg"
 />
 `;

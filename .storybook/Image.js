@@ -5,7 +5,7 @@ import { Image, Box } from '../src'
 
 const text = 'A low-level layout component that renders an image'
 const props = {
-  src: 'https://hackclub.com/lah_1.jpg',
+  src: 'https://hackclub.com/social-photo_2.jpg',
   alt: 'Smiling students at a hackathon'
 }
 
