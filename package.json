@@ -17,7 +17,7 @@
   "dependencies": {
     "@hackclub/icons": "^0.0.2",
     "lodash": "^4.17.11",
-    "palx": "1.0.1",
+    "palx": "1.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
