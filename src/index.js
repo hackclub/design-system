@@ -21,6 +21,7 @@ export { default as Link } from './Link'
 export { default as Loading } from './Loading'
 export { default as OutlineButton } from './OutlineButton'
 export { default as Section } from './Section'
+export { default as Sheet } from './Sheet'
 export { default as Slider } from './Slider'
 export { default as Text } from './Text'
 
