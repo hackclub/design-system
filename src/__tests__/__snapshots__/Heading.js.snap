@@ -10,6 +10,7 @@ exports[`Heading renders 1`] = `
 
 <h2
   className="c0"
+  fontSize={5}
 />
 `;
 
@@ -26,6 +27,7 @@ exports[`Heading uses <Text> component properties 1`] = `
 <h2
   className="c0"
   color="primary"
+  fontSize={5}
 />
 `;
 
@@ -39,6 +41,7 @@ exports[`Heading with default theme font size, when fontSize prop not used 1`] =
 
 <h2
   className="c0"
+  fontSize={5}
 />
 `;
 
@@ -53,6 +56,7 @@ exports[`Heading with h1-h6 dot-notation 1`] = `
 
 <h1
   className="c0"
+  fontSize={6}
 />
 `;
 
@@ -66,6 +70,7 @@ exports[`Heading with h1-h6 dot-notation 2`] = `
 
 <h2
   className="c0"
+  fontSize={5}
 />
 `;
 
@@ -79,6 +84,7 @@ exports[`Heading with h1-h6 dot-notation 3`] = `
 
 <h3
   className="c0"
+  fontSize={4}
 />
 `;
 
@@ -92,6 +98,7 @@ exports[`Heading with h1-h6 dot-notation 4`] = `
 
 <h4
   className="c0"
+  fontSize={3}
 />
 `;
 
@@ -105,6 +112,7 @@ exports[`Heading with h1-h6 dot-notation 5`] = `
 
 <h5
   className="c0"
+  fontSize={2}
 />
 `;
 
@@ -119,5 +127,6 @@ exports[`Heading with h1-h6 dot-notation 6`] = `
 
 <h6
   className="c0"
+  fontSize={0}
 />
 `;

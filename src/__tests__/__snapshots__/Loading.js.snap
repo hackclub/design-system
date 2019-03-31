@@ -41,8 +41,8 @@ exports[`Loading renders 1`] = `
 
 <div
   aria-label="Loading"
-  aria-role="presentation"
   className="c0 c1"
+  role="presentation"
 >
   <div
     className="c2 "

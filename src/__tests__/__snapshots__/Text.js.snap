@@ -33,6 +33,17 @@ exports[`Text caps prop sets text-transform 1`] = `
 />
 `;
 
+exports[`Text maxWidth prop sets max-width 1`] = `
+.c0 {
+  margin: 0px;
+  max-width: 48rem;
+}
+
+<p
+  className="c0"
+/>
+`;
+
 exports[`Text mt prop sets margin-top 1`] = `
 .c0 {
   margin: 0px;

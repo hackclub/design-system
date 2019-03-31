@@ -30,5 +30,6 @@ exports[`Slider renders 1`] = `
   color="primary"
   id="renders"
   type="range"
+  width={1}
 />
 `;
