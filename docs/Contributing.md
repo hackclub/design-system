@@ -4,10 +4,10 @@ If you’d like to contribute to the design system, we’d love to have your hel
 
 Contributing doesn’t necessarily mean committing code, we also encourage you to:
 
-* Open issues
-* Join in on discussions in issues and PRs
-* Help write documentation (storybook)
-* Use the Design System and provide feedback
+- Open issues
+- Join in on discussions in issues and PRs
+- Help write documentation (storybook)
+- Use the Design System and provide feedback
 
 ## Local Development
 
