@@ -26,12 +26,14 @@ exports[`Loading renders 1`] = `
   transform: translate(-50%,-50%);
   width: 64px;
   height: 64px;
+  border-radius: 50%;
 }
 
 .c2 {
   position: absolute;
   border: 4px solid currentColor;
   opacity: 1;
+  border-radius: 50%;
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;

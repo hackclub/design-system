@@ -2,6 +2,7 @@
 
 exports[`LargeButton inverted 1`] = `
 .c0 {
+  margin: 0px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 18px;
@@ -63,6 +64,7 @@ exports[`LargeButton inverted 1`] = `
 
 exports[`LargeButton larger 1`] = `
 .c0 {
+  margin: 0px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 18px;
@@ -122,6 +124,7 @@ exports[`LargeButton larger 1`] = `
 
 exports[`LargeButton renders 1`] = `
 .c0 {
+  margin: 0px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 18px;

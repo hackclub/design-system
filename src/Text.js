@@ -11,8 +11,7 @@ import {
 } from 'styled-system'
 import theme, { filterProps } from './theme'
 
-export const caps = props =>
-  props.caps ? { textTransform: 'uppercase' } : null
+export const caps = props => props.caps && { textTransform: 'uppercase' }
 
 export const regular = props => props.regular && { fontWeight: 'regular' }
 

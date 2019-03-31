@@ -23,6 +23,7 @@ export { default as OutlineButton } from './OutlineButton'
 export { default as Section } from './Section'
 export { default as Sheet } from './Sheet'
 export { default as Slider } from './Slider'
+export { default as Submit } from './Submit'
 export { default as Text } from './Text'
 
 export { default as theme } from './theme'

@@ -26,8 +26,12 @@ LargeButton.defaultProps = {
   bg: 'primary',
   color: 'white',
   fontSize: 3,
+  m: 0,
   py: 3,
   px: 4
 }
+
+LargeButton.button = LargeButton.withComponent('button')
+LargeButton.input = LargeButton.withComponent('input')
 
 export default LargeButton
