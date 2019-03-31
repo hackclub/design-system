@@ -1,14 +1,6 @@
 import Box from './Box'
 import theme, { cx, hexa } from './theme'
-import styled, { css } from 'styled-components'
-import {
-  space,
-  width,
-  color,
-  fontSize,
-  textAlign,
-  propTypes
-} from 'styled-system'
+import { css } from 'styled-components'
 import PropTypes from 'prop-types'
 
 const Button = Box.withComponent('a').extend`

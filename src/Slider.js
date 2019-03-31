@@ -1,8 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 import { space, width, color, propTypes } from 'styled-system'
 import theme from './theme'
-import PropTypes from 'prop-types'
 
 const Slider = styled.input.attrs({ type: 'range' })`
   appearance: none;

@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import LargeButton from './LargeButton'
 import theme, { cx } from './theme'
 

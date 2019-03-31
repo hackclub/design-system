@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import Button from './Button'
 import theme, { hexa } from './theme'
 
