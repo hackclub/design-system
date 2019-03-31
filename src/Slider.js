@@ -33,7 +33,7 @@ Slider.propTypes = {
 
 Slider.defaultProps = {
   theme,
-  w: 1,
+  width: 1,
   bg: 'smoke',
   color: 'primary'
 }

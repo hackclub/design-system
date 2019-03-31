@@ -20,8 +20,8 @@ const Flag = styled(Link)`
 storiesOf('👋 Welcome!', module).add('About the project', () => (
   <Fragment>
     <Flag href="https://hackclub.com" />
-    <Heading.h1 f={5}>Welcome!</Heading.h1>
-    <Text f={3} my={2}>
+    <Heading.h1 fontSize={5}>Welcome!</Heading.h1>
+    <Text fontSize={3} my={2}>
       This is{' '}
       <Link href="https://hackclub.com" underline children="Hack Club" />
       ’s Design System.

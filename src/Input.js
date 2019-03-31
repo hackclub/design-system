@@ -69,7 +69,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   theme,
-  w: 1,
+  width: 1,
   m: 0,
   py: 1,
   px: 2,

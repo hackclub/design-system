@@ -22,7 +22,7 @@ Label.defaultProps = {
   theme,
   color: 'black',
   fontSize: 2,
-  w: 1
+  width: 1
 }
 
 export default Label

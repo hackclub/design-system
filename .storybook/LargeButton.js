@@ -25,5 +25,5 @@ storiesOf('LargeButton', module)
       </LargeButton>
     </div>
   ))
-  .add('Width', () => <LargeButton w={1}>Full Width</LargeButton>)
+  .add('Width', () => <LargeButton width={1}>Full Width</LargeButton>)
   .add('Disabled', () => <LargeButton disabled>Disabled</LargeButton>)

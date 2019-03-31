@@ -27,21 +27,21 @@ storiesOf('Button', module)
   ))
   .add('Font size', () => (
     <Flex align="baseline" wrap>
-      <Button mr={2} f={1}>
+      <Button mr={2} fontSize={1}>
         Size 1
       </Button>
-      <Button bg="accent" mr={2} f={2}>
+      <Button bg="accent" mr={2} fontSize={2}>
         Size 2
       </Button>
-      <Button bg="info" mr={2} f={3}>
+      <Button bg="info" mr={2} fontSize={3}>
         Size 3
       </Button>
-      <Button bg="accent" inverted mr={2} f={4}>
+      <Button bg="accent" inverted mr={2} fontSize={4}>
         Size 4
       </Button>
     </Flex>
   ))
-  .add('Width', () => <Button w={1}>Full Width</Button>)
+  .add('Width', () => <Button width={1}>Full Width</Button>)
   .add('Disabled', () => <Button disabled>Disabled</Button>)
   .add('Scale', () => <Button scale>Scale</Button>)
   .add('Chevrons', () => (
