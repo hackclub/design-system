@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react'
 import { Box, Flex, Heading, Text, Link, Button, Avatar } from '../src'
 import styled from 'styled-components'
 
-const List = Box.withComponent('ul')
-const Item = Text.withComponent('li')
-const Code = Text.withComponent('pre')
+const List = styled(Box).attrs({ as: 'ul' })``
+const Item = styled(Text).attrs({ as: 'li' })``
+const Code = styled(Text).attrs({ as: 'pre' })``
 
 const Flag = styled(Link)`
   display: inline-block;

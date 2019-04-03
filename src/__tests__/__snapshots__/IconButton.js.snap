@@ -2,6 +2,12 @@
 
 exports[`IconButton renders 1`] = `
 .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c0 {
   margin: 0px;
   padding-left: 18px;
   padding-right: 18px;
@@ -29,38 +35,29 @@ exports[`IconButton renders 1`] = `
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
   border: none;
-}
-
-.c1:hover,
-.c1:focus {
-  outline: 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.125);
-}
-
-.c1:active {
-  outline: 0;
-  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.125);
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c0 {
   box-shadow: none !important;
   line-height: 0 !important;
 }
 
-<button
-  className="c0 c1"
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.125);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.125);
+}
+
+<a
+  className="c0"
   color="white"
   fontSize={3}
 >
   <svg
     aria-label="flag"
-    className="c2 "
+    className="c1"
     clipRule="evenodd"
     fill="currentColor"
     fillRule="evenodd"
@@ -68,252 +65,6 @@ exports[`IconButton renders 1`] = `
     preserveAspectRatio="xMidYMid meet"
     strokeLinejoin="round"
     strokeMiterlimit="1.414"
-    theme={
-      Object {
-        "bold": "bold",
-        "boxShadows": Array [
-          "0 0 2px 0 rgba(0,0,0,.0625),0 2px 4px 0 rgba(0,0,0,0.125)",
-          "0 0 2px 0 rgba(0,0,0,.0625),0 4px 8px 0 rgba(0,0,0,0.125)",
-          "0 0 2px 0 rgba(0,0,0,.0625),0 12px 12px 0 rgba(0,0,0,0.125)",
-          "0 0 2px 0 rgba(0,0,0,.0625),0 24px 24px 0 rgba(0,0,0,0.125)",
-        ],
-        "breakpoints": Array [
-          32,
-          48,
-          64,
-          80,
-        ],
-        "colors": Object {
-          "accent": "#7280ed",
-          "base": "#2d9ce4",
-          "black": "#384046",
-          "blue": Array [
-            "#e6f4fc",
-            "#cce7f8",
-            "#add9f5",
-            "#8bc9f0",
-            "#62b6eb",
-            "#2d9ee4",
-            "#298fce",
-            "#247db4",
-            "#1d6795",
-            "#154a6b",
-          ],
-          "cyan": Array [
-            "#e7fcfa",
-            "#ccf9f3",
-            "#aff5ed",
-            "#8cf0e5",
-            "#63ebdb",
-            "#2de4cf",
-            "#29cebb",
-            "#24b5a5",
-            "#1e9789",
-            "#166d63",
-          ],
-          "dark": "#17171d",
-          "darker": "#121217",
-          "error": "#b52434",
-          "fuschia": Array [
-            "#faebfc",
-            "#f5d4fa",
-            "#efbaf6",
-            "#e89bf2",
-            "#df73ed",
-            "#cf2de4",
-            "#bb29ce",
-            "#a424b5",
-            "#881d95",
-            "#61156b",
-          ],
-          "gray": Array [
-            "#f9f9fa",
-            "#ebeeef",
-            "#dde1e4",
-            "#cdd4d8",
-            "#bcc5cb",
-            "#a9b5bc",
-            "#93a2ab",
-            "#7a8c97",
-            "#606e77",
-            "#384046",
-          ],
-          "green": Array [
-            "#eafce7",
-            "#d2f9cd",
-            "#b7f5b0",
-            "#99f08d",
-            "#73eb64",
-            "#42e42d",
-            "#3cce29",
-            "#35b524",
-            "#2c971e",
-            "#206d16",
-          ],
-          "indigo": Array [
-            "#ebedfc",
-            "#d4d8f9",
-            "#bac1f6",
-            "#9aa4f2",
-            "#7280ed",
-            "#2d42e4",
-            "#283bcd",
-            "#2334b3",
-            "#1d2a92",
-            "#141e66",
-          ],
-          "info": "#2d9ee4",
-          "lime": Array [
-            "#f2fbe4",
-            "#e5f8c6",
-            "#d6f4a6",
-            "#c6ef83",
-            "#b3ea5b",
-            "#9ee42d",
-            "#8fce29",
-            "#7eb524",
-            "#69971e",
-            "#4c6d16",
-          ],
-          "muted": "#7a8c97",
-          "orange": Array [
-            "#fcefe7",
-            "#f9ddcc",
-            "#f5caaf",
-            "#f0b38d",
-            "#eb9763",
-            "#e4732d",
-            "#ce6829",
-            "#b45b24",
-            "#954b1d",
-            "#6b3615",
-          ],
-          "pink": Array [
-            "#fcebf6",
-            "#fad5eb",
-            "#f6bbdf",
-            "#f29cd1",
-            "#ed73be",
-            "#e42d9e",
-            "#ce298f",
-            "#b5247d",
-            "#961e68",
-            "#6b154a",
-          ],
-          "primary": "#e42d42",
-          "red": Array [
-            "#fcebed",
-            "#fad5d9",
-            "#f6bcc2",
-            "#f29da7",
-            "#ed7582",
-            "#e42d42",
-            "#ce293c",
-            "#b52434",
-            "#951d2b",
-            "#6b151f",
-          ],
-          "silver": "#7a8c97",
-          "slate": "#606e77",
-          "smoke": "#dde1e4",
-          "snow": "#f9f9fa",
-          "success": "#2de473",
-          "teal": Array [
-            "#e7fcef",
-            "#cdf9de",
-            "#b0f5ca",
-            "#8df0b3",
-            "#64eb98",
-            "#2de473",
-            "#29ce68",
-            "#24b55c",
-            "#1e974c",
-            "#166d37",
-          ],
-          "violet": Array [
-            "#f2ebfc",
-            "#e3d4fa",
-            "#d1baf6",
-            "#bd9bf2",
-            "#a173ed",
-            "#732de4",
-            "#6829cd",
-            "#5a23b3",
-            "#4a1d93",
-            "#341467",
-          ],
-          "warning": "#e4732d",
-          "white": "#ffffff",
-          "yellow": Array [
-            "#fbf9e3",
-            "#f7f2c4",
-            "#f3eaa4",
-            "#efe280",
-            "#ead959",
-            "#e4cf2d",
-            "#cebb29",
-            "#b5a524",
-            "#97891e",
-            "#6d6316",
-          ],
-        },
-        "cx": [Function],
-        "font": "\\"Phantom Sans\\",-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
-        "fontSizes": Array [
-          13.5,
-          16,
-          18,
-          24,
-          27,
-          36,
-          48,
-          54,
-          72,
-          96,
-        ],
-        "fontWeights": Object {
-          "bold": "bold",
-          "regular": "regular",
-        },
-        "gradient": [Function],
-        "hexa": [Function],
-        "mediaQueries": Object {
-          "0": "@media screen and (min-width:32em)",
-          "1": "@media screen and (min-width:48em)",
-          "2": "@media screen and (min-width:64em)",
-          "3": "@media screen and (min-width:80em)",
-          "reduceMotion": "@media (prefers-reduced-motion: reduce)",
-          "reduceTransparency": "@media (prefers-reduced-transparency: reduce)",
-        },
-        "mono": "SFMono-Regular,\\"Roboto Mono\\",Menlo,monospace",
-        "pill": "9999px",
-        "radii": Array [
-          "0px",
-          "4px",
-          "8px",
-          "16px",
-          "9999px",
-        ],
-        "radius": "4px",
-        "regular": "regular",
-        "scaleFactor": 1.0625,
-        "shadowColor": "rgba(0,0,0,0.125)",
-        "space": Array [
-          0,
-          6,
-          12,
-          18,
-          24,
-          36,
-          72,
-          108,
-          144,
-          288,
-          432,
-        ],
-        "transition": "0.1875s cubic-bezier(0.375, 0, 0.675, 1)",
-      }
-    }
     viewBox="0 0 32 32"
     width={24}
     xmlns="http://www.w3.org/2000/svg"
@@ -324,11 +75,17 @@ exports[`IconButton renders 1`] = `
       />
     </g>
   </svg>
-</button>
+</a>
 `;
 
 exports[`IconButton renders with circle prop 1`] = `
 .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c0 {
   margin: 0px;
   padding-left: 18px;
   padding-right: 18px;
@@ -356,39 +113,30 @@ exports[`IconButton renders with circle prop 1`] = `
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
   border: none;
-}
-
-.c1:hover,
-.c1:focus {
-  outline: 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.125);
-}
-
-.c1:active {
-  outline: 0;
-  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.125);
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c0 {
   box-shadow: none !important;
   line-height: 0 !important;
   padding: 12px;
 }
 
-<button
-  className="c0 c1"
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.125);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.125);
+}
+
+<a
+  className="c0"
   color="white"
   fontSize={3}
 >
   <svg
     aria-label="flag"
-    className="c2 "
+    className="c1"
     clipRule="evenodd"
     fill="currentColor"
     fillRule="evenodd"
@@ -396,252 +144,6 @@ exports[`IconButton renders with circle prop 1`] = `
     preserveAspectRatio="xMidYMid meet"
     strokeLinejoin="round"
     strokeMiterlimit="1.414"
-    theme={
-      Object {
-        "bold": "bold",
-        "boxShadows": Array [
-          "0 0 2px 0 rgba(0,0,0,.0625),0 2px 4px 0 rgba(0,0,0,0.125)",
-          "0 0 2px 0 rgba(0,0,0,.0625),0 4px 8px 0 rgba(0,0,0,0.125)",
-          "0 0 2px 0 rgba(0,0,0,.0625),0 12px 12px 0 rgba(0,0,0,0.125)",
-          "0 0 2px 0 rgba(0,0,0,.0625),0 24px 24px 0 rgba(0,0,0,0.125)",
-        ],
-        "breakpoints": Array [
-          32,
-          48,
-          64,
-          80,
-        ],
-        "colors": Object {
-          "accent": "#7280ed",
-          "base": "#2d9ce4",
-          "black": "#384046",
-          "blue": Array [
-            "#e6f4fc",
-            "#cce7f8",
-            "#add9f5",
-            "#8bc9f0",
-            "#62b6eb",
-            "#2d9ee4",
-            "#298fce",
-            "#247db4",
-            "#1d6795",
-            "#154a6b",
-          ],
-          "cyan": Array [
-            "#e7fcfa",
-            "#ccf9f3",
-            "#aff5ed",
-            "#8cf0e5",
-            "#63ebdb",
-            "#2de4cf",
-            "#29cebb",
-            "#24b5a5",
-            "#1e9789",
-            "#166d63",
-          ],
-          "dark": "#17171d",
-          "darker": "#121217",
-          "error": "#b52434",
-          "fuschia": Array [
-            "#faebfc",
-            "#f5d4fa",
-            "#efbaf6",
-            "#e89bf2",
-            "#df73ed",
-            "#cf2de4",
-            "#bb29ce",
-            "#a424b5",
-            "#881d95",
-            "#61156b",
-          ],
-          "gray": Array [
-            "#f9f9fa",
-            "#ebeeef",
-            "#dde1e4",
-            "#cdd4d8",
-            "#bcc5cb",
-            "#a9b5bc",
-            "#93a2ab",
-            "#7a8c97",
-            "#606e77",
-            "#384046",
-          ],
-          "green": Array [
-            "#eafce7",
-            "#d2f9cd",
-            "#b7f5b0",
-            "#99f08d",
-            "#73eb64",
-            "#42e42d",
-            "#3cce29",
-            "#35b524",
-            "#2c971e",
-            "#206d16",
-          ],
-          "indigo": Array [
-            "#ebedfc",
-            "#d4d8f9",
-            "#bac1f6",
-            "#9aa4f2",
-            "#7280ed",
-            "#2d42e4",
-            "#283bcd",
-            "#2334b3",
-            "#1d2a92",
-            "#141e66",
-          ],
-          "info": "#2d9ee4",
-          "lime": Array [
-            "#f2fbe4",
-            "#e5f8c6",
-            "#d6f4a6",
-            "#c6ef83",
-            "#b3ea5b",
-            "#9ee42d",
-            "#8fce29",
-            "#7eb524",
-            "#69971e",
-            "#4c6d16",
-          ],
-          "muted": "#7a8c97",
-          "orange": Array [
-            "#fcefe7",
-            "#f9ddcc",
-            "#f5caaf",
-            "#f0b38d",
-            "#eb9763",
-            "#e4732d",
-            "#ce6829",
-            "#b45b24",
-            "#954b1d",
-            "#6b3615",
-          ],
-          "pink": Array [
-            "#fcebf6",
-            "#fad5eb",
-            "#f6bbdf",
-            "#f29cd1",
-            "#ed73be",
-            "#e42d9e",
-            "#ce298f",
-            "#b5247d",
-            "#961e68",
-            "#6b154a",
-          ],
-          "primary": "#e42d42",
-          "red": Array [
-            "#fcebed",
-            "#fad5d9",
-            "#f6bcc2",
-            "#f29da7",
-            "#ed7582",
-            "#e42d42",
-            "#ce293c",
-            "#b52434",
-            "#951d2b",
-            "#6b151f",
-          ],
-          "silver": "#7a8c97",
-          "slate": "#606e77",
-          "smoke": "#dde1e4",
-          "snow": "#f9f9fa",
-          "success": "#2de473",
-          "teal": Array [
-            "#e7fcef",
-            "#cdf9de",
-            "#b0f5ca",
-            "#8df0b3",
-            "#64eb98",
-            "#2de473",
-            "#29ce68",
-            "#24b55c",
-            "#1e974c",
-            "#166d37",
-          ],
-          "violet": Array [
-            "#f2ebfc",
-            "#e3d4fa",
-            "#d1baf6",
-            "#bd9bf2",
-            "#a173ed",
-            "#732de4",
-            "#6829cd",
-            "#5a23b3",
-            "#4a1d93",
-            "#341467",
-          ],
-          "warning": "#e4732d",
-          "white": "#ffffff",
-          "yellow": Array [
-            "#fbf9e3",
-            "#f7f2c4",
-            "#f3eaa4",
-            "#efe280",
-            "#ead959",
-            "#e4cf2d",
-            "#cebb29",
-            "#b5a524",
-            "#97891e",
-            "#6d6316",
-          ],
-        },
-        "cx": [Function],
-        "font": "\\"Phantom Sans\\",-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
-        "fontSizes": Array [
-          13.5,
-          16,
-          18,
-          24,
-          27,
-          36,
-          48,
-          54,
-          72,
-          96,
-        ],
-        "fontWeights": Object {
-          "bold": "bold",
-          "regular": "regular",
-        },
-        "gradient": [Function],
-        "hexa": [Function],
-        "mediaQueries": Object {
-          "0": "@media screen and (min-width:32em)",
-          "1": "@media screen and (min-width:48em)",
-          "2": "@media screen and (min-width:64em)",
-          "3": "@media screen and (min-width:80em)",
-          "reduceMotion": "@media (prefers-reduced-motion: reduce)",
-          "reduceTransparency": "@media (prefers-reduced-transparency: reduce)",
-        },
-        "mono": "SFMono-Regular,\\"Roboto Mono\\",Menlo,monospace",
-        "pill": "9999px",
-        "radii": Array [
-          "0px",
-          "4px",
-          "8px",
-          "16px",
-          "9999px",
-        ],
-        "radius": "4px",
-        "regular": "regular",
-        "scaleFactor": 1.0625,
-        "shadowColor": "rgba(0,0,0,0.125)",
-        "space": Array [
-          0,
-          6,
-          12,
-          18,
-          24,
-          36,
-          72,
-          108,
-          144,
-          288,
-          432,
-        ],
-        "transition": "0.1875s cubic-bezier(0.375, 0, 0.675, 1)",
-      }
-    }
     viewBox="0 0 32 32"
     width={24}
     xmlns="http://www.w3.org/2000/svg"
@@ -652,5 +154,5 @@ exports[`IconButton renders with circle prop 1`] = `
       />
     </g>
   </svg>
-</button>
+</a>
 `;

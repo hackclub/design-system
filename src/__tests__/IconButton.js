@@ -14,7 +14,6 @@ describe('IconButton', () => {
   test('renders with circle prop', () => {
     const json = renderer.create(<IconButton circle />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-radius', '9999px')
     expect(json).toHaveStyleRule('padding', '12px')
   })
 

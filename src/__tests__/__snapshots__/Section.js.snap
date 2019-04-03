@@ -1,16 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Section renders 1`] = `
-.c2 {
+.c0 {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 24px;
   padding-bottom: 24px;
   color: #ffffff;
   text-align: center;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26,20 +23,17 @@ exports[`Section renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c0 {
   text-align: center;
 }
 
 @media screen and (min-width:32em) {
-  .c2 {
+  .c0 {
     padding-top: 36px;
     padding-bottom: 36px;
   }
 }
 
 <div
-  className="c0 c1 c2"
+  className="c0"
 />
 `;

@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
-import { ThemeProvider as Root, injectGlobal, css } from 'styled-components'
+import { ThemeProvider as Root, createGlobalStyle } from 'styled-components'
 import PropTypes from 'prop-types'
 import theme from './theme'
 
-const fontsCss = css`
+const FontsCss = createGlobalStyle`
   @font-face {
     font-family: 'Phantom Sans';
     src: url('https://hackclub.com/fonts/Phantom_Sans_0.4/Regular.woff')
@@ -26,7 +26,7 @@ const fontsCss = css`
   }
 `
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     font-weight: inherit;
@@ -74,16 +74,19 @@ injectGlobal`
   }
 `
 
-const ThemeProvider = ({ theme, webfonts, ...props }) => {
-  if (webfonts) injectGlobal([], fontsCss)
-  return (
-    <Root
-      theme={theme}
-      {...props}
-      children={<Fragment>{props.children}</Fragment>}
-    />
-  )
-}
+const ThemeProvider = ({ theme, webfonts, ...props }) => (
+  <Root
+    theme={theme}
+    {...props}
+    children={
+      <Fragment>
+        {webfonts && <FontsCss />}
+        <GlobalStyle />
+        {props.children}
+      </Fragment>
+    }
+  />
+)
 
 ThemeProvider.propTypes = {
   theme: PropTypes.object,

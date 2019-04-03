@@ -1,9 +1,9 @@
 import Box from './Box'
 import theme, { cx, hexa } from './theme'
-import { css } from 'styled-components'
+import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 
-const Button = Box.withComponent('a').extend`
+const Button = styled(Box)`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -91,6 +91,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   theme,
+  as: 'a',
   bg: 'primary',
   color: 'white',
   fontSize: 3,
@@ -99,7 +100,7 @@ Button.defaultProps = {
   py: 2
 }
 
-Button.button = Button.withComponent('button')
-Button.input = Button.withComponent('input')
+Button.button = styled(Button).attrs({ as: 'button' })``
+Button.input = styled(Button).attrs({ as: 'input' })``
 
 export default Button

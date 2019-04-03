@@ -32,8 +32,8 @@ const Text = styled(Base)(
   color,
   caps,
   textAlign,
-  bold,
   regular,
+  bold,
   fontWeight,
   maxWidth
 )
@@ -57,8 +57,8 @@ Text.defaultProps = {
   m: 0
 }
 
-Text.span = Text.withComponent('span')
-Text.p = Text.withComponent('p')
-Text.s = Text.withComponent('s')
+Text.span = styled(Text).attrs({ as: 'span' })``
+Text.p = styled(Text).attrs({ as: 'p' })``
+Text.s = styled(Text).attrs({ as: 's' })``
 
 export default Text

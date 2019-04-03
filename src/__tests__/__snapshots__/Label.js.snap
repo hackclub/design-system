@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Label it renders 1`] = `
-.c1 {
-  font-size: 18px;
-  margin: 0px;
-  color: #384046;
-}
-
 .c0 {
+  font-size: 18px;
+  color: #384046;
   display: block;
 }
 
@@ -18,7 +14,7 @@ exports[`Label it renders 1`] = `
 }
 
 <label
-  className="c0 c1"
+  className="c0"
   color="black"
   fontSize={2}
   width={1}

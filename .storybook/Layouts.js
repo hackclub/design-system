@@ -1,7 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
-import { Flex, Box, Text, Icon, Image, Heading, Card, theme } from '../src'
+import { Box, Card, Image, Heading, Text, Flex, Icon, theme } from '../src'
+
+const Border = styled(Box)`
+  border: 1px solid ${({ theme }) => theme.colors.smoke};
+  border-radius: ${({ theme }) => theme.radius};
+  line-height: 0;
+`
+
+const Tile = ({ image, title, text }) => (
+  <Card boxShadowSize="sm">
+    <Image src={image} alt="" width="512" height="256" />
+    <Box p={2}>
+      <Heading fontSize={2} bold>
+        {title}
+      </Heading>
+      <Text fontSize={1} color="slate">
+        {text}
+      </Text>
+    </Box>
+  </Card>
+)
+
+const cards = Array.from({ length: 12 }).map((n, i) => ({
+  id: i,
+  title: 'Hello' + i,
+  text: 'Card',
+  image: `http://placehold.it/512x256/${theme.colors.accent.replace('#', '')}`
+}))
 
 storiesOf('Layout Examples', module)
   .add('Grid', () => (
@@ -57,30 +84,3 @@ storiesOf('Layout Examples', module)
       ))}
     </Flex>
   ))
-
-const Border = styled(Box)`
-  border: 1px solid ${({ theme }) => theme.colors.smoke};
-  border-radius: ${({ theme }) => theme.radius};
-  line-height: 0;
-`
-
-const Tile = ({ image, title, text }) => (
-  <Card boxShadowSize="sm">
-    <Image src={image} width="512" height="256" />
-    <Box p={2}>
-      <Heading fontSize={2} bold>
-        {title}
-      </Heading>
-      <Text fontSize={1} color="slate">
-        {text}
-      </Text>
-    </Box>
-  </Card>
-)
-
-const cards = Array.from({ length: 12 }).map((n, i) => ({
-  id: i,
-  title: 'Hello' + i,
-  text: 'Card',
-  image: `http://placehold.it/512x256/${theme.colors.accent.replace('#', '')}`
-}))

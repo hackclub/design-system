@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Box from './Box'
 import PropTypes from 'prop-types'
 
-const Image = styled(Box.withComponent('img'))`
+const Image = styled(Box).attrs({ as: 'img' })`
   display: block;
   max-width: 100%;
   height: auto;

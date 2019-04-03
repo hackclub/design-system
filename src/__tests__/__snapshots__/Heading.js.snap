@@ -50,7 +50,6 @@ exports[`Heading with h1-h6 dot-notation 1`] = `
   font-size: 48px;
   margin: 0px;
   font-weight: bold;
-  font-weight: regular;
   line-height: 1.25;
 }
 

@@ -11,7 +11,8 @@ const BackgroundImage = styled(Box)`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  ${src} ${height};
+  ${src};
+  ${height};
 
   ${props =>
     props.scale &&

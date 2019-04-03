@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
-import { storiesOf, action } from '@storybook/react'
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
 import { IconButton } from '../src'
 
@@ -9,13 +10,7 @@ storiesOf('IconButton', module)
     withInfo({
       inline: true,
       text: 'Use the <IconButton /> component to render a primitive button.'
-    })(() => (
-      <IconButton
-        glyph="view-close"
-        color="error"
-        onClick={action('clicked')}
-      />
-    ))
+    })(() => <IconButton glyph="view-close" color="error" />)
   )
   .add('Rectangular button', () => (
     <IconButton

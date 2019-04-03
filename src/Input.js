@@ -78,7 +78,7 @@ Input.defaultProps = {
   bg: 'transparent'
 }
 
-export const InputSelect = Input.withComponent('select')
-export const InputTextarea = Input.withComponent('textarea')
+export const InputSelect = styled(Input).attrs({ as: 'select' })``
+export const InputTextarea = styled(Input).attrs({ as: 'textarea' })``
 
 export default Input

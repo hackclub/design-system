@@ -1,11 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BackgroundImage renders 1`] = `
-.c1 {
-  background-color: #dde1e4;
-}
-
 .c0 {
+  background-color: #dde1e4;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,17 +11,14 @@ exports[`BackgroundImage renders 1`] = `
 
 <div
   aria-label="Wooden desk with tools and chair"
-  className="c0 c1"
+  className="c0"
   src="https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 />
 `;
 
 exports[`BackgroundImage renders with height 1`] = `
-.c1 {
-  background-color: #dde1e4;
-}
-
 .c0 {
+  background-color: #dde1e4;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,17 +28,14 @@ exports[`BackgroundImage renders with height 1`] = `
 
 <div
   aria-label="Wooden desk with tools and chair"
-  className="c0 c1"
+  className="c0"
   src="https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 />
 `;
 
 exports[`BackgroundImage scale 1`] = `
-.c1 {
-  background-color: #dde1e4;
-}
-
 .c0 {
+  background-color: #dde1e4;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,7 +61,7 @@ exports[`BackgroundImage scale 1`] = `
 
 <div
   aria-label="Wooden desk with tools and chair"
-  className="c0 c1"
+  className="c0"
   scale={true}
   src="https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 />

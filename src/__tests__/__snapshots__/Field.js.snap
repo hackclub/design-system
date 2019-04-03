@@ -1,19 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Field renders 1`] = `
-.c3 {
-  margin-bottom: 2px;
-  text-align: center;
-}
-
-.c1 {
+.c0 {
   font-size: 18px;
-  margin: 0px;
   margin-bottom: 12px;
   color: #384046;
-}
-
-.c0 {
   display: block;
 }
 
@@ -23,7 +14,9 @@ exports[`Field renders 1`] = `
   text-decoration: underline;
 }
 
-.c2 {
+.c1 {
+  margin-bottom: 2px;
+  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -37,7 +30,7 @@ exports[`Field renders 1`] = `
   flex-wrap: wrap;
 }
 
-.c4 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -65,51 +58,51 @@ exports[`Field renders 1`] = `
   background-color: transparent;
 }
 
-.c4::-ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
-.c4::-ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
-.c4::-ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
-.c4::-ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
-.c4:focus {
+.c2:focus {
   outline: none;
   border-color: #2d9ee4;
   box-shadow: 0 0 0 2px #add9f5;
 }
 
-.c4[type='select'] {
+.c2[type='select'] {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
   background-size: .5rem;
 }
 
-.c4[type='textarea'] {
+.c2[type='textarea'] {
   resize: vertical;
 }
 
 <label
-  className="text c0 c1"
+  className="text c0"
   color="black"
   fontSize={2}
   id="renders"
   width={1}
 >
   <div
-    className="c2 c3"
+    className="c1"
   >
     Renders
   </div>
   <input
-    className="c4"
+    className="c2"
     name="renders"
     type="text"
   />
@@ -117,28 +110,10 @@ exports[`Field renders 1`] = `
 `;
 
 exports[`Field with error 1`] = `
-.c3 {
-  margin-bottom: 2px;
-  text-align: center;
-}
-
-.c5 {
-  font-size: 16px;
-  margin: 0px;
-  margin-left: 6px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #b52434;
-}
-
-.c1 {
+.c0 {
   font-size: 18px;
-  margin: 0px;
   margin-bottom: 12px;
   color: #384046;
-}
-
-.c0 {
   display: block;
 }
 
@@ -148,7 +123,9 @@ exports[`Field with error 1`] = `
   text-decoration: underline;
 }
 
-.c2 {
+.c1 {
+  margin-bottom: 2px;
+  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -162,7 +139,7 @@ exports[`Field with error 1`] = `
   flex-wrap: wrap;
 }
 
-.c6 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -190,64 +167,70 @@ exports[`Field with error 1`] = `
   background-color: transparent;
 }
 
-.c6::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c6::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c6::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c6::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c6:focus {
+.c3:focus {
   outline: none;
   border-color: #2d9ee4;
   box-shadow: 0 0 0 2px #add9f5;
 }
 
-.c6[type='select'] {
+.c3[type='select'] {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
   background-size: .5rem;
 }
 
-.c6[type='textarea'] {
+.c3[type='textarea'] {
   resize: vertical;
 }
 
-.c4 {
+.c2 {
+  font-size: 16px;
+  margin: 0px;
+  margin-left: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #b52434;
   font-weight: normal;
 }
 
-.c4:before {
+.c2:before {
   content: '— ';
 }
 
 <label
-  className="text c0 c1"
+  className="text c0"
   color="black"
   fontSize={2}
   id="error"
   width={1}
 >
   <div
-    className="c2 c3"
+    className="c1"
   >
     Error
     <p
-      className="error c4 c5"
+      className="error c2"
     >
       error message
     </p>
   </div>
   <input
-    className="c6"
+    className="c3"
     name="error"
     type="text"
   />

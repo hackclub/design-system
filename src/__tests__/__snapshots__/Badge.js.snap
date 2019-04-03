@@ -1,18 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Badge accepts custom bg and color 1`] = `
-.c1 {
+.c0 {
   font-size: 16px;
-  margin: 0px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: #ffffff;
   color: #7280ed;
-}
-
-.c0 {
   border-radius: 4px;
   display: inline-block;
   font-weight: normal;
@@ -25,25 +21,21 @@ exports[`Badge accepts custom bg and color 1`] = `
 }
 
 <span
-  className="c0 c1"
+  className="c0"
   color="accent"
   fontSize={1}
 />
 `;
 
 exports[`Badge renders 1`] = `
-.c1 {
+.c0 {
   font-size: 16px;
-  margin: 0px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: #e42d42;
   color: #ffffff;
-}
-
-.c0 {
   border-radius: 4px;
   display: inline-block;
   font-weight: normal;
@@ -56,7 +48,7 @@ exports[`Badge renders 1`] = `
 }
 
 <span
-  className="c0 c1"
+  className="c0"
   color="white"
   fontSize={1}
 />

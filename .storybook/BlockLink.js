@@ -11,6 +11,7 @@ storiesOf('BlockLink', module).add(
   })(() => (
     <BlockLink href="https://hackclub.com" target="_blank">
       <BackgroundImage
+        aria-label="Hack Club"
         src="https://hackclub.com/social-photo_2.jpg'"
         width={640}
       >

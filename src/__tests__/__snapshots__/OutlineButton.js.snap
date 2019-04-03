@@ -69,11 +69,9 @@ exports[`OutlineButton disabled prop sets 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) background, 0.1875s cubic-bezier(0.375,0,0.675,1) color;
 }
 
-<a
+<div
   className="c0"
-  color="white"
   disabled={true}
-  fontSize={3}
 />
 `;
 
@@ -144,10 +142,8 @@ exports[`OutlineButton renders 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) background, 0.1875s cubic-bezier(0.375,0,0.675,1) color;
 }
 
-<a
+<div
   className="c0"
-  color="white"
-  fontSize={3}
 />
 `;
 
@@ -218,9 +214,7 @@ exports[`OutlineButton with custom color 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) background, 0.1875s cubic-bezier(0.375,0,0.675,1) color;
 }
 
-<a
+<div
   className="c0"
-  color="white"
-  fontSize={3}
 />
 `;

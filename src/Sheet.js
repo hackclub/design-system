@@ -3,7 +3,7 @@ import Card from './Card'
 import Container from './Container'
 import theme from './theme'
 
-const Sheet = styled(Card.withComponent(Container))`
+const Sheet = styled(Card).attrs({ as: Container })`
   position: relative;
   overflow: hidden;
   border-radius: ${theme.radii[2]};

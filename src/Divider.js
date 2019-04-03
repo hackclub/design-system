@@ -3,7 +3,7 @@ import Box from './Box'
 import PropTypes from 'prop-types'
 import { cx } from './theme'
 
-const Divider = styled(Box.withComponent('hr'))`
+const Divider = styled(Box).attrs({ as: 'hr' })`
   height: ${props => props.height};
   border: 0;
   border-radius: ${({ theme }) => theme.pill};

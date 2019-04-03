@@ -3,7 +3,7 @@ import Text from './Text'
 import { propTypes } from 'styled-system'
 import theme from './theme'
 
-const Label = styled(Text.withComponent('label'))`
+const Label = styled(Text).attrs({ as: 'label' })`
   display: block;
 
   a {

@@ -11,7 +11,7 @@ const next = keys.map(key => ({ key, value: theme.colors[key] }))
 
 const Chip = props => <Box width={1} p={5} {...props} />
 
-const Pre = styled(Text.withComponent('pre'))`
+const Pre = styled(Text).attrs({ as: 'pre' })`
   font-family: ${theme.mono};
 `
 
@@ -33,13 +33,12 @@ storiesOf('Color', module).add('Palette', () => (
       Color Palette
     </Heading.h1>
     <Flex wrap>
-      {next.map(
-        color =>
-          !color.key[color.key.length - 1].match(/^\d+$/) ? (
-            <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
-              <Card name={color.key} color={color.value} />
-            </Box>
-          ) : null
+      {next.map(color =>
+        !color.key[color.key.length - 1].match(/^\d+$/) ? (
+          <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
+            <Card name={color.key} color={color.value} />
+          </Box>
+        ) : null
       )}
     </Flex>
   </div>

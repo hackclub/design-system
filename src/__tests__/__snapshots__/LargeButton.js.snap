@@ -55,10 +55,9 @@ exports[`LargeButton inverted 1`] = `
   box-shadow: 0 4px 16px 2px rgba(0,0,0,0.125);
 }
 
-<a
+<div
   className="c0"
-  color="white"
-  fontSize={3}
+  inverted={true}
 />
 `;
 
@@ -115,10 +114,8 @@ exports[`LargeButton larger 1`] = `
   box-shadow: 0 4px 16px 2px rgba(114,128,237,0.25);
 }
 
-<a
+<div
   className="c0"
-  color="white"
-  fontSize={3}
 />
 `;
 
@@ -175,9 +172,7 @@ exports[`LargeButton renders 1`] = `
   box-shadow: 0 4px 16px 2px rgba(228,45,66,0.25);
 }
 
-<a
+<div
   className="c0"
-  color="white"
-  fontSize={3}
 />
 `;

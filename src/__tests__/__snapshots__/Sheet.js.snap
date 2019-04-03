@@ -1,23 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Sheet renders 1`] = `
-.c3 {
+.c1 {
   margin-left: auto;
   margin-right: auto;
   padding: 18px;
   width: 100%;
   background-color: rgba(255,255,255,0.875);
-}
-
-.c2 {
   max-width: 72rem;
 }
 
-.c1 {
-  border-radius: 4px;
-}
-
 .c0 {
+  padding: 18px;
+  background-color: rgba(255,255,255,0.875);
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -25,12 +20,18 @@ exports[`Sheet renders 1`] = `
 }
 
 @media screen and (min-width:32em) {
-  .c3 {
+  .c1 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
     padding: 24px;
   }
 }
 
 <div
-  className="c0 c1 c2 c3"
+  className="sc-bdVaJa c0 c1"
 />
 `;
