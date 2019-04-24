@@ -9,7 +9,7 @@ import {
   color,
   propTypes
 } from 'styled-system'
-import theme, { filterProps } from './theme'
+import theme from './theme'
 
 export const caps = props => props.caps && { textTransform: 'uppercase' }
 
@@ -20,12 +20,7 @@ export const bold = props => props.bold && { fontWeight: 'bold' }
 export const maxWidth = ({ maxWidth }) =>
   maxWidth && { maxWidth: `${maxWidth}rem` }
 
-const Base = props => {
-  const next = filterProps(props)
-  return <p {...next} />
-}
-
-const Text = styled(Base)(
+const Text = styled.p(
   [],
   fontSize,
   space,

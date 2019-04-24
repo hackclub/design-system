@@ -1,23 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import {
   space,
   width,
   color,
   fontSize,
   textAlign,
-  responsiveStyle,
   propTypes
 } from 'styled-system'
-import theme, { filterProps } from './theme'
+import theme from './theme'
 
-const Base = props => {
-  const next = filterProps(props)
-  return <div {...next} />
-}
-
-const Box = styled(Base)([], space, width, color, fontSize, textAlign)
+const Box = styled.div([], space, width, color, fontSize, textAlign)
 
 Box.displayName = 'Box'
 Box.header = Box.withComponent('header')
