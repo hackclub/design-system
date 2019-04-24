@@ -61,13 +61,13 @@ addAliases(mediaQueries, aliases)
 export const space = [0, 6, 12, 18, 24, 36, 72, 108, 144, 288, 432]
 
 const emoji = '"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"'
-export const font = `"Phantom Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif,${emoji}`
+export const font = `Averta,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif,${emoji}`
 export const mono = 'SFMono-Regular,"Roboto Mono",Menlo,monospace'
 
-export const fontSizes = [13.5, 16, 18, 24, 27, 36, 48, 54, 72, 96]
+export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 56, 72, 96, 128]
 
-export const regular = 'regular'
-export const bold = 'bold'
+export const regular = '400'
+export const bold = '700'
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = { regular, bold }
