@@ -20,7 +20,6 @@ storiesOf('OutlineButton', module)
       <OutlineButton bg="success" mr={3}>
         Success
       </OutlineButton>
-      <LargeButton bg="success">Large</LargeButton>
     </div>
   ))
   .add('Width', () => <OutlineButton width={1}>Full Width</OutlineButton>)
