@@ -33,6 +33,12 @@ storiesOf('Text', module)
   .add('regular', () => <Text regular>Hello Regular</Text>)
   .add('bold', () => <Text bold>Hello Bold</Text>)
   .add('caps', () => <Text caps>Hello Caps</Text>)
+  .add('maxWidth', () => (
+    <Text maxWidth={16}>
+      Hello I am some very long text that will be wrapped at 16rem because of my
+      maxWidth prop!
+    </Text>
+  ))
   .add('strikethrough', () => <Text.s>Hello Strikethrough</Text.s>)
   .add('spacing', () => (
     <div>
