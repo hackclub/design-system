@@ -3,7 +3,7 @@ import Text from './Text'
 import theme from './theme'
 
 const Badge = styled(Text.span)`
-  border-radius: ${({ theme }) => theme.radius};
+  border-radius: ${({ theme }) => theme.pill};
   display: inline-block;
   font-weight: normal;
   letter-spacing: 0.0375em;
