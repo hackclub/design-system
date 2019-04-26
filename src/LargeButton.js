@@ -1,7 +1,8 @@
+import styled from 'styled-components'
 import Button from './Button'
 import theme, { hexa } from './theme'
 
-const LargeButton = Button.extend`
+const LargeButton = styled(Button)`
   text-transform: uppercase;
   box-shadow: 0 2px 12px ${({ theme }) => theme.shadowColor};
 

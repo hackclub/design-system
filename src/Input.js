@@ -37,15 +37,14 @@ const Input = styled.input`
   &:focus {
     outline: none;
     border-color: ${({ theme }) => theme.colors.info};
-    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.blue[2]};
   }
 
-  &[type='select'] {
+  &[type="select"] {
     background: #fff url("data:image/svg+xml;charset=utf8,${chevron()}") no-repeat right .75rem center;
     background-size: .5rem;
   }
 
-  &[type='textarea'] {
+  &[type="textarea"] {
     resize: vertical;
   }
 
