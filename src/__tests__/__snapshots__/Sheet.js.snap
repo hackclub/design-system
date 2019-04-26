@@ -32,5 +32,6 @@ exports[`Sheet renders 1`] = `
 
 <div
   className="c0 c1 c2 c3"
+  width={1}
 />
 `;

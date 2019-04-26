@@ -2,15 +2,6 @@
 
 exports[`Button custom bg 1`] = `
 .c0 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #7280ed;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -18,7 +9,7 @@ exports[`Button custom bg 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -28,17 +19,24 @@ exports[`Button custom bg 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #7280ed;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .c0:hover,
 .c0:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(114,128,237,0.25);
 }
 
 .c0:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(114,128,237,0.25);
 }
 
@@ -51,15 +49,6 @@ exports[`Button custom bg 1`] = `
 
 exports[`Button disabled prop sets 1`] = `
 .c0 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -67,7 +56,7 @@ exports[`Button disabled prop sets 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -77,19 +66,26 @@ exports[`Button disabled prop sets 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
   opacity: 0.25;
   cursor: not-allowed;
 }
 
 .c0:hover,
 .c0:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
 .c0:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
 }
 
@@ -103,15 +99,6 @@ exports[`Button disabled prop sets 1`] = `
 
 exports[`Button inverted 1`] = `
 .c0 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #7280ed;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -119,7 +106,7 @@ exports[`Button inverted 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -129,19 +116,26 @@ exports[`Button inverted 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #7280ed;
+  color: #ffffff;
+  font-size: 20px;
   background-color: #ffffff;
   color: #7280ed;
 }
 
 .c0:hover,
 .c0:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.125);
 }
 
 .c0:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(0,0,0,0.125);
 }
 
@@ -154,15 +148,6 @@ exports[`Button inverted 1`] = `
 
 exports[`Button left chevron 1`] = `
 .c0 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -170,7 +155,7 @@ exports[`Button left chevron 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -180,17 +165,24 @@ exports[`Button left chevron 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .c0:hover,
 .c0:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
 .c0:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
 }
 
@@ -208,15 +200,6 @@ exports[`Button left chevron 1`] = `
 
 exports[`Button renders 1`] = `
 .c0 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -224,7 +207,7 @@ exports[`Button renders 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -234,17 +217,24 @@ exports[`Button renders 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .c0:hover,
 .c0:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
 .c0:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
 }
 
@@ -257,15 +247,6 @@ exports[`Button renders 1`] = `
 
 exports[`Button right chevron 1`] = `
 .c0 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -273,7 +254,7 @@ exports[`Button right chevron 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -283,17 +264,24 @@ exports[`Button right chevron 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .c0:hover,
 .c0:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
 .c0:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
 }
 
@@ -311,15 +299,6 @@ exports[`Button right chevron 1`] = `
 
 exports[`Button scale 1`] = `
 .c0 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -327,7 +306,7 @@ exports[`Button scale 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -337,7 +316,16 @@ exports[`Button scale 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
   -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) all;
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) all;
   will-change: transform;
@@ -348,12 +336,10 @@ exports[`Button scale 1`] = `
 
 .c0:hover,
 .c0:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
 .c0:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
 }
 
@@ -382,15 +368,6 @@ exports[`Button scale 1`] = `
 
 exports[`Button without disabled prop sets 1`] = `
 .c0 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #2de473;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -398,7 +375,7 @@ exports[`Button without disabled prop sets 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -408,19 +385,26 @@ exports[`Button without disabled prop sets 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #2de473;
+  color: #ffffff;
+  font-size: 20px;
   background-color: #ffffff;
   color: #2de473;
 }
 
 .c0:hover,
 .c0:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.125);
 }
 
 .c0:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(0,0,0,0.125);
 }
 

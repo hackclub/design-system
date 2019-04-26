@@ -2,15 +2,6 @@
 
 exports[`Submit renders 1`] = `
 .c1 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -18,7 +9,7 @@ exports[`Submit renders 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -28,17 +19,24 @@ exports[`Submit renders 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .c1:hover,
 .c1:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
 .c1:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
 }
 
@@ -56,15 +54,6 @@ exports[`Submit renders 1`] = `
 
 exports[`Submit renders lg 1`] = `
 .c1 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -72,7 +61,7 @@ exports[`Submit renders lg 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -82,17 +71,24 @@ exports[`Submit renders lg 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .c1:hover,
 .c1:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(228,45,66,0.25);
 }
 
 .c1:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
 }
 

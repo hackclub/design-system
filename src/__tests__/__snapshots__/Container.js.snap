@@ -13,6 +13,7 @@ exports[`Container renders with default theme max-width 1`] = `
 
 <div
   className="c0 c1"
+  width={1}
 />
 `;
 
@@ -29,5 +30,6 @@ exports[`Container renders with maxWidth 1`] = `
 
 <div
   className="c0 c1"
+  width={1}
 />
 `;

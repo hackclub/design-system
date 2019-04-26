@@ -2,7 +2,7 @@
 
 exports[`Badge accepts custom bg and color 1`] = `
 .c1 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0px;
   padding-left: 12px;
   padding-right: 12px;
@@ -20,7 +20,7 @@ exports[`Badge accepts custom bg and color 1`] = `
   -moz-letter-spacing: 0.0375em;
   -ms-letter-spacing: 0.0375em;
   letter-spacing: 0.0375em;
-  line-height: 1.25;
+  line-height: 1.125;
   text-transform: uppercase;
 }
 
@@ -33,7 +33,7 @@ exports[`Badge accepts custom bg and color 1`] = `
 
 exports[`Badge renders 1`] = `
 .c1 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0px;
   padding-left: 12px;
   padding-right: 12px;
@@ -51,7 +51,7 @@ exports[`Badge renders 1`] = `
   -moz-letter-spacing: 0.0375em;
   -ms-letter-spacing: 0.0375em;
   letter-spacing: 0.0375em;
-  line-height: 1.25;
+  line-height: 1.125;
   text-transform: uppercase;
 }
 

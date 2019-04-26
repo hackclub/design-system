@@ -2,15 +2,6 @@
 
 exports[`IconButton renders 1`] = `
 .c1 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -18,7 +9,7 @@ exports[`IconButton renders 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -28,17 +19,24 @@ exports[`IconButton renders 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .c1:hover,
 .c1:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.125);
 }
 
 .c1:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(0,0,0,0.125);
 }
 
@@ -70,7 +68,7 @@ exports[`IconButton renders 1`] = `
     strokeMiterlimit="1.414"
     theme={
       Object {
-        "bold": "bold",
+        "bold": "700",
         "boxShadows": Array [
           "0 0 2px 0 rgba(0,0,0,.0625),0 2px 4px 0 rgba(0,0,0,0.125)",
           "0 0 2px 0 rgba(0,0,0,.0625),0 4px 8px 0 rgba(0,0,0,0.125)",
@@ -258,22 +256,23 @@ exports[`IconButton renders 1`] = `
           ],
         },
         "cx": [Function],
-        "font": "\\"Phantom Sans\\",-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
+        "font": "Averta,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
         "fontSizes": Array [
-          13.5,
+          12,
+          14,
           16,
-          18,
+          20,
           24,
-          27,
-          36,
+          32,
           48,
-          54,
+          56,
           72,
           96,
+          128,
         ],
         "fontWeights": Object {
-          "bold": "bold",
-          "regular": "regular",
+          "bold": "700",
+          "regular": "400",
         },
         "gradient": [Function],
         "hexa": [Function],
@@ -295,7 +294,7 @@ exports[`IconButton renders 1`] = `
           "9999px",
         ],
         "radius": "4px",
-        "regular": "regular",
+        "regular": "400",
         "scaleFactor": 1.0625,
         "shadowColor": "rgba(0,0,0,0.125)",
         "space": Array [
@@ -329,15 +328,6 @@ exports[`IconButton renders 1`] = `
 
 exports[`IconButton renders with circle prop 1`] = `
 .c1 {
-  margin: 0px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -345,7 +335,7 @@ exports[`IconButton renders with circle prop 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -355,17 +345,24 @@ exports[`IconButton renders with circle prop 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: none;
+  border: 0;
+  outline: 0;
+  margin: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .c1:hover,
 .c1:focus {
-  outline: 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.125);
 }
 
 .c1:active {
-  outline: 0;
   box-shadow: 0 2px 8px 2px rgba(0,0,0,0.125);
 }
 
@@ -398,7 +395,7 @@ exports[`IconButton renders with circle prop 1`] = `
     strokeMiterlimit="1.414"
     theme={
       Object {
-        "bold": "bold",
+        "bold": "700",
         "boxShadows": Array [
           "0 0 2px 0 rgba(0,0,0,.0625),0 2px 4px 0 rgba(0,0,0,0.125)",
           "0 0 2px 0 rgba(0,0,0,.0625),0 4px 8px 0 rgba(0,0,0,0.125)",
@@ -586,22 +583,23 @@ exports[`IconButton renders with circle prop 1`] = `
           ],
         },
         "cx": [Function],
-        "font": "\\"Phantom Sans\\",-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
+        "font": "Averta,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
         "fontSizes": Array [
-          13.5,
+          12,
+          14,
           16,
-          18,
+          20,
           24,
-          27,
-          36,
+          32,
           48,
-          54,
+          56,
           72,
           96,
+          128,
         ],
         "fontWeights": Object {
-          "bold": "bold",
-          "regular": "regular",
+          "bold": "700",
+          "regular": "400",
         },
         "gradient": [Function],
         "hexa": [Function],
@@ -623,7 +621,7 @@ exports[`IconButton renders with circle prop 1`] = `
           "9999px",
         ],
         "radius": "4px",
-        "regular": "regular",
+        "regular": "400",
         "scaleFactor": 1.0625,
         "shadowColor": "rgba(0,0,0,0.125)",
         "space": Array [

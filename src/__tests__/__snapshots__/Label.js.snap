@@ -2,7 +2,7 @@
 
 exports[`Label it renders 1`] = `
 .c1 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0px;
   color: #384046;
 }
