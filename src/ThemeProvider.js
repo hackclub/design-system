@@ -34,6 +34,12 @@ injectGlobal`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  html {
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+  }
+
   html,
   body {
     min-height: 100%;
