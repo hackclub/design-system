@@ -2,7 +2,7 @@
 
 exports[`theme snapshot 1`] = `
 Object {
-  "bold": "700",
+  "bold": "bold",
   "boxShadows": Array [
     "0 0 2px 0 rgba(0,0,0,.0625),0 2px 4px 0 rgba(0,0,0,0.125)",
     "0 0 2px 0 rgba(0,0,0,.0625),0 4px 8px 0 rgba(0,0,0,0.125)",
@@ -190,23 +190,22 @@ Object {
     ],
   },
   "cx": [Function],
-  "font": "Averta,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
+  "font": "\\"Phantom Sans\\",-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\"",
   "fontSizes": Array [
-    12,
-    14,
+    13.5,
     16,
-    20,
+    18,
     24,
-    32,
+    27,
+    36,
     48,
-    56,
+    54,
     72,
     96,
-    128,
   ],
   "fontWeights": Object {
-    "bold": "700",
-    "regular": "400",
+    "bold": "bold",
+    "regular": "regular",
   },
   "gradient": [Function],
   "hexa": [Function],
@@ -228,7 +227,7 @@ Object {
     "9999px",
   ],
   "radius": "4px",
-  "regular": "400",
+  "regular": "regular",
   "scaleFactor": 1.0625,
   "shadowColor": "rgba(0,0,0,0.125)",
   "space": Array [

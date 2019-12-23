@@ -18,7 +18,7 @@ exports[`Input renders 1`] = `
   border-color: #dde1e4;
   -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0px;
   padding-left: 12px;
   padding-right: 12px;
@@ -48,14 +48,15 @@ exports[`Input renders 1`] = `
 .c0:focus {
   outline: none;
   border-color: #2d9ee4;
+  box-shadow: 0 0 0 2px #add9f5;
 }
 
-.c0[type="select"] {
+.c0[type='select'] {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
   background-size: .5rem;
 }
 
-.c0[type="textarea"] {
+.c0[type='textarea'] {
   resize: vertical;
 }
 
@@ -86,7 +87,7 @@ exports[`Input renders with custom fontSize 1`] = `
   border-color: #dde1e4;
   -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
-  font-size: 24px;
+  font-size: 27px;
   margin: 0px;
   padding-left: 12px;
   padding-right: 12px;
@@ -116,14 +117,15 @@ exports[`Input renders with custom fontSize 1`] = `
 .c0:focus {
   outline: none;
   border-color: #2d9ee4;
+  box-shadow: 0 0 0 2px #add9f5;
 }
 
-.c0[type="select"] {
+.c0[type='select'] {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
   background-size: .5rem;
 }
 
-.c0[type="textarea"] {
+.c0[type='textarea'] {
   resize: vertical;
 }
 
@@ -154,7 +156,7 @@ exports[`Input renders with custom spacing 1`] = `
   border-color: #dde1e4;
   -webkit-transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
-  font-size: 16px;
+  font-size: 18px;
   margin: 24px;
   padding: 24px;
   padding-left: 12px;
@@ -185,14 +187,15 @@ exports[`Input renders with custom spacing 1`] = `
 .c0:focus {
   outline: none;
   border-color: #2d9ee4;
+  box-shadow: 0 0 0 2px #add9f5;
 }
 
-.c0[type="select"] {
+.c0[type='select'] {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23606e77' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
   background-size: .5rem;
 }
 
-.c0[type="textarea"] {
+.c0[type='textarea'] {
   resize: vertical;
 }
 

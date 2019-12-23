@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`OutlineButton disabled prop sets 1`] = `
-.c2 {
+.c0 {
+  margin: 0px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -9,7 +18,7 @@ exports[`OutlineButton disabled prop sets 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -19,50 +28,37 @@ exports[`OutlineButton disabled prop sets 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: 0;
-  outline: 0;
-  margin: 0px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 20px;
+  border: none;
   opacity: 0.25;
   cursor: not-allowed;
-}
-
-.c2:hover,
-.c2:focus {
-  box-shadow: 0 2px 6px rgba(228,45,66,0.25);
-}
-
-.c2:active {
-  box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
-}
-
-.c1 {
   text-transform: uppercase;
   box-shadow: 0 2px 12px rgba(0,0,0,0.125);
-}
-
-.c1:hover,
-.c1:focus {
-  box-shadow: 0 2px 12px 2px rgba(228,45,66,0.25);
-}
-
-.c1:active {
-  box-shadow: 0 4px 16px 2px rgba(228,45,66,0.25);
-}
-
-.c0 {
   background: transparent;
   border-width: 2px;
   border-style: solid;
   border-color: #e42d42;
   box-shadow: none;
   color: #e42d42;
+}
+
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 6px rgba(228,45,66,0.25);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: 0 2px 12px 2px rgba(228,45,66,0.25);
+}
+
+.c0:active {
+  box-shadow: 0 4px 16px 2px rgba(228,45,66,0.25);
 }
 
 .c0:focus:enabled,
@@ -74,7 +70,7 @@ exports[`OutlineButton disabled prop sets 1`] = `
 }
 
 <a
-  className="c0 c1 c2"
+  className="c0"
   color="white"
   disabled={true}
   fontSize={3}
@@ -82,7 +78,16 @@ exports[`OutlineButton disabled prop sets 1`] = `
 `;
 
 exports[`OutlineButton renders 1`] = `
-.c2 {
+.c0 {
+  margin: 0px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #e42d42;
+  color: #ffffff;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -90,7 +95,7 @@ exports[`OutlineButton renders 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -100,48 +105,35 @@ exports[`OutlineButton renders 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: 0;
-  outline: 0;
-  margin: 0px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #e42d42;
-  color: #ffffff;
-  font-size: 20px;
-}
-
-.c2:hover,
-.c2:focus {
-  box-shadow: 0 2px 6px rgba(228,45,66,0.25);
-}
-
-.c2:active {
-  box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
-}
-
-.c1 {
+  border: none;
   text-transform: uppercase;
   box-shadow: 0 2px 12px rgba(0,0,0,0.125);
-}
-
-.c1:hover,
-.c1:focus {
-  box-shadow: 0 2px 12px 2px rgba(228,45,66,0.25);
-}
-
-.c1:active {
-  box-shadow: 0 4px 16px 2px rgba(228,45,66,0.25);
-}
-
-.c0 {
   background: transparent;
   border-width: 2px;
   border-style: solid;
   border-color: #e42d42;
   box-shadow: none;
   color: #e42d42;
+}
+
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 6px rgba(228,45,66,0.25);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 2px 8px 2px rgba(228,45,66,0.25);
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: 0 2px 12px 2px rgba(228,45,66,0.25);
+}
+
+.c0:active {
+  box-shadow: 0 4px 16px 2px rgba(228,45,66,0.25);
 }
 
 .c0:focus:enabled,
@@ -153,14 +145,23 @@ exports[`OutlineButton renders 1`] = `
 }
 
 <a
-  className="c0 c1 c2"
+  className="c0"
   color="white"
   fontSize={3}
 />
 `;
 
 exports[`OutlineButton with custom color 1`] = `
-.c2 {
+.c0 {
+  margin: 0px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #ffffff;
+  color: #ffffff;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -168,7 +169,7 @@ exports[`OutlineButton with custom color 1`] = `
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.125;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -178,48 +179,35 @@ exports[`OutlineButton with custom color 1`] = `
   transition: 0.1875s cubic-bezier(0.375,0,0.675,1) box-shadow;
   box-shadow: 0 2px 4px rgba(0,0,0,0.125);
   border-radius: 9999px;
-  border: 0;
-  outline: 0;
-  margin: 0px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #ffffff;
-  color: #ffffff;
-  font-size: 20px;
-}
-
-.c2:hover,
-.c2:focus {
-  box-shadow: 0 2px 6px rgba(255,255,255,0.25);
-}
-
-.c2:active {
-  box-shadow: 0 2px 8px 2px rgba(255,255,255,0.25);
-}
-
-.c1 {
+  border: none;
   text-transform: uppercase;
   box-shadow: 0 2px 12px rgba(0,0,0,0.125);
-}
-
-.c1:hover,
-.c1:focus {
-  box-shadow: 0 2px 12px 2px rgba(255,255,255,0.25);
-}
-
-.c1:active {
-  box-shadow: 0 4px 16px 2px rgba(255,255,255,0.25);
-}
-
-.c0 {
   background: transparent;
   border-width: 2px;
   border-style: solid;
   border-color: #ffffff;
   box-shadow: none;
   color: #ffffff;
+}
+
+.c0:hover,
+.c0:focus {
+  outline: 0;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.25);
+}
+
+.c0:active {
+  outline: 0;
+  box-shadow: 0 2px 8px 2px rgba(255,255,255,0.25);
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: 0 2px 12px 2px rgba(255,255,255,0.25);
+}
+
+.c0:active {
+  box-shadow: 0 4px 16px 2px rgba(255,255,255,0.25);
 }
 
 .c0:focus:enabled,
@@ -231,7 +219,7 @@ exports[`OutlineButton with custom color 1`] = `
 }
 
 <a
-  className="c0 c1 c2"
+  className="c0"
   color="white"
   fontSize={3}
 />
