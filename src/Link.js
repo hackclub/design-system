@@ -1,10 +1,9 @@
-import styled from 'styled-components'
 import Text from './Text'
 import PropTypes from 'prop-types'
 import { css } from 'styled-components'
 import theme from './theme'
 
-const Link = styled(Text.withComponent('a'))`
+const Link = Text.withComponent('a').extend`
   text-decoration: ${props => (props.underline ? 'underline' : 'none')};
 
   ${props =>

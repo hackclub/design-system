@@ -1,8 +1,7 @@
-import styled from 'styled-components'
 import LargeButton from './LargeButton'
 import theme, { cx } from './theme'
 
-const OutlineButton = styled(LargeButton)`
+const OutlineButton = LargeButton.extend`
   background: transparent;
   border-width: 2px;
   border-style: solid;

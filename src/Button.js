@@ -1,9 +1,10 @@
-import styled, { css } from 'styled-components'
+import Box from './Box'
 import theme, { cx, hexa } from './theme'
-import { space, width, color, fontSize, propTypes } from 'styled-system'
+import { css } from 'styled-components'
 import PropTypes from 'prop-types'
 
-const Button = styled.a`
+const Button = Box.withComponent('a').extend`
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -17,9 +18,7 @@ const Button = styled.a`
   transition: ${({ theme }) => theme.transition} box-shadow;
   box-shadow: 0 2px 4px ${({ theme }) => theme.shadowColor};
   border-radius: ${({ theme }) => theme.pill};
-  border: 0;
-  outline: 0;
-  ${space} ${width} ${color} ${fontSize}
+  border: none;
 
   ${props =>
     props.inverted && {
@@ -29,23 +28,20 @@ const Button = styled.a`
 
   &:hover,
   &:focus {
+    outline: 0;
     box-shadow: 0 2px 6px
       ${props =>
         props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
   }
 
   &:active {
+    outline: 0;
     box-shadow: 0 2px 8px 2px
       ${props =>
         props.inverted ? props.theme.shadowColor : hexa(props.bg, 0.25)};
   }
 
-  ${props =>
-    props.disabled &&
-    css`
-      opacity: 0.25;
-      cursor: not-allowed;
-    `};
+  ${props => props.disabled && { opacity: 0.25, cursor: 'not-allowed' }};
 
   ${props =>
     props.scale &&
@@ -83,10 +79,6 @@ const Button = styled.a`
 Button.displayName = 'Button'
 
 Button.propTypes = {
-  ...propTypes.space,
-  ...propTypes.color,
-  ...propTypes.fontSize,
-  ...propTypes.width,
   /** flip colors */
   inverted: PropTypes.bool,
   /** add hover/focus animation */
