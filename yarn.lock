@@ -7611,10 +7611,10 @@ pako@~1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
 
-palx@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/palx/-/palx-1.0.0.tgz#f1c9e2492f3fa9542be377ae1ff2de97088e58f0"
-  integrity sha1-8cniSS8/qVQr43euH/LelwiOWPA=
+palx@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/palx/-/palx-1.0.2.tgz#5a0f59ac542a6a9dd7422f29ed3a31bab5bfe0c4"
+  integrity sha1-Wg9ZrFQqap3XQi8p7ToxurW/4MQ=
   dependencies:
     chroma-js "^1.2.1"
     micro "^6.1.0"
