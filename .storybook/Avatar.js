@@ -9,14 +9,12 @@ storiesOf('Avatar', module)
     withInfo({
       inline: true,
       text: 'A circular avatar image primitive.'
-    })(() => <Avatar src="https://hackclub.com/team/zach.png" size={64} />)
+    })(() => <Avatar src="https://hackclub.com/team/zach.jpg" size={64} />)
   )
   .add('Team', () => (
-    <React.Fragment>
-      {['zach.png', 'max.jpg', 'lachlan.jpg', 'mingjie.jpg', 'athul.jpg'].map(
-        key => (
-          <Avatar mr={2} src={`https://hackclub.com/team/${key}`} key={key} />
-        )
-      )}
-    </React.Fragment>
+    <>
+      {['zach', 'max', 'lachlan', 'mingjie', 'athul'].map(key => (
+        <Avatar mr={2} src={`https://hackclub.com/team/${key}.jpg`} key={key} />
+      ))}
+    </>
   ))
