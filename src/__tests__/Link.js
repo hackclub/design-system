@@ -22,4 +22,16 @@ describe('Link', () => {
       modifier: ':hover'
     })
   })
+
+  test('renders chevronleft', () => {
+    const json = renderer.create(<Link chevronLeft>Left</Link>).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('content', `'‹'`, { modifier: ':before' })
+  })
+
+  test('renders chevronright', () => {
+    const json = renderer.create(<Link chevronRight>Right</Link>).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('content', `'›'`, { modifier: ':after' })
+  })
 })

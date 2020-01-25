@@ -22,6 +22,60 @@ exports[`Link renders 1`] = `
 </a>
 `;
 
+exports[`Link renders chevronleft 1`] = `
+.c0 {
+  color: #2d9ee4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:before,
+.c0:after {
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.c0:before {
+  content: '‹';
+  padding-right: 0.25em;
+}
+
+<a
+  className="c0"
+  color="info"
+>
+  Left
+</a>
+`;
+
+exports[`Link renders chevronright 1`] = `
+.c0 {
+  color: #2d9ee4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:before,
+.c0:after {
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.c0:after {
+  content: '›';
+  padding-left: 0.25em;
+}
+
+<a
+  className="c0"
+  color="info"
+>
+  Right
+</a>
+`;
+
 exports[`Link renders hoverline 1`] = `
 .c0 {
   color: #2d9ee4;
