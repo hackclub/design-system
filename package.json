@@ -15,7 +15,7 @@
   "author": "Lachlan Campbell <lachlan@hackclub.com>",
   "license": "MIT",
   "dependencies": {
-    "@hackclub/icons": "^0.0.2",
+    "@hackclub/icons": "^0.0.3",
     "lodash": "^4.17.15",
     "palx": "1.0.2",
     "prop-types": "^15.7.2",
@@ -25,12 +25,12 @@
     "styled-system": "1.1.7"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
-    "@storybook/addon-info": "^5.2.8",
-    "@storybook/react": "^5.2.8",
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-info": "^5.3.9",
+    "@storybook/react": "^5.3.9",
     "@storybook/storybook-deployer": "^2.8.1",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
@@ -51,7 +51,9 @@
     "coveragePathIgnorePatterns": [
       "dist/"
     ],
-    "setupTestFrameworkScriptFile": "./test-setup.js"
+    "setupFilesAfterEnv": [
+      "./test-setup.js"
+    ]
   },
   "repository": {
     "type": "git",
