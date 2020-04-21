@@ -6,9 +6,9 @@ import theme from './theme'
 const fontsCss = css`
   @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://hackclub.com/fonts/Phantom_Sans_0.6/Regular.woff')
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
         format('woff'),
-      url('https://hackclub.com/fonts/Phantom_Sans_0.6/Regular.woff2')
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
         format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -16,9 +16,9 @@ const fontsCss = css`
   }
   @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://hackclub.com/fonts/Phantom_Sans_0.6/Bold.woff')
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
         format('woff'),
-      url('https://hackclub.com/fonts/Phantom_Sans_0.6/Bold.woff2')
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
         format('woff2');
     font-weight: bold;
     font-style: normal;
