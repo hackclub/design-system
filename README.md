@@ -1,5 +1,7 @@
 # Hack Club Design System
 
+> Hack Club has transitioned to using `hackclub/theme` as its design system. This project is only being patched when needed.
+
 https://design.hackclub.com/
 
 ```sh
